@@ -38,3 +38,7 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin'), func
     Route::get('/logout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@logout'));     
 
 });
+
+Route::get('/', function () {
+     return view('welcome');
+ });
