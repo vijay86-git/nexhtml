@@ -1,7 +1,7 @@
 <?php
 
-$segment2 = Request::segment(2);
-$segment3 = Request::segment(3);
+$segment2 = Request::segment(1);
+$segment3 = Request::segment(2);
 
 switch ($segment2)
    {
