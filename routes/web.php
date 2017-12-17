@@ -20,6 +20,7 @@
 Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
 
     echo "in";
+    
 
     Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
 
