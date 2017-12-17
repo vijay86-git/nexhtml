@@ -27,9 +27,6 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin'), func
 
     echo $_SERVER['SERVER_NAME'];
 
-     Route::get('/', function () {
-         return view('welcome');
-     });
 
    // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
 
