@@ -41,6 +41,10 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin'), func
 
 });
 
-Route::get('/', function () {
-     return view('welcome');
- });
+Route::group(array('domain' => 'nexladder.com'), function() {
+
+    Route::get('/', function () {
+         return view('welcome');
+     });
+
+}
