@@ -47,4 +47,4 @@ Route::group(array('domain' => 'nexladder.com'), function() {
          return view('welcome');
      });
 
-}
+});
