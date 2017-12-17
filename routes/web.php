@@ -14,3 +14,24 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
+
+    Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
+
+    Route::get('/database', array('as' => 'database', 'uses' => 'DashboardController@database'));
+
+    Route::resource('subject','SubjectController');
+    Route::resource('topic','TopicController');
+    Route::resource('section','SectionController');
+
+    Route::resource('interview','InterviewController');
+    Route::resource('question','QuestionController');
+
+    Route::get('/image', array('as' => 'image.index', 'uses' => 'ImageController@index'));
+    Route::post('/store', array('as' => 'image.store', 'uses' => 'ImageController@store'));
+    Route::get('/logout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@logout'));     
+
+});
