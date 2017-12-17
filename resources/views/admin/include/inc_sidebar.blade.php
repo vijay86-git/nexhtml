@@ -145,54 +145,7 @@ switch ($segment2)
                      <a class="{{ isset($dashboard_active) ? 'activelink' : '' }}" href="{{ route('dashboard') }}"><span>Dashboard</span></a>
                   </li>
 
-                  <!-- <li class="treeview {{ isset($category_active) ? $category_active : '' }}">
-                     <a href="#">
-                     <i class=""></i><span>Category</span>
-                       <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                     </a>
-                     <ul class="treeview-menu" style="{{ isset($category_active) ? 'display:block' : 'display:none' }}">
-                        <li><a class="{{ isset($cat_link_active) ? 'activelink' : '' }}" href="{{ route('category.list') }}">View Category</a></li>
-                        
-                        <li>
-                           <a class="{{ isset($catae_link_active) ? 'activelink' : '' }}" href="{{ route('category.create') }}">Add Category</a>
-                        </li>
-                     </ul>
-                  </li>
-
-
-                  <li class="treeview {{ isset($game_active) ? $game_active : '' }}">
-                     <a href="#">
-                     <i class=""></i><span>Games</span>
-                       <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                     </a>
-                     <ul class="treeview-menu" style="{{ isset($game_active) ? 'display:block' : 'display:none' }}">
-                        <li><a class="{{ isset($gam_link_active) ? 'activelink' : '' }}" href="{{ route('game.list') }}">View Games</a></li>
-                        
-                        <li>
-                           <a class="{{ isset($gamae_link_active) ? 'activelink' : '' }}" href="{{ route('game.create') }}">Add Games</a>
-                        </li>
-                     </ul>
-                  </li>
-
-
-                  <li class="treeview {{ isset($banner_active) ? $banner_active : '' }}">
-                     <a href="#">
-                     <i class=""></i><span>Banner</span>
-                       <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                     </a>
-                     <ul class="treeview-menu" style="{{ isset($banner_active) ? 'display:block' : 'display:none' }}">
-                        <li><a class="{{ isset($ban_link_active) ? 'activelink' : '' }}" href="{{ route('banner.list') }}">View Banners</a></li>
-                        
-                        <li>
-                           <a class="{{ isset($banae_link_active) ? 'activelink' : '' }}" href="{{ route('banner.create') }}">Add Banner</a>
-                        </li>
-                     </ul>
-                  </li>
-
-
-                  <li class="">
-                     <a class="{{ isset($users_active) ? 'activelink' : '' }}" href="{{ route('users.list') }}">Users</a>
-                  </li> -->
+                 
 
 
                   <li class="treeview {{ isset($subject_active) ? $subject_active : '' }}">
