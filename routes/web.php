@@ -25,9 +25,6 @@ Route::group(array('domain' => 'nexladder.com'), function() {
 
 Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin'), function() {
 
-    echo $_SERVER['SERVER_NAME'];
-
-
    // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
 
     Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
