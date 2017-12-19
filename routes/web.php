@@ -15,7 +15,7 @@
     //return view('welcome');
 //});
 
-Route::group(array('domain' => 'nexladder.com'), function() {
+/*Route::group(array('domain' => 'nexladder.com'), function() {
 
     Route::get('/', function () {
 
@@ -24,6 +24,8 @@ Route::group(array('domain' => 'nexladder.com'), function() {
      });
 
 });
+*/
+
 
 Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'adminsession'), function() {
 
@@ -45,4 +47,13 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
     Route::get('/logout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@logout'));     
 
 });
+
+
+Route::get('/', function () {
+
+         Session::put('admin', 'vijay1');
+         return view('welcome');
+     });
+
+     
 
