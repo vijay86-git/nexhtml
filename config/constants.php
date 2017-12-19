@@ -1,9 +1,4 @@
 <?php
-
-return [
-		    'settings ' => [
-		       			        'cp_url' => 'http://cp.nexladder.com/',
-		      			        'front_url' => 'http://nexladder.com/',
-		      			        'title' => 'Nexladder Control Panel'
-		                   ]
-       ];
+  define('ADMIN_URL', 'http://cp.nexladder.com/');
+  define('SITE_URL', 'http://nexladder.com/');
+  define('ADMIN_TITLE', 'Nexladder Control Panel');
