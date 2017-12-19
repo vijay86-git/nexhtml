@@ -18,6 +18,8 @@
 Route::group(array('domain' => 'nexladder.com'), function() {
 
     Route::get('/', function () {
+
+         Session::put('admin', 'vijay1');
          return view('welcome');
      });
 
