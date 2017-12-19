@@ -145,9 +145,6 @@ switch ($segment2)
                      <a class="{{ isset($dashboard_active) ? 'activelink' : '' }}" href="{{ route('dashboard') }}"><span>Dashboard</span></a>
                   </li>
 
-                 
-
-
                   <li class="treeview {{ isset($subject_active) ? $subject_active : '' }}">
                      <a href="#">
                      <i class=""></i><span>Subject</span>
