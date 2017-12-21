@@ -31,7 +31,7 @@ class DashboardController extends Controller
         $request->session()->flush();
     	    Session::flush(); 
 
-          echo $request->session()->get('admin');
+          echo 'dd'.$request->session()->get('admin');
 
           die;
 
