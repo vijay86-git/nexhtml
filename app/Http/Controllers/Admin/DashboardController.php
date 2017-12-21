@@ -29,7 +29,11 @@ class DashboardController extends Controller
     public function logout(Request $request)
        {
         $request->session()->flush();
-    	    Session::flush(); die;
+    	    Session::flush(); 
+
+          echo $request->session()->get('admin');
+
+          die;
 
           return redirect('/');
        }
