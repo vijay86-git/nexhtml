@@ -16,6 +16,7 @@ class CheckAdminSession
      */
     public function handle($request, Closure $next)
      {
+        print_r($request->session()->get('admin'));
         echo 'vv'.$request->session()->exists('admin');die;
 
 
