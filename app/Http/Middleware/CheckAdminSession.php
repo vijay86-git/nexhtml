@@ -16,6 +16,9 @@ class CheckAdminSession
      */
     public function handle($request, Closure $next)
      {
+        echo 'vv'.$request->session()->get('admin');
+
+
         if ( ! $request->session()->exists('admin')) {
 
             return redirect(SITE_URL);
