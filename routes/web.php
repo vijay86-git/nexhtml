@@ -31,7 +31,7 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 
    // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
    // 
-   echo session('admin');
+   echo 'ddd'.session('admin');
    
 
     Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
