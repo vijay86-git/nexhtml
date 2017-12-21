@@ -50,7 +50,7 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 });
 
 
-Route::get('/', function () {
+Route::get('/home', function () {
 
          Session::put('admin', 'vijay1');
          echo Session::get('admin');
