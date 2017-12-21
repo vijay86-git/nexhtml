@@ -16,12 +16,10 @@ class CheckAdminSession
      */
     public function handle($request, Closure $next)
      {
-        
         if ( ! $request->session()->exists('admin')) {
 
             return redirect(SITE_URL);
         }
-
             return $next($request);
      }
 }
