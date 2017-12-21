@@ -26,8 +26,9 @@ class DashboardController extends Controller
         echo "sdf";
       }
       
-    public function logout()
+    public function logout(Request $request)
        {
+        $request->session()->flush();
     	    Session::flush(); die;
 
           return redirect('/');
