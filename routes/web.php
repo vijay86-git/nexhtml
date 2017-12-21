@@ -49,13 +49,14 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 
 });
 
+Route::group(array('domain' => 'nexladder.com'), function() {
 
-Route::get('/home', function () {
+    Route::get('/', function () {
 
-         Session::put('admin', 'vijay1');
-         echo Session::get('admin');
-         return view('welcome');
-     });
+             Session::put('admin', 'vijay1');
+             echo Session::get('admin');
+             return view('welcome');
+         });
 
-
+});
 
