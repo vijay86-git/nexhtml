@@ -32,7 +32,7 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
    // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
    // 
    // 
-    Route::group(array('prefix' => '/'), function() { Route::get('/dashboard', 'DashboardController@index'); });
+    Route::group(array('prefix' => '/'), function() { Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index')) });
 
 
     //Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
