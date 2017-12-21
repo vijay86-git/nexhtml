@@ -31,6 +31,7 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 
    // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
    // 
+   echo 'dd'.$request->session()->get('admin');
    
     Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
 
@@ -53,7 +54,7 @@ Route::group(array('domain' => 'nexladder.com'), function() {
 
     Route::get('/', function () {
 
-             Session::put('admin', 'vijay1');
+             Session::put('admin', mt_rand());
              echo Session::get('admin');
              return view('welcome');
          });
