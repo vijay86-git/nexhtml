@@ -15,8 +15,7 @@ class CheckAdminSession
      * @return mixed
      */
     public function handle($request, Closure $next)
-    {
-        echo Session::get('admin'); die;
+     {
         
         if ( ! $request->session()->exists('admin')) {
 
@@ -24,5 +23,5 @@ class CheckAdminSession
         }
 
             return $next($request);
-    }
+     }
 }
