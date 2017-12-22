@@ -25,7 +25,6 @@
 
 });
 */
-use Session;;
 
 Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'adminsession'), function() {
 
