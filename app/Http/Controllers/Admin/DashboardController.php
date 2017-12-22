@@ -23,7 +23,7 @@ class DashboardController extends Controller
 
     public function database()
       {
-        echo "sdf";
+           echo "sdf";
       }
       
     public function logout(Request $request)
