@@ -45,6 +45,7 @@ class CreateTopicsTable extends Migration
 
             $table->foreign('section_id')->references('id')->on('section');
 
+
         });
     }
 
@@ -55,8 +56,6 @@ class CreateTopicsTable extends Migration
      */
     public function down()
     {
-        Schema::disableForeignKeyConstraints(); 
         Schema::dropIfExists('topics');
-        Schema::enableForeignKe‌​yConstraints(); 
     }
 }
