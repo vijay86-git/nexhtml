@@ -54,7 +54,6 @@ Route::group(array('domain' => 'nexladder.com'), function() {
     Route::get('/', function () {
 
              Session::put('admin', mt_rand());
-             echo Session::get('admin');
              return view('welcome');
          });
 
