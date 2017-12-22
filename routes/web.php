@@ -44,9 +44,13 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 
     Route::get('/image', array('as' => 'image.index', 'uses' => 'ImageController@index'));
     Route::post('/store', array('as' => 'image.store', 'uses' => 'ImageController@store'));
-    Route::get('/logout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@logout'));     
+        
 
 });
+
+Route::get('/logout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@logout')); 
+
+
 
 Route::group(array('domain' => 'nexladder.com'), function() {
 
