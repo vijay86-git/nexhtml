@@ -48,7 +48,7 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 
 });
 
-Route::get('/logout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@logout')); 
+//Route::get('/logout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@logout')); 
 
 
 

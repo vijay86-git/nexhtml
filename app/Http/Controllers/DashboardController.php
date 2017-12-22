@@ -7,4 +7,17 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     //
+    //
+    //
+    public function cplogout(Request $request)
+       {
+          $request->session()->flush();
+    	  Session::flush(); 
+
+          echo 'dd'.$request->session()->get('admin');
+
+          die;
+
+          return redirect('/');
+       }
 }
