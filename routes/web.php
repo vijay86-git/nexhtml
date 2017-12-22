@@ -61,5 +61,7 @@ Route::group(array('domain' => 'nexladder.com'), function() {
              return view('welcome');
          });
 
+    Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
+
 });
 
