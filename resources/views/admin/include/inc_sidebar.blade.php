@@ -233,7 +233,7 @@ switch ($segment2)
 
 
                   <li class="">
-                     <a href="http://nexladder.com/cplogout">Logout</a>
+                     <a href="{{ SITE_URL }}cplogout">Logout</a>
                   </li>
 
                </ul>
