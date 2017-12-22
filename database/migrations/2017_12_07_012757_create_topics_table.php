@@ -57,6 +57,6 @@ class CreateTopicsTable extends Migration
     {
         Schema::disableForeignKeyConstraints(); 
         Schema::dropIfExists('topics');
-        Sch‌​ema::enableForeignKe‌​yConstraints(); 
+        Schema::enableForeignKe‌​yConstraints(); 
     }
 }
