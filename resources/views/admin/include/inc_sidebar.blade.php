@@ -233,7 +233,7 @@ switch ($segment2)
 
 
                   <li class="">
-                     <a href="{{ route('dashboard.logout') }}">Logout</a>
+                     <a href="http://nexladder.com/cplogout">Logout</a>
                   </li>
 
                </ul>
