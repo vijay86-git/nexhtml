@@ -29,6 +29,8 @@ class CreateTopicsTable extends Migration
 
             $table->tinyInteger('sort')->unsigned()->comment('Sort');
 
+            $table->tinyInteger('display')->unsigned()->comment('0 - hide, 1 - show');
+
             $table->text('page_title')->comment('Page Title');
 
             $table->text('meta_keywords')->comment('Meta Keywords')->nullable();

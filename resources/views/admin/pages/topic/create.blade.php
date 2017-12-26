@@ -97,6 +97,16 @@
                   <input class="form-control" name="sort" placeholder="Sort" type="text" value="{{ old('sort') }}">
                 </div>
 
+                <div class="form-group">
+                  <label for="category">Display&nbsp;</label>
+                  <select class="form-control" name="display">
+                      <option value="1">Show</option>
+                      <option value="0">Hide</option>
+                  </select>
+
+                </div>
+
+
 
 
                 <div class="form-group">

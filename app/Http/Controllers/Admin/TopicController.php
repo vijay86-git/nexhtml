@@ -67,6 +67,7 @@ class TopicController extends Controller
             $fields['page_title']       =    $params['page_title'];
             $fields['meta_keywords']    =    $params['meta_keywords'];
             $fields['meta_description'] =    $params['meta_description'];
+            $fields['display']          =    $params['display'];
             $fields['status']           =    $params['status'];
             $fields['unix_timestamp']   =    time();
 
@@ -123,6 +124,7 @@ class TopicController extends Controller
         $fields['page_title']       =    $params['page_title'];
         $fields['meta_keywords']    =    $params['meta_keywords'];
         $fields['meta_description'] =    $params['meta_description'];
+        $fields['display']          =    $params['display'];
         $fields['status']           =    $params['status'];
 
         Topics::find($id)->update($fields);

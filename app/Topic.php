@@ -10,7 +10,7 @@ class Topic extends Model
 {
     //
     protected $table    = 'topics';
-    protected $fillable = ['subject_id', 'section_id', 'topic', 'slug', 'detail', 'sort', 'page_title', 'meta_keywords', 'meta_description', 'status', 'unix_timestamp'];
+    protected $fillable = ['subject_id', 'section_id', 'topic', 'slug', 'detail', 'sort', 'page_title', 'meta_keywords', 'meta_description', 'status', 'unix_timestamp', 'display'];
 
     public function subject()
       {

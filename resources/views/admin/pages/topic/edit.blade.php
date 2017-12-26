@@ -85,6 +85,15 @@
                 </div>
 
 
+                <div class="form-group">
+                  <label for="category">Display&nbsp;</label>
+                  <select class="form-control" name="display">
+                      <option value="1" {{ ($topic->display == 1) ? "selected='selected'" : ""}}>Show</option>
+                      <option value="0" {{ ($topic->display == 0) ? "selected='selected'" : ""}}>Hide</option>
+                  </select>
+
+                </div>
+
 
                 <div class="form-group">
                   <label for="category">Status&nbsp;</label>
