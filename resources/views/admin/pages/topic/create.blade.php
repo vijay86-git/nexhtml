@@ -98,7 +98,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="category">Display (Left Bar)&nbsp;</label>
+                  <label for="category">Display (Left Bar Home Page)&nbsp;</label>
                   <select class="form-control" name="display">
                       <option value="1">Show</option>
                       <option value="0">Hide</option>
