@@ -15,6 +15,8 @@ class TopicController extends Controller
       	  $id = 1;
       	  $topic = Topics::find($id);
 
+      	  echo "in";
+
           return view('front.pages.subject',compact('topic'));
       }
  }
