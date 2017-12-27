@@ -113,8 +113,8 @@ class TopicController extends Controller
         //
         request()->validate(['subject' => 'required', 'section' => 'required', 'name' => 'required', 'slug' => 'required', 'description' => 'required', 'page_title' => 'required', 'sort']);
 
-        $params                     =    $request->all();
 
+        $params                     =    $request->all();
         $fields['subject_id']       =    $params['subject'];
         $fields['section_id']       =    $params['section'];
         $fields['topic']            =    $params['name'];
