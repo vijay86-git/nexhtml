@@ -57,9 +57,9 @@ Route::group(array('domain' => 'nexladder.com'), function() {
              return view('welcome');
          });
 
-    Route::get('topic/{id}', function ($id) {
-    return 'User '.$id;
-});
+   // Route::get('topic/{id}', function ($id) {
+    //return 'User '.$id;
+//});
 
     Route::get('topic/{slug}', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
