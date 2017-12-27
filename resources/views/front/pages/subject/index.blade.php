@@ -11,7 +11,6 @@
             <!-- /.box-header -->
             <div class="box-body">
 
-                {{ $topic }}
                {{ $topic->detail }}
 
             </div>
