@@ -17,3 +17,4 @@ class TopicController extends Controller
 
           return view('front.pages.subject',compact('topic'));
       }
+ }
