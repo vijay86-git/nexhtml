@@ -10,7 +10,7 @@ use DB;
 class TopicController extends Controller
 {
     //
-    public function index()
+    public function index($slug)
       {
       	  $id = 1;
       	  $topic = Topics::find($id);
