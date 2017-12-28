@@ -66,10 +66,16 @@
                   <input class="form-control" name="slug" placeholder="Slug" type="text" value="{{ $topic->slug }}">
                 </div>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="page_title">Description&nbsp;<span class="req">*</span></label>
                 
                   <textarea id="editor1" class="form-control" name="description" id="description" placeholder="Enter Topic Description">{{ $topic->detail }}</textarea>
+                </div>-->
+
+                <div class="form-group">
+                  <label for="page_title">Description&nbsp;<span class="req">*</span></label>
+                
+                  <textarea id="" class="form-control" name="description" id="description" placeholder="Enter Topic Description">{{ $topic->detail }}</textarea>
                 </div>
 
 
