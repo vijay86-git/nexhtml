@@ -59,7 +59,7 @@ Route::group(array('domain' => 'nexladder.com'), function() {
          });
 
 
-})
+});
 
 Route::group(array('domain' => 'nexladder.com', 'prefix' => 'demo'), function() {
 
