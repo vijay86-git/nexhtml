@@ -83,7 +83,7 @@ pre {
 @section('topics')
 <ul>
 @foreach ($topics as $data)
-      <option value="{{ $data->id }}">{{ $data->topic }}</option>
+      <li style="color:#ffffff"><a href="{{ route('topic',$data->slug) }}">{{ $data->topic }}</li>
 @endforeach
 
 <ul>

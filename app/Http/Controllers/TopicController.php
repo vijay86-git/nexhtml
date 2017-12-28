@@ -13,7 +13,7 @@ class TopicController extends Controller
     //
     public function index()
       {
-      	  $topics = DB::table('topics')->select('id', 'topic')->get();
+      	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
           return view('front.pages.subject.index',compact('topics'));
       }
 
