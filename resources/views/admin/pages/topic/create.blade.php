@@ -76,7 +76,7 @@
                 <div class="form-group">
                   <label for="page_title">Description&nbsp;<span class="req">*</span></label>
                 
-                  <textarea id="" class="form-control" name="description" id="description" placeholder="Enter Topic Description">{{ old('description') }}</textarea>
+                  <textarea style="height: 150px" id="" class="form-control" name="description" id="description" placeholder="Enter Topic Description">{{ old('description') }}</textarea>
                 </div>
 
 
