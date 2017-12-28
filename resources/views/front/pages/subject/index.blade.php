@@ -93,7 +93,6 @@ body{font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;}
             <!-- /.box-header -->
             <div class="box-body">
 
-               {!! $topic->detail !!}
                {!!html_entity_decode($topic->detail)!!}
 
             </div>
