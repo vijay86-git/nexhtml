@@ -76,9 +76,6 @@ pre {
     background-color: #f3f3f3;
 }
 
-body{font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;}
-
-
 
 </style>
 
