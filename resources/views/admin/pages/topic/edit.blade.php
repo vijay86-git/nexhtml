@@ -43,6 +43,18 @@
 
                 </div>
 
+                <div class="form-group">
+                  <label for="category">Section&nbsp;<span class="req">*</span></label>
+                  <select class="form-control" name="section">
+                    <option value="">-- Select Section--</option>
+                    @foreach ($section as $sec)
+                      <option value="{{ $sec->id }}">{{ $sec->section }}</option>
+                    @endforeach
+                  </select>
+
+                </div>
+                
+
 
                 <div class="form-group">
                   <label for="category">Topic&nbsp;<span class="req">*</span></label>
