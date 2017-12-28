@@ -98,7 +98,8 @@ class TopicController extends Controller
         //
         $topic = Topics::find($id);
         $subject = DB::table('subject')->select('id', 'name')->get();
-        return view('admin.pages.topic.edit',compact('topic', 'subject'));
+        $section = DB::table('section')->select('id', 'section')->get();
+        return view('admin.pages.topic.edit',compact('topic', 'subject', 'section'));
     }
 
     /**
