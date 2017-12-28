@@ -10,6 +10,14 @@ use DB;
 class TopicController extends Controller
 {
     //
+    //
+    public function index()
+      {
+      	  $topics = DB::table('topics')->select('id', 'topic')->get();
+          return view('front.pages.subject.index',compact('topics'));
+      }
+
+
     public function index($slug)
       {
       	  $id = 1;

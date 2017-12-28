@@ -79,6 +79,17 @@ pre {
 
 </style>
 
+
+@section('topics')
+<ul>
+@foreach ($topics as $data)
+      <option value="{{ $data->id }}">{{ $data->topic }}</option>
+@endforeach
+
+<ul>
+
+@stop
+
 @section('content')
   <section class="content">
       <div class="row">
