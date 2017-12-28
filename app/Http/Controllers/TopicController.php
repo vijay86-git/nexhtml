@@ -20,8 +20,10 @@ class TopicController extends Controller
 
     public function index2($slug)
       {
-      	  $id = 1;
-      	  $topic = Topics::find($id);
-          return view('front.pages.subject.index',compact('topic'));
+      	  $info = DB::table('topics')->where('slug', $slug)->first();
+
+
+      	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
+          return view('front.pages.subject.index',compact('topics', 'info'));
       }
  }
