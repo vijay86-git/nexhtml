@@ -29,12 +29,12 @@
    <body class="hold-transition skin-blue sidebar-mini">
       <div class="wrapper">
       
-         <!-- @include('admin/include/inc_header') -->
+
          
          <!-- Left side column. contains the logo and sidebar -->
          <aside class="main-sidebar">
             <!-- sidebar: style can be found in sidebar.less -->
-              <!-- @include('admin/include/inc_sidebar')-->
+              
             <!-- /.sidebar -->
  
             @yield('topics')
