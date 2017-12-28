@@ -49,7 +49,7 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 }); 
 
 
-Route::group(array('domain' => 'nexladder.com'), function() {
+Route::group(array('domain' => 'nexladder.com', 'prefix' => 'demo'), function() {
 
     /*Route::get('/', function () {
 
