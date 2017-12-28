@@ -91,6 +91,8 @@ pre {
 @stop
 
 @section('content')
+
+@if(isset($topic)):
   <section class="content">
       <div class="row">
         <div class="col-xs-12">
@@ -114,4 +116,5 @@ pre {
       </div>
       <!-- /.row -->
     </section>
+@endif
 @stop
