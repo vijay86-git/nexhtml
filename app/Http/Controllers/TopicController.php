@@ -18,7 +18,7 @@ class TopicController extends Controller
       }
 
 
-    public function index($slug)
+    public function index2($slug)
       {
       	  $id = 1;
       	  $topic = Topics::find($id);
