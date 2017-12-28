@@ -51,17 +51,21 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 
 Route::group(array('domain' => 'nexladder.com'), function() {
 
-    Route::get('/', function () {
+    /*Route::get('/', function () {
 
              Session::put('admin', mt_rand());
              return view('welcome');
          });
+         */
 
    // Route::get('topic/{id}', function ($id) {
     //return 'User '.$id;
 //});
 
-    Route::get('topic/{slug}', array('as' => 'topic', 'uses' => 'TopicController@index'));
+Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
+
+
+    Route::get('topic/{slug}', array('as' => 'topic', 'uses' => 'TopicController@index2'));
 
     Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
 
