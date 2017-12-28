@@ -48,12 +48,12 @@
                   <select class="form-control" name="section">
                     <option value="">-- Select Section--</option>
                     @foreach ($section as $sec)
-                      <option value="{{ $sec->id }}">{{ $sec->section }}</option>
+                      <option value="{{ $sec->id }}" {{ ($sec->id == $topic->section_id) ? "selected='selected'" : ""}}>{{ $sec->section }}</option>
                     @endforeach
                   </select>
 
                 </div>
-                
+
 
 
                 <div class="form-group">
