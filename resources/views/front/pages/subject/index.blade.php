@@ -81,12 +81,17 @@ pre {
 
 
 @section('topics')
+
+@foreach($section as $sec_data)
+<h3>{{ $sec_data->section}}</h3>
 <ul>
-@foreach ($topics as $data)
+@foreach (App\Section::find($sec_data->id)->topics as $data)
       <li style="color:#ffffff"><a href="{{ route('topic',$data->slug) }}">{{ $data->topic }}</a></li>
 @endforeach
 
 <ul>
+
+@endforeach
 
 @stop
 

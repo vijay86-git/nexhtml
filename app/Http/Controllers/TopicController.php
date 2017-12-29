@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Topic as Topics;
+use App\Section as Section;
 use DB;
 
 class TopicController extends Controller
@@ -14,7 +15,10 @@ class TopicController extends Controller
     public function index()
       {
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
-          return view('front.pages.subject.index',compact('topics'));
+
+          $section = DB::table('section')->select('id', 'section')->get();
+
+          return view('front.pages.subject.index',compact('topics', 'section'));
       }
 
 

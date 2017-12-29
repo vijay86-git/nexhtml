@@ -15,4 +15,9 @@ class Section extends Model
             return $this->belongsTo('App\Subject', 'subject_id', 'id');
       }
 
+    public function topics()
+      {
+            return $this->hasMany('App\Topic', 'section_id', 'id');
+      }
+
 }
