@@ -12,8 +12,9 @@ class TopicController extends Controller
 {
     //
     //
-    public function index()
+    public function index($any)
       {
+        echo $any;
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
 
           $section = DB::table('section')->select('id', 'section')->get();
@@ -24,9 +25,9 @@ class TopicController extends Controller
 
     public function index2($any, $slug)
       {
-        echo $any;
-        echo $slug;
-        
+          echo $any;
+          echo $slug;
+
       	  $info = DB::table('topics')->where('slug', $slug)->first();
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
           $section = DB::table('section')->select('id', 'section')->get();
