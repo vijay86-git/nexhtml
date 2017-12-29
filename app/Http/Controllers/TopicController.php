@@ -24,7 +24,6 @@ class TopicController extends Controller
 
     public function index3($any)
       {
-        echo $any;
           $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
 
           $section = DB::table('section')->select('id', 'section')->get();
