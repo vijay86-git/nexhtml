@@ -22,7 +22,7 @@ class TopicController extends Controller
       }
 
 
-    public function index3($any)
+    public function index3($segment)
       {
           $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
 
@@ -34,9 +34,9 @@ class TopicController extends Controller
 
 
 
-    public function index2($any, $slug)
+    public function index2($segment, $slug)
       {
-          echo $any;
+          echo $segment;
           echo $slug;
 
       	  $info = DB::table('topics')->where('slug', $slug)->first();
