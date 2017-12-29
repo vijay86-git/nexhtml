@@ -83,11 +83,10 @@ pre {
 @section('topics')
 
 @foreach($section as $sec_data)
-$any = 'php'
 <h1 style="color:#fff;font-size:16px">{{ $sec_data->section}}</h1>
 <ul>
 @foreach (App\Section::find($sec_data->id)->topics as $data)
-      <li style="color:#ffffff"><a href="{{ route('topic.index', $any, $data->slug) }}">{{ $data->topic }}</a></li>
+      <li style="color:#ffffff"><a href="{{ route('topic.index', 'php', $data->slug) }}">{{ $data->topic }}</a></li>
 @endforeach
 
 </ul>
