@@ -89,7 +89,7 @@ pre {
       <li style="color:#ffffff"><a href="{{ route('topic',$data->slug) }}">{{ $data->topic }}</a></li>
 @endforeach
 
-<ul>
+</ul>
 
 @endforeach
 
