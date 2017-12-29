@@ -34,7 +34,7 @@ class TopicController extends Controller
 
 
 
-    public function index2($segment, $slug)
+    public function index2($segment = '', $slug = '')
       {
           echo $segment;
           echo $slug;
