@@ -78,7 +78,7 @@ Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
     Route::get('/{any}', array('as' => 'topic', 'uses' => 'TopicController@index3'));
 
-    Route::get('/{any}/{slug}', array('as' => 'topic', 'uses' => 'TopicController@index2'));
+    Route::get('/{any}/{slug}', array('as' => 'topic.index', 'uses' => 'TopicController@index2'));
 
     Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
 

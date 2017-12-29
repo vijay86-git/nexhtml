@@ -86,7 +86,7 @@ pre {
 <h1 style="color:#fff;font-size:16px">{{ $sec_data->section}}</h1>
 <ul>
 @foreach (App\Section::find($sec_data->id)->topics as $data)
-      <li style="color:#ffffff"><a href="{{ route('topic',$data->slug) }}">{{ $data->topic }}</a></li>
+      <li style="color:#ffffff"><a href="{{ route('topic.index',$data->slug) }}">{{ $data->topic }}</a></li>
 @endforeach
 
 </ul>
