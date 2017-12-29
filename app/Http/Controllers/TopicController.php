@@ -12,9 +12,8 @@ class TopicController extends Controller
 {
     //
     //
-    public function index($any)
+    public function index()
       {
-        echo $any;
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
 
           $section = DB::table('section')->select('id', 'section')->get();
