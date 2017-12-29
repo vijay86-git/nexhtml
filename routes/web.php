@@ -76,7 +76,7 @@ Route::group(array('domain' => 'nexladder.com', 'prefix' => 'demo'), function() 
 
 Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
-    Route::get('{any}', array('as' => 'topic', 'uses' => 'TopicController@index'));
+    Route::get('/{any}', array('as' => 'topic', 'uses' => 'TopicController@index3'));
 
     Route::get('{any}/{slug}', array('as' => 'topic', 'uses' => 'TopicController@index2'));
 

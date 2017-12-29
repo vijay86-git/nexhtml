@@ -23,6 +23,19 @@ class TopicController extends Controller
       }
 
 
+    public function index3($any)
+      {
+        echo $any;
+          $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
+
+          $section = DB::table('section')->select('id', 'section')->get();
+
+          return view('front.pages.subject.index',compact('topics', 'section'));
+      }
+
+
+
+
     public function index2($any, $slug)
       {
           echo $any;
