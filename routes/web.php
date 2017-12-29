@@ -76,9 +76,9 @@ Route::group(array('domain' => 'nexladder.com', 'prefix' => 'beta'), function() 
 
 Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
-   // Route::get('{segment}', array('as' => 'topic', 'uses' => 'TopicController@index3'));
+   // Route::get('/{segment}', array('as' => 'topic', 'uses' => 'TopicController@index3'));
 
-    Route::get('{segment}/{slug}', array('as' => 'topics', 'uses' => 'TopicController@index2'));
+    Route::get('/{segment}/{slug}', array('as' => 'topics', 'uses' => 'TopicController@index2'));
 
     Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
 
