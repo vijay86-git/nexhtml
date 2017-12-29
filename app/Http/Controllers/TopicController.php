@@ -27,6 +27,6 @@ class TopicController extends Controller
       	  $info = DB::table('topics')->where('slug', $slug)->first();
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
           $section = DB::table('section')->select('id', 'section')->get();
-          return view('front.pages.subject.index',compact('topics', 'info'));
+          return view('front.pages.subject.index',compact('topics', 'info', 'section'));
       }
  }
