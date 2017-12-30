@@ -24,12 +24,13 @@ class TopicController extends Controller
     public function index()
       {
           $subjects =  $this->_subjects;
+          $slug = '';
           
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
           $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
 
-          return view('front.pages.subject.index',compact('topics', 'section', 'subjects'));
+          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug'));
       }
 
 
