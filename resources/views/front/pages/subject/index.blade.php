@@ -85,7 +85,9 @@ pre {
 <li style="color:#ffffff"><a href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
 <ul>
 
-@endsection
+@endforeach
+
+@stop
 
 
 @section('topics')
