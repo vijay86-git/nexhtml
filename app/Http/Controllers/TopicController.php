@@ -38,11 +38,9 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $data     = Subject::select('id', 'name', 'page_title', 'meta_keywords', 'meta_description', 'about')->where('slug', $slug)->firstOrFail();
+          $data     = Subject::select('id', 'name', 'page_title', 'meta_keywords', 'meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $data->id)->orderBy('sort', 'asc')->get();
-
-          print_r($data);
 
           return view('front.pages.subject.index',compact('section', 'subjects', 'slug', 'data'));
       }
