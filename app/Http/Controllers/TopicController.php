@@ -55,12 +55,13 @@ class TopicController extends Controller
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
           Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
+          
 
-      	  $info = DB::table('topics')->where('slug', $slug)->first();
+      	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
-      	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
+          $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
-          $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
+          $info = DB::table('topics')->where('slug', $slug)->first();
 
           return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects'));
       }
