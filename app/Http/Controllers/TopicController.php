@@ -53,6 +53,8 @@ echo $slug;
 
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
+          print_r($subject_data);
+
           Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
 
 
