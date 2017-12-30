@@ -40,7 +40,7 @@ class TopicController extends Controller
 
           $data     = Subject::select('id', 'name', 'page_title', 'meta_keywords', 'meta_description', 'about')->where('slug', $slug)->firstOrFail();
 
-          $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
+          $section = DB::table('section')->select('id', 'section')->where('subject_id', $data->id)->orderBy('sort', 'asc')->get();
 
           return view('front.pages.subject.index',compact('section', 'subjects', 'slug', 'data'));
       }
