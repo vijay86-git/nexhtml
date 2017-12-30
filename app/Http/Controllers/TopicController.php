@@ -40,7 +40,7 @@ class TopicController extends Controller
 
           $ff = Subject::where('slug', $subject)->firstOrFail();
 
-          print_r($ff); die;
+          print_r($ff->id); die;
           
       	  $info = DB::table('topics')->where('slug', $slug)->first();
 
