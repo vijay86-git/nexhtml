@@ -13,15 +13,17 @@ class TopicController extends Controller
 {
     //
     //
+    private $_subjects;
   
     public function __construct()
       {
-          $subjects = DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+          $this->_subjects = DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
       }
 
 
     public function index()
       {
+          $subjects =  $this->_subjects;
           
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
@@ -33,6 +35,8 @@ class TopicController extends Controller
 
     public function index2($subject)
       {
+          $subjects =  $this->_subjects;
+
           Subject::where('slug', $subject)->firstOrFail();
 
           $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
@@ -46,6 +50,8 @@ class TopicController extends Controller
     public function index3($subject = null, $slug = null)
       {
 
+          $subjects =  $this->_subjects;
+          
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
           Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
