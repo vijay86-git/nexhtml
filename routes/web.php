@@ -78,7 +78,7 @@ Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
     Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
 
-    Route::get('/{subject}', array('as' => 'topic', 'uses' => 'TopicController@index2'));
+    Route::get('/{slug}', array('as' => 'topic', 'uses' => 'TopicController@index2'));
 
     Route::get('/{subject}/{slug}', array('as' => 'topics', 'uses' => 'TopicController@index3'));
 

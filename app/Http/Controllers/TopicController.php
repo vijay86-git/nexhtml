@@ -33,17 +33,15 @@ class TopicController extends Controller
       }
 
 
-    public function index2($subject)
+    public function index2($slug)
       {
           $subjects =  $this->_subjects;
 
-          Subject::where('slug', $subject)->firstOrFail();
+          $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
-          $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
+          $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
-          $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
-
-          return view('front.pages.subject.index',compact('topics', 'section', 'subjects'));
+          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug'));
       }
 
 
@@ -55,7 +53,7 @@ class TopicController extends Controller
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
           Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
-          
+
 
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
