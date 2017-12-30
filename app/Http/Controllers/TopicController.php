@@ -47,20 +47,12 @@ class TopicController extends Controller
 
     public function index3($subject = null, $slug = null)
       {
-echo $subject;
-echo $slug;
+
           $subjects =  $this->_subjects;
 
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
-
-
-          $h = Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
-
-          print_r($h);
-
-          echo $subject_data->id;
-
+          Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
 
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
