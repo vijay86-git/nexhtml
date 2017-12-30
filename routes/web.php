@@ -78,9 +78,9 @@ Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
     Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
 
-    Route::get('/{segment}', array('as' => 'topic', 'uses' => 'TopicController@index2'));
+    Route::get('/{subject}', array('as' => 'topic', 'uses' => 'TopicController@index2'));
 
-    Route::get('/{segment}/{slug}', array('as' => 'topics', 'uses' => 'TopicController@index3'));
+    Route::get('/{subject}/{slug}', array('as' => 'topics', 'uses' => 'TopicController@index3'));
 
     Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
 

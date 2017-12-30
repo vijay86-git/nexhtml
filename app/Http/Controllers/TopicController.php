@@ -14,15 +14,15 @@ class TopicController extends Controller
     //
     public function index()
       {
-      	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
+      	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
-          $section = DB::table('section')->select('id', 'section')->get();
+          $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
 
           return view('front.pages.subject.index',compact('topics', 'section'));
       }
 
 
-    public function index2($segment)
+    public function index2($subject)
       {
           $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
@@ -32,13 +32,8 @@ class TopicController extends Controller
       }
 
 
-
-
-    public function index3($segment = null, $slug = null)
+    public function index3($subject = null, $slug = null)
       {
-          echo $segment;
-
-          echo $slug;
 
       	  $info = DB::table('topics')->where('slug', $slug)->first();
 
