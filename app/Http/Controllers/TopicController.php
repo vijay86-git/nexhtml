@@ -24,7 +24,7 @@ class TopicController extends Controller
     public function index()
       {
           $subjects =  $this->_subjects;
-          $slug     = null;
+          $slug     =  '';
           
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
