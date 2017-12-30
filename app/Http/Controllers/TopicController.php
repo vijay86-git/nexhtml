@@ -55,6 +55,8 @@ echo $slug;
 
           print_r($subject_data);
 
+          echo $subject_data->id;
+
           Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
 
 
