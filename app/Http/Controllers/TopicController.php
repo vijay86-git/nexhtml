@@ -36,6 +36,7 @@ class TopicController extends Controller
 
     public function index2($slug)
       {
+        phpinfo();
           $subjects =  $this->_subjects;
 
           $info = Subject::select('id','page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
