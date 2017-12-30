@@ -35,7 +35,7 @@ class TopicController extends Controller
 
 
 
-    public function index3($segment = '', $slug = '')
+    public function index3($segment = null, $slug = null)
       {
           echo $segment;
           echo $slug;
@@ -45,4 +45,11 @@ class TopicController extends Controller
           $section = DB::table('section')->select('id', 'section')->get();
           return view('front.pages.subject.index',compact('topics', 'info', 'section'));
       }
+
+    public function about()
+      {
+          echo 'test';
+      }
+
+
  }
