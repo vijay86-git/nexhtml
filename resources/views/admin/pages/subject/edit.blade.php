@@ -60,7 +60,7 @@
 
 
                 <div class="form-group">
-                  <label for="page_title">Meta Keywords</label>
+                  <label for="page_title">Meta Description</label>
                   <textarea class="form-control" name="meta_description" id="meta_description" placeholder="Enter Meta Description">{{ $subject->meta_description }}</textarea>
                 </div>
 
