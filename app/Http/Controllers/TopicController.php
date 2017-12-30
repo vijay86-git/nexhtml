@@ -38,11 +38,11 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $subject_data = Subject::select('id')->where('slug', $slug)->firstOrFail();
+          $info = Subject::select('id','page_title','meta_keywords','meta_description')->where('slug', $slug)->firstOrFail();
 
-          $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
+          $section = DB::table('section')->select('id', 'section')->where('subject_id', $info->id)->orderBy('sort', 'asc')->get();
 
-          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug'));
+          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug', 'info'));
       }
 
 
@@ -53,7 +53,7 @@ class TopicController extends Controller
 
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
-          Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
+          Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
 
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
