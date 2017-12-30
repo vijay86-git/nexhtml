@@ -13,13 +13,21 @@ class TopicController extends Controller
 {
     //
     //
+  
+    public function __construct()
+      {
+          $subjects = DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+      }
+
+
     public function index()
       {
+          
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
           $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
 
-          return view('front.pages.subject.index',compact('topics', 'section'));
+          return view('front.pages.subject.index',compact('topics', 'section', 'subjects'));
       }
 
 
@@ -31,7 +39,7 @@ class TopicController extends Controller
 
           $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
 
-          return view('front.pages.subject.index',compact('topics', 'section'));
+          return view('front.pages.subject.index',compact('topics', 'section', 'subjects'));
       }
 
 
@@ -48,8 +56,9 @@ class TopicController extends Controller
 
           $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
 
-          return view('front.pages.subject.index',compact('topics', 'info', 'section'));
+          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects'));
       }
+
 
     public function about()
       {

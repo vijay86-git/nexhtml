@@ -29,7 +29,7 @@
    <body class="hold-transition skin-blue sidebar-mini">
       <div class="wrapper">
       
-
+         @yield('subjects')
          
          <!-- Left side column. contains the logo and sidebar -->
          <aside class="main-sidebar">

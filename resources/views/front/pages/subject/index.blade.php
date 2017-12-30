@@ -79,6 +79,14 @@ pre {
 
 </style>
 
+@section('subjects')
+
+@foreach($subjects as $sub_data)
+<li style="color:#ffffff"><a href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
+<ul>
+
+@endsection
+
 
 @section('topics')
 
