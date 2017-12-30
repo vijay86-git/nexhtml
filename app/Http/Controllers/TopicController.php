@@ -37,7 +37,7 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
+          $subject_data = Subject::select('id')->where('slug', $slug)->firstOrFail();
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
