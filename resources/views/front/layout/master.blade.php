@@ -29,7 +29,7 @@
    <body class="hold-transition skin-blue sidebar-mini">
       <div class="wrapper">
       
-         @yield('subjects')
+         
          
          <!-- Left side column. contains the logo and sidebar -->
          <aside class="main-sidebar">
@@ -43,6 +43,10 @@
 
          <!-- Content Wrapper. Contains page content -->
          <div class="content-wrapper">
+
+            @yield('subjects')
+
+            
             <!-- Main content -->
             <section class="content">
                @yield('content')
