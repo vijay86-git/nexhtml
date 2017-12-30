@@ -42,13 +42,14 @@ class TopicController extends Controller
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $data->id)->orderBy('sort', 'asc')->get();
 
+          print_r($data);
+
           return view('front.pages.subject.index',compact('section', 'subjects', 'slug', 'data'));
       }
 
 
     public function index3($subject = null, $slug = null)
       {
-
           $subjects =  $this->_subjects;
 
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
