@@ -38,19 +38,17 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $data     = Subject::select('id', 'name', 'page_title', 'meta_keywords', 'meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
+          $subject_data = Subject::select('id')->where('slug', $slug)->firstOrFail();
 
-          $section = DB::table('section')->select('id', 'section')->where('subject_id', $data->id)->orderBy('sort', 'asc')->get();
+          $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
-          print_r($data);
-
-          return view('front.pages.subject.index',compact('section', 'subjects', 'slug', 'data'));
+          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug'));
       }
 
 
     public function index3($subject = null, $slug = null)
       {
-        die('sdf');
+
           $subjects =  $this->_subjects;
 
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
@@ -61,11 +59,11 @@ class TopicController extends Controller
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
-          $data = DB::table('topics')->where('slug', $slug)->first();
+          $info = DB::table('topics')->where('slug', $slug)->first();
 
           $slug = $subject;
 
-          return view('front.pages.subject.index',compact('topics', 'data', 'section', 'subjects', 'slug'));
+          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug'));
       }
 
 
