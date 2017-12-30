@@ -38,11 +38,11 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $subject_data = Subject::select('id')->where('slug', $slug)->firstOrFail();
+          $data     = Subject::select('id, name, page_title, meta_keywords, meta_description, about')->where('slug', $slug)->firstOrFail();
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
-          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug'));
+          return view('front.pages.subject.index',compact('section', 'subjects', 'slug', 'data'));
       }
 
 
@@ -59,11 +59,11 @@ class TopicController extends Controller
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
-          $info = DB::table('topics')->where('slug', $slug)->first();
+          $data = DB::table('topics')->where('slug', $slug)->first();
 
           $slug = $subject;
 
-          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug'));
+          return view('front.pages.subject.index',compact('topics', 'data', 'section', 'subjects', 'slug'));
       }
 
 

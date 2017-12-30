@@ -112,7 +112,7 @@ pre {
 
 @section('content')
 
-@if(isset($info)):
+@if(isset($data)):
   <section class="content">
       <div class="row">
         <div class="col-xs-12">
@@ -123,7 +123,7 @@ pre {
             <!-- /.box-header -->
             <div class="box-body">
 
-               {!!html_entity_decode($info->detail)!!}
+               {!!html_entity_decode($data->detail)!!}
 
             </div>
             <!-- /.box-body -->
