@@ -24,6 +24,8 @@ class TopicController extends Controller
     public function index()
       {
           $subjects =  $this->_subjects;
+
+          print_r($subjects);
           
       	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
@@ -51,7 +53,7 @@ class TopicController extends Controller
       {
 
           $subjects =  $this->_subjects;
-          
+
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
           Topics::select('id')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
