@@ -40,7 +40,7 @@ class TopicController extends Controller
 
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
 
-          Topics::where(['subject_id' => $subject_data->id, 'slug', $slug])->firstOrFail();
+          Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
 
       	  $info = DB::table('topics')->where('slug', $slug)->first();
 
