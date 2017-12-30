@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Subject as Subject;
 use App\Topic as Topics;
 use App\Section as Section;
 use DB;
@@ -24,6 +25,8 @@ class TopicController extends Controller
 
     public function index2($subject)
       {
+          Subject::where('slug', $subject)->firstOrFail();
+
           $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
           $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
