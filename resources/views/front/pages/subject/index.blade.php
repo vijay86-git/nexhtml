@@ -92,6 +92,7 @@ pre {
 
 @section('topics')
 
+@if (count($section) > 0)
 @foreach($section as $sec_data)
 <h1 style="color:#fff;font-size:16px">{{ $sec_data->section}}</h1>
 <ul>
@@ -102,6 +103,8 @@ pre {
 </ul>
 
 @endforeach
+
+@endif
 
 @stop
 
