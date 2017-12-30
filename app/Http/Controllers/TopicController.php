@@ -50,6 +50,7 @@ class TopicController extends Controller
 
     public function index3($subject = null, $slug = null)
       {
+        die('sdf');
           $subjects =  $this->_subjects;
 
           $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
