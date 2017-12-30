@@ -22,8 +22,9 @@ class TopicController extends Controller
       }
 
 
-    public function index3($segment)
+    public function index2($segment)
       {
+        echo $segment;
           $topics = DB::table('topics')->select('id', 'topic', 'slug')->get();
 
           $section = DB::table('section')->select('id', 'section')->get();
@@ -34,7 +35,7 @@ class TopicController extends Controller
 
 
 
-    public function index2($segment = '', $slug = '')
+    public function index3($segment = '', $slug = '')
       {
           echo $segment;
           echo $slug;
