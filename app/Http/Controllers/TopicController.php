@@ -41,8 +41,6 @@ class TopicController extends Controller
           
           $key      =  $slug.'_cache';
 
-          echo Cache::get($key); die;
-
           /* get data from subject slug */
 
           if (Cache::has($key))
