@@ -127,6 +127,19 @@ class TopicController extends Controller
 
           $info = DB::table('topics')->where('slug', $slug)->first();
 
+          /* get topic details from slug */
+
+          $topic_detail_cache = $slug . '_detail_cache';
+
+          if (Cache::has($topic_detail_cache))
+              {
+                    $info =  Cache::get($topic_detail_cache);
+              } 
+          else  {
+                    $info =  Topics::select('id','page_title','meta_keywords','meta_description', 'detail')->where('slug', $slug)->firstOrFail();
+                    Cache::put($topic_detail_cache, $info, env('CACHE_TIME', 60));
+                }
+                
           $slug = $subject;
 
           return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug'));
