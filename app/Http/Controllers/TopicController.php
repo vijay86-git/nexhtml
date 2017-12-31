@@ -69,13 +69,39 @@ class TopicController extends Controller
     public function index3($subject = null, $slug = null)
       {
 
-          $subjects =  $this->_subjects;
+          $subjects     =  $this->_subjects;
 
-          $subject_data = Subject::select('id')->where('slug', $subject)->firstOrFail();
+          //$subject_data =  Subject::select('id')->where('slug', $subject)->firstOrFail();
+          
+          /* get subject slug */
 
-          Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
+          $sub_slug_cache = $subject.'_slug_cache';
 
-      	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
+          if (Cache::has($sub_slug_cache))
+              {
+                    $subject_data =  Cache::get($sub_slug_cache);
+              }
+                    $subject_data =  Subject::select('id')->where('slug', $subject)->firstOrFail();
+                    Cache::put($sub_slug_cache, $subject_data, env('CACHE_TIME', 60));
+              } 
+          /* end */
+
+          //Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
+          
+          /* check topic corrosponding to subject */
+
+          $sub_topic_slug_cache = $subject  . '_' . $slug . '_slug_cache';
+
+          if ( ! Cache::has($sub_topic_slug_cache))
+              {
+                    Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
+                    Cache::put($sub_topic_slug_cache, 'TRUE', env('CACHE_TIME', 60));
+              } 
+
+          /* end here */
+
+
+      	  //$topics = DB::table('topics')->select('id', 'topic', 'slug')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
@@ -91,6 +117,5 @@ class TopicController extends Controller
       {
           echo 'test';
       }
-
 
  }
