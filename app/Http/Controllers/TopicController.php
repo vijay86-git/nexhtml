@@ -48,7 +48,7 @@ class TopicController extends Controller
                     $info =  Cache::get($key);
               } 
           else  {
-                    $info =  DB::table('subjects')->select('id','page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
+                    $info =  Subject::select('id','page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($key, $info, env('CACHE_TIME', 60));
                 }
 
@@ -86,7 +86,7 @@ class TopicController extends Controller
               }
           else
               {
-                  $subject_data =  DB::table('subjects')->select('id')->where('slug', $subject)->firstOrFail(); // check 404 and get sub id
+                  $subject_data =  Subject::select('id')->where('slug', $subject)->firstOrFail(); // check 404 and get sub id
                   Cache::put($sub_slug_cache, $subject_data, env('CACHE_TIME', 60));
               } 
           /* end */
@@ -97,8 +97,8 @@ class TopicController extends Controller
 
           if ( ! Cache::has($sub_topic_slug_cache))
               {
-                  DB::table('topics')->where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail(); // check 404
-                  Cache::put($sub_topic_slug_cache, 'TRUE', env('CACHE_TIME', 60));
+                    Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail(); // check 404
+                    Cache::put($sub_topic_slug_cache, 'TRUE', env('CACHE_TIME', 60));
               } 
 
           /* end here */
@@ -127,7 +127,7 @@ class TopicController extends Controller
                     $info =  Cache::get($topic_detail_cache);
               } 
           else  {
-                    $info =  DB::table('topics')->select('id','page_title','meta_keywords','meta_description', 'detail')->where('slug', $slug)->firstOrFail();
+                    $info =  Topics::select('id','page_title','meta_keywords','meta_description', 'detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($topic_detail_cache, $info, env('CACHE_TIME', 60));
                 }
 
