@@ -107,10 +107,25 @@ class TopicController extends Controller
 
 
       	  //$topics = DB::table('topics')->select('id', 'topic', 'slug')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
+          
 
-          $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
+          /* get section by subject */
 
-         // $info = DB::table('topics')->where('slug', $slug)->first();
+          $sub_section_cache = $subject.'_section_cache';
+
+          if (Cache::has($sub_section_cache))
+              {
+                    $section =  Cache::get($sub_section_cache);
+              }
+          else
+              {
+                    $section =  DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
+                    Cache::put($sub_section_cache, $section, env('CACHE_TIME', 60));
+              } 
+          /* end */
+
+
+          $info = DB::table('topics')->where('slug', $slug)->first();
 
           $slug = $subject;
 
