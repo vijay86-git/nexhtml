@@ -142,7 +142,7 @@ class TopicController extends Controller
 
         //  $slug = $subject;
 
-          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug'));
+          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects'));
       }
 
 
