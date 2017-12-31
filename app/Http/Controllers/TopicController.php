@@ -39,9 +39,11 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $info = Cache::remember('exist_subject_slug', env('CACHE_TIME', 60), function () {
+          $info = Cache::remember('exist_subject_slug', env('CACHE_TIME', 60), function ($slug) {
                     return Subject::select('id','page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
           });
+
+
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $info->id)->orderBy('sort', 'asc')->get();
 
