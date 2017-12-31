@@ -52,7 +52,7 @@ class TopicController extends Controller
                     Cache::put($key, $info, env('CACHE_TIME', 60));
                 }
 
-          $id = $info->id;
+          $subject_id = $info->id;
 
           /* end */
 
@@ -60,8 +60,8 @@ class TopicController extends Controller
 
           $sub_sec_cache = $slug . '_section_cache';
 
-          $section  =  Cache::remember($sub_sec_cache, env('CACHE_TIME', 60), function () use($info->id) {
-                                 return DB::table('section')->select('id', 'section')->where('subject_id', $info->id)->orderBy('sort', 'asc')->get();
+          $section  =  Cache::remember($sub_sec_cache, env('CACHE_TIME', 60), function () use($subject_id) {
+                                 return DB::table('section')->select('id', 'section')->where('subject_id', $subject_id)->orderBy('sort', 'asc')->get();
                               });
           /* close */
 
