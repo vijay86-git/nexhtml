@@ -13,18 +13,14 @@ use Cache;
 class TopicController extends Controller
 {
     //
-    //
     private $_subjects;
   
     public function __construct()
       {
-        $this->_subjects  =  Cache::remember('subject', env('CACHE_TIME', 60), function () {
+         $this->_subjects  =  Cache::remember('subject', env('CACHE_TIME', 60), function () {
                                  return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
-                             });
-
-          //$this->_subjects = DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+                              });
       }
-
 
     public function index()
       {
