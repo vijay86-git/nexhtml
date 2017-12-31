@@ -139,8 +139,8 @@ class TopicController extends Controller
                     $info =  Topics::select('id','page_title','meta_keywords','meta_description', 'detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($topic_detail_cache, $info, env('CACHE_TIME', 60));
                 }
-                
-          $slug = $subject;
+
+        //  $slug = $subject;
 
           return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug'));
       }
