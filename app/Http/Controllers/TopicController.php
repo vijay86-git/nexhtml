@@ -82,16 +82,14 @@ class TopicController extends Controller
 
           if (Cache::has($sub_slug_cache))
               {
-                    $subject_data =  Cache::get($sub_slug_cache);
+                  $subject_data =  Cache::get($sub_slug_cache);
               }
           else
               {
-                    $subject_data =  Subject::select('id')->where('slug', $subject)->firstOrFail();
-                    Cache::put($sub_slug_cache, $subject_data, env('CACHE_TIME', 60));
+                  $subject_data =  Subject::select('id')->where('slug', $subject)->firstOrFail(); // check 404 and get sub id
+                  Cache::put($sub_slug_cache, $subject_data, env('CACHE_TIME', 60));
               } 
           /* end */
-
-          //Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
           
           /* check topic corrosponding to subject */
 
@@ -99,13 +97,13 @@ class TopicController extends Controller
 
           if ( ! Cache::has($sub_topic_slug_cache))
               {
-                    Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail();
+                    Topics::where(['subject_id' => $subject_data->id, 'slug' => $slug])->firstOrFail(); // check 404
                     Cache::put($sub_topic_slug_cache, 'TRUE', env('CACHE_TIME', 60));
               } 
 
           /* end here */
 
-          /* get section by subject */
+          /* get sections by subject */
 
           $sub_section_cache = $subject.'_section_cache';
 
