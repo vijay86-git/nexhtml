@@ -39,7 +39,7 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $info = Cache::remember('exist_subject_slug', env('CACHE_TIME', 60), function ($slug) {
+          $info = Cache::remember('exist_subject_slug', env('CACHE_TIME', 60), function ($slug) use($slug) {
                     return Subject::select('id','page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
           });
 
