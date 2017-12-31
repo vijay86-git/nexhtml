@@ -17,7 +17,11 @@ class TopicController extends Controller
   
     public function __construct()
       {
-          $this->_subjects = DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+        $this->_subjects  =  Cache::remember('subject', env('CACHE_TIME', 60), function () {
+                                 return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+                             });
+
+          //$this->_subjects = DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
       }
 
 
