@@ -26,5 +26,8 @@
     RewriteCond %{HTTPS} !on
     RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
+    RewriteCond %{HTTP_HOST} ^www\.([^.]+\.nexladder\.com)$ [NC]
+    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+
 
 </IfModule>
