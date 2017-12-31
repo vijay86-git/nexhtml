@@ -44,7 +44,7 @@ class TopicController extends Controller
 
           if (Cache::has($key))
               {
-                    $info =  Cache::get($key);
+                    //$info =  Cache::get($key);
               } 
           else  {
                     $info =  Subject::select('id','page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
