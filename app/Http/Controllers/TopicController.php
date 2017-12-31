@@ -60,7 +60,7 @@ class TopicController extends Controller
 
           $sub_sec_cache = $slug . '_section_cache';
 
-          $section  =  Cache::remember($sub_sec_cache, env('CACHE_TIME', 60), function () use($id) {
+          $section  =  Cache::remember($sub_sec_cache, env('CACHE_TIME', 60), function () use($info->id) {
                                  return DB::table('section')->select('id', 'section')->where('subject_id', $info->id)->orderBy('sort', 'asc')->get();
                               });
           /* close */
