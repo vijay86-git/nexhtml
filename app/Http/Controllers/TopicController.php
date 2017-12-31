@@ -38,9 +38,10 @@ class TopicController extends Controller
     public function index2($slug)
       {
           $subjects =  $this->_subjects;
-
           
           $key      =  $slug.'_cache';
+
+          /* get data from subject slug */
 
           if (Cache::has($key))
               {
@@ -50,8 +51,16 @@ class TopicController extends Controller
                     $info =  Subject::select('id','page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($key, $info, env('CACHE_TIME', 60));
                 }
+          /* end */
 
-          $section = DB::table('section')->select('id', 'section')->where('subject_id', $info->id)->orderBy('sort', 'asc')->get();
+          /* get subject's section */
+
+          $sub_sec_cache = $slug . '_section_cache';
+
+          $section  =  Cache::remember($sub_sec_cache, env('CACHE_TIME', 60), function () {
+                                 return DB::table('section')->select('id', 'section')->where('subject_id', $info->id)->orderBy('sort', 'asc')->get();
+                              });
+          /* close */
 
           return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug', 'info'));
       }
