@@ -105,10 +105,6 @@ class TopicController extends Controller
 
           /* end here */
 
-
-      	  //$topics = DB::table('topics')->select('id', 'topic', 'slug')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
-          
-
           /* get section by subject */
 
           $sub_section_cache = $subject.'_section_cache';
@@ -123,9 +119,6 @@ class TopicController extends Controller
                     Cache::put($sub_section_cache, $section, env('CACHE_TIME', 60));
               } 
           /* end */
-
-
-          $info = DB::table('topics')->where('slug', $slug)->first();
 
           /* get topic details from slug */
 
