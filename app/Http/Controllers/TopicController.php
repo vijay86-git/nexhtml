@@ -110,7 +110,7 @@ class TopicController extends Controller
 
           $section = DB::table('section')->select('id', 'section')->where('subject_id', $subject_data->id)->orderBy('sort', 'asc')->get();
 
-          $info = DB::table('topics')->where('slug', $slug)->first();
+         // $info = DB::table('topics')->where('slug', $slug)->first();
 
           $slug = $subject;
 
