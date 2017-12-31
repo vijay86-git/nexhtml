@@ -140,9 +140,7 @@ class TopicController extends Controller
                     Cache::put($topic_detail_cache, $info, env('CACHE_TIME', 60));
                 }
 
-        //  $slug = $subject;
-
-          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects'));
+          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'subject'));
       }
 
 
