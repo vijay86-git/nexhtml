@@ -8,6 +8,7 @@ use App\Subject as Subject;
 use App\Topic as Topics;
 use App\Section as Section;
 use DB;
+use Cache;
 
 class TopicController extends Controller
 {
