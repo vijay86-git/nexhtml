@@ -81,6 +81,7 @@ class TopicController extends Controller
               {
                     $subject_data =  Cache::get($sub_slug_cache);
               }
+          else
                     $subject_data =  Subject::select('id')->where('slug', $subject)->firstOrFail();
                     Cache::put($sub_slug_cache, $subject_data, env('CACHE_TIME', 60));
               } 
