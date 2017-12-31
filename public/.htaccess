@@ -22,6 +22,7 @@
 
     RewriteCond %{HTTP_HOST} ^www.cp.nexladder.com [NC] 
     RewriteRule ^(.*)$ https://cp.nexladder.com/$1 [L,R=301]
+    
 
 
     RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
