@@ -20,18 +20,11 @@
     RewriteRule ^ index.php [L]
 
 
-    RewriteCond %{HTTP_HOST} ^www.cp.nexladder.com [NC] 
-    RewriteRule ^(.*)$ https://cp.nexladder.com/$1 [L,R=301]
-    
-
-
     RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
     RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
     RewriteCond %{HTTPS} !on
     RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-
     
-
 </IfModule>
