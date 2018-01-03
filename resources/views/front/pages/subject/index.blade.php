@@ -74,6 +74,7 @@ pre {
 font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif !important;
     font-size: 13px;
     background-color: #f3f3f3;
+    border:0 !important;
 }
 ul {margin:0;padding:0;}
 ul li { padding:0 10px; display:block;color:#888;}
