@@ -72,7 +72,7 @@ pre {
     max-height: 600px;
     overflow: auto;
 font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif !important;
-    font-size: 12px !important;
+    font-size: 11px !important;
     background-color: #f3f3f3;
     border:0 !important;
 }
