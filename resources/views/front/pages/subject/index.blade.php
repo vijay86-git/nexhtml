@@ -75,7 +75,8 @@ pre {
     font-size: 13px;
     background-color: #f3f3f3;
 }
-
+ul {margin:0;padding:0;}
+ul li { padding:0 10px; }
 
 </style>
 
