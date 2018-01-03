@@ -10,7 +10,7 @@
 
   <style>
   ul {margin:0;padding:0}
-  ul li {list-style-type: none;display: inline;padding:0 10px;}
+  ul li {list-style-type: none;display: inline;padding:0 10px;color:#888;}
 </style>
 </head>
 <body>
