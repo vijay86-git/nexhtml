@@ -23,10 +23,10 @@
 
 
      <div class="row">
-         <div class="cols-md-3">
+         <div class="col-md-3">
            @yield('topics')
          </div>
-         <div class="cols-md-3">
+         <div class="col-md-3">
             @yield('content')
          </div>
      </div>
