@@ -10,6 +10,9 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+  <meta name="description" content="{{ $info->meta_description }}">
+   <meta name="keywords" content="{{ $info->meta_keywords }}">
+
   <style>
   ul {margin:0;padding:0}
   ul li {list-style-type: none;display: inline;padding:0 10px;color:#888;}
