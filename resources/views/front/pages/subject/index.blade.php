@@ -77,7 +77,7 @@ pre {
 }
 ul {margin:0;padding:0;}
 ul li { padding:0 10px; display:block;color:#888;}
-h1{color:#888;font-size:18px;}
+h1{color:#888;font-size:15px !important;}
 
 </style>
 
