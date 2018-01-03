@@ -71,6 +71,7 @@ pre {
     width: 650px !ie7;
     max-height: 600px;
     overflow: auto;
+font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 13px;
     background-color: #f3f3f3;
 }
