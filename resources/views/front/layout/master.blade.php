@@ -13,6 +13,7 @@
   <style>
   ul {margin:0;padding:0}
   ul li {list-style-type: none;display: inline;padding:0 10px;color:#888;}
+  body{font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;}
 </style>
 </head>
 <body>
