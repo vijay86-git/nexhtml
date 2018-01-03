@@ -2,7 +2,7 @@
 
  <style>
   .post-text pre>code:first-child, .wmd-preview pre>code:first-child{max-height:600px\9;display:block\9}
-pre{border-radius:0px !important;border:0;max-height:none\9}
+pre{border-radius:0px !important;border:0 !important;max-height:none\9}
 li pre{margin:.5em 0 1em 0}
 h1, h2, h3{line-height:1.3;margin:0 0 1em}
 h1{font-size:22px}
@@ -71,7 +71,7 @@ pre {
     width: 650px !ie7;
     max-height: 600px;
     overflow: auto;
-font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif !important;
     font-size: 13px;
     background-color: #f3f3f3;
 }
