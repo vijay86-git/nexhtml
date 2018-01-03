@@ -76,7 +76,8 @@ pre {
     background-color: #f3f3f3;
 }
 ul {margin:0;padding:0;}
-ul li { padding:0 10px; }
+ul li { padding:0 10px; display:block;color:#888;}
+h1{color:#888;font-size:18px;}
 
 </style>
 
@@ -84,7 +85,7 @@ ul li { padding:0 10px; }
 
 <ul>
 @foreach($subjects as $sub_data)
-<li><a style="color:#ffffff" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
+<li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
 @endforeach
 </ul>
 
@@ -95,7 +96,7 @@ ul li { padding:0 10px; }
 
 @if (count($section) > 0)
 @foreach($section as $sec_data)
-<h1 style="color:#fff;font-size:16px">{{ $sec_data->section}}</h1>
+<h1 style="">{{ $sec_data->section}}</h1>
 <ul>
 @foreach (App\Section::find($sec_data->id)->topics as $data)
       <li style="color:#ffffff"><a href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
