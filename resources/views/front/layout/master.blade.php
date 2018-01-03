@@ -26,7 +26,7 @@
          <div class="col-md-3">
            @yield('topics')
          </div>
-         <div class="col-md-3">
+         <div class="col-md-9">
             @yield('content')
          </div>
      </div>
