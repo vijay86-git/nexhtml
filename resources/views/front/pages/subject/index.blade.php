@@ -99,7 +99,7 @@ h1{color:#888;font-size:15px !important;}
 <h1 style="">{{ $sec_data->section}}</h1>
 <ul>
 @foreach (App\Section::find($sec_data->id)->topics as $data)
-      <li style="color:#ffffff"><a href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
+      <li style="color:#ffffff;display:block;"><a href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
 @endforeach
 
 </ul>
