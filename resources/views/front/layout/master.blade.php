@@ -16,10 +16,6 @@
         @yield('subjects')
      </div>
 
-     
-
-
-
 </div>
 
 </body>
