@@ -24,7 +24,9 @@ class TopicController extends Controller
 
     public function index()
       {
-        echo "Home"; die;
+          return view('front.pages.home.index');
+
+          die;
           $subjects =  $this->_subjects;
           $slug     =  '';
           
