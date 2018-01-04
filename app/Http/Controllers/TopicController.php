@@ -143,7 +143,13 @@ class TopicController extends Controller
 
 
           /* get next previous topic from slug */
-              
+             echo $subject_id =  $info->subject_id;
+echo $topic_sort =  $info->sort;
+
+              $next = DB::table('topics')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->get();
+
+              print_r($next);
+
              // $prev = DB::table('topics')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
 
               //print_r($prev);
