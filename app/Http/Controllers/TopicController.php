@@ -154,15 +154,15 @@ class TopicController extends Controller
               $nextlink   =  null;
               $prevlink   =  null;
 
-              $next = DB::table('topics')->select('slug')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->get();
+              $next = DB::table('topics')->select('slug')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->first();
 
               if ($next->count() > 0)
-              $nextlink = $subject . '/' . $next[0]->slug;
+              $nextlink = $subject . '/' . $next->slug;
 
-              $prev = DB::table('topics')->select('slug')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
+              $prev = DB::table('topics')->select('slug')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->first();
 
               if ($prev->count() > 0)
-              $prevlink = $subject . '/' . $prev[0]->slug;
+              $prevlink = $subject . '/' . $prev->slug;
             
           /* end here */
 
