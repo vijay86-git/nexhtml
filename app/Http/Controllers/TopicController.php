@@ -150,9 +150,9 @@ class TopicController extends Controller
 
               print_r($next);
 
-              $prev = DB::table('topics')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
+             // $prev = DB::table('topics')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
 
-              print_r($prev);
+              //print_r($prev);
             
 
           /* end here */
