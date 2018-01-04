@@ -135,9 +135,27 @@ class TopicController extends Controller
                     $info =  Cache::get($topic_detail_cache);
               } 
           else  {
-                    $info =  Topics::select('id','page_title','meta_keywords','meta_description', 'detail')->where('slug', $slug)->firstOrFail();
+                    $info =  Topics::select('id','sort','page_title','meta_keywords','meta_description', 'detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($topic_detail_cache, $info, env('CACHE_TIME', 60));
                 }
+
+          /* end here */
+
+
+          /* get next previous topic from slug */
+              $topic_sort =  $info->id;
+
+              $next = DB::table('topics')->where('sort', '>', $topic_sort)->orderBy('sort', 'asc')->limit(1)->get();
+
+              print_r($next);
+
+              $prev = DB::table('topics')->where('sort', '<', $topic_sort)->orderBy('sort', 'desc')->limit(1)->get();
+
+              print_r($prev);
+            
+
+          /* end here */
+
 
           $slug = $subject;
 
