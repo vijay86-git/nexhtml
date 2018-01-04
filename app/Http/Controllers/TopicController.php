@@ -73,7 +73,11 @@ class TopicController extends Controller
                               });
           /* close */
 
-          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug', 'info'));
+          $nextlink   =  null;
+          $prevlink   =  null;
+
+
+          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug', 'info', 'nextlink', 'prevlink'));
       }
 
 
@@ -147,8 +151,8 @@ class TopicController extends Controller
               $subject_id =  $info->subject_id;
               $topic_sort =  $info->sort;
 
-              $nextlink   =  'd';
-              $prevlink   =  'd';
+              $nextlink   =  null;
+              $prevlink   =  null;
 
               $next = DB::table('topics')->select('slug')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->get();
 
