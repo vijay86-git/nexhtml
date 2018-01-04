@@ -143,23 +143,29 @@ class TopicController extends Controller
 
 
           /* get next previous topic from slug */
+
               $subject_id =  $info->subject_id;
-              $topic_sort =  $info->sort; 
-              $next = DB::table('topics')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->get();
+              $topic_sort =  $info->sort;
 
-              print_r($next);
+              $nextlink   =  null;
+              $prevlink   =  null;
+              
+              $next = DB::table('topics')->select('slug')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->get();
 
-             // $prev = DB::table('topics')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
+              if ($next->count() > 0)
+              $nextlink = $subject'/'.$next->slug;
 
-              //print_r($prev);
+              $prev = DB::table('topics')->select('slug')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
+
+              if ($prev->count() > 0)
+              $prevlink = $subject'/'.$prev->slug;
             
-
           /* end here */
 
 
           $slug = $subject;
 
-          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug'));
+          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug', 'nextlink', 'prevlink'));
       }
 
 
