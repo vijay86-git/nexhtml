@@ -141,9 +141,9 @@ h1{color:#888;font-size:15px !important;}
 
       <div class="row">
 
-         <div class="col-xs-12 text-left">{{ $nextlink }}</div>
+         <div class="col-xs-12 text-left">{{ $prevlink }}</div>
 
-         <div class="col-xs-12 text-right">{{ $prevlink }}</div>
+         <div class="col-xs-12 text-right">{{ $nextlink }}</div>
       </div>
 
 
