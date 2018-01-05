@@ -6,9 +6,9 @@ class Helper
 {
     public static function loadAssetsFiles($src = null)
 	    {
-	         if (1 == env('CDN_ENABLE', ''))
+	         if ( ! empty(env('CDN_ENABLE', '')))
 	         	return env('CDN_URL') . $src;
 	         else
-	         	return resource_path($src);
+	         	return URL::asset($src);
 	    }
 }
