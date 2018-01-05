@@ -179,6 +179,7 @@ return [
 
         Collective\Html\HtmlServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
+        App\Providers\HelperServiceProvider::class,
 
     ],
 
@@ -233,6 +234,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Input' => Illuminate\Support\Facades\Input::class,
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
+        'Helper' => App\Helpers\Helper::class,
 
     ],
 
