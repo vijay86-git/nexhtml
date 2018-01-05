@@ -10,8 +10,10 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+  <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/app.css') }}">
+
   <meta name="description" content="{{ $info->meta_description }}">
-   <meta name="keywords" content="{{ $info->meta_keywords }}">
+  <meta name="keywords" content="{{ $info->meta_keywords }}">
 
   <style>
   ul {margin:0;padding:0}

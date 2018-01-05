@@ -4,8 +4,11 @@ namespace App\Helpers;
 
 class Helper
 {
-    public static function test()
+    public static function loadAssetsFiles($src = null)
 	    {
-	        echo "in";
+	         if (1 == env('CDN_ENABLE', ''))
+	         	return env('CDN_URL') . $src;
+	         else
+	         	return public_path($src);
 	    }
 }
