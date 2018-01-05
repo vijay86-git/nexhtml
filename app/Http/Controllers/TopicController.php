@@ -46,8 +46,6 @@ class TopicController extends Controller
 
     public function index2($slug)
       {
-          Helper::test();
-
           $subjects =  $this->_subjects;
           
           $key      =  $slug.'_cache';
