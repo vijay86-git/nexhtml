@@ -9,6 +9,6 @@ class Helper
 	         if (1 == env('CDN_ENABLE', ''))
 	         	return env('CDN_URL') . $src;
 	         else
-	         	return public_path($src);
+	         	return resource_path($src);
 	    }
 }
