@@ -55,8 +55,7 @@ Route::group(array('domain' => 'nexladder.com'), function() {
     Route::get('/', function () {
 
              Session::put('admin', mt_rand());
-             //return view('welcome');
-             echo 'Under Maintenance';
+             return view('welcome');
          });
 
 

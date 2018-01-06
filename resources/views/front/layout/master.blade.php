@@ -20,18 +20,6 @@
   ul li {list-style-type: none;display: inline;padding:0 10px;color:#888;}
   body{font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;}
 </style>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111558941-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-111558941-1');
-</script>
-
-
 </head>
 <body>
 
