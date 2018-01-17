@@ -200,7 +200,7 @@ border:0 !important}
 .mrgnbtm15{margin-bottom:15px}
 h1.headingtop, h2.headingtop, h3.headingtop, h4.headingtop, h5.headingtop, h6.headingtop{display:inline-block}
 .topnexprev{float:right}
-.topnexprev a:hover, .topnexprev a:focus{background:none}
+.topnexprev a:hover, .topnexprev a:focus, a.btn-default:hover, a.btn-default:focus{background:none}
 .pad0{padding:0}
 span.nexprv a,span.nexprv a:hover{color:#11a286;text-decoration:none}
 h1.h1, h2.h2, h3.h3, h4.h4, h5.h5, h6.h6{color:#505763;font-size:22px !important;margin:10px 0}
