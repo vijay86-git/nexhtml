@@ -16,7 +16,7 @@
 
                     <ul class="nav navbar-nav">
                       @foreach($subjects as $sub_data)
-                       <li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
+                       <li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ ucfirst($sub_data->name) }}</a></li>
                       @endforeach
                     </ul>
 
