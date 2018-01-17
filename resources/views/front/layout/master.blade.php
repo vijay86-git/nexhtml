@@ -72,7 +72,7 @@
             
            <div class="row">
              <div class="col-md-4">
-              <div class="logo">Nexladder</div>
+              <div class="logo">nexladder</div>
              </div>
          
             <div class="col-md-8">
