@@ -74,7 +74,7 @@
             
            <div class="row">
              <div class="col-md-4">
-              <div class="logos">Nexladder</div>
+              <div class="logos">nexladder</div>
              </div>
          
             <div class="col-md-8">
@@ -103,7 +103,7 @@
           <div class="bodyPart">
           <div class="row">
            <div class="col-md-3">
-            
+
               <ul class="list-group">
                 <li class="list-group-item disabled"><strong>Bootstrap Tutorial</strong></a></li>
                 <li class="list-group-item"><span class="fa fa-book"></span><a href='#' class="active">BS Home</a></li>
