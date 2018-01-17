@@ -13,7 +13,7 @@
 
 --}}
 
-@section('subjects')
+@section('nav')
 <nav class="navbar navbar-inverse">
                   <div class="container-fluid">
                   <div class="navbar-header">
@@ -24,10 +24,6 @@
                     </button>
                     <a class="navbar-brand" href="#"></a>
                   </div>
-
-                  
-
-
 
                   <div class="collapse navbar-collapse" id="navBar">
 
