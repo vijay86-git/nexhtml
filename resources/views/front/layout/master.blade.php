@@ -77,37 +77,14 @@
          
             <div class="col-md-8">
               <!-- navigation -->
-              <nav class="navbar navbar-inverse">
-                  <div class="container-fluid">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
-                    </button>
-                    <a class="navbar-brand" href="#"></a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="navBar">
-                    <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">CSS</a></li> 
-                    <li><a href="#">HTML</a></li> 
-                    <li><a href="#">JAVASCRIPT</a></li> 
-                    <li><a href="#">JSON</a></li> 
-                    <li><a href="#">JQUERY</a></li> 
-                    <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Page 1-1</a></li>
-                        <li><a href="#">Page 1-2</a></li>
-                        <li><a href="#">Page 1-3</a></li>
-                      </ul>
-                    </li>-->
-    
-                    </ul>
-                  </div>
-                  </div>
-                </nav>
+
+
+               @yield('nav')
+
+
+              
+
+
               <!-- close navigation -->
             </div>  
             
