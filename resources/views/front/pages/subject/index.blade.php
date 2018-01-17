@@ -1,7 +1,7 @@
 @extends('front.layout.template')
 
 @section('nav')
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse-inner">
                   <div class="container-fluid">
                   <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
