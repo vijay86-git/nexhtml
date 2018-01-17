@@ -134,6 +134,10 @@ a, a:hover{color:#505763;text-decoration:none}
 .contact-details p {margin:0 0 20px;font-size:15px}
 /* code */
 
+code, kbd, pre, samp {
+    font-family:Open Sans !important;
+}
+
 .post-text pre>code:first-child, .wmd-preview pre>code:first-child{max-height:600px\9;display:block\9}
 pre{border-radius:0px !important;border:0 !important;max-height:none\9}
 li pre{margin:.5em 0 1em 0}
