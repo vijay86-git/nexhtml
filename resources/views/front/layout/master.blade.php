@@ -20,8 +20,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   
-  <link href="style.css?v=1" rel="stylesheet">
-  
 
   </head>
   <body>
