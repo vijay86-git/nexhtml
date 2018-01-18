@@ -262,10 +262,10 @@ Size is: Short
             <div class="row">
                <div class="col-md-12">
                <div class="col-md-6 col-sm-6 text-left pad0">
-                <a href="#" class="btn btn-default prev"><span class="glyphicon glyphicon-chevron-left"></span>  Previous</a><span class='nexprv'><a href='#'>PHP Example</a></span>
+                <a href="#" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a href='#'>PHP Example</a></span>
                </div>
                <div class="col-md-6 col-sm-6 text-right pad0">
-                <span class='nexprv'><a href='#'>PHP Associative Array</span></a><a href="#" class="btn btn-default next">Next  <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                <span class='nexprv'><a href='#'>PHP Associative Array</span></a><a href="#" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
                </div>
              </div> 
              </div> 
