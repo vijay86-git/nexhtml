@@ -44,6 +44,10 @@
 @stop
 
 
+@section('content')
+  {!!html_entity_decode($info->detail)!!}
+@stop
+
 
 {{--
 @extends('front.layout.master')
