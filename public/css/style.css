@@ -97,7 +97,7 @@ a, a:hover{color:#505763;text-decoration:none}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {.bodySearchBox {width:270px;height:45px;line-height:45px;padding: 0 0 0 10px;border-radius:2px;border:none;margin:160px 0 0 0;font-size:16px}
-.content table{font-size:14px}
+.content table{font-size:13px}
 }
 
 /* Extra Small Devices, Phones */ 
