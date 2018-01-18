@@ -264,15 +264,15 @@ Size is: Short
                <div class="col-md-12">
                <div class="col-md-6 col-sm-6 text-left pad0">
 
-                <a href="#" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a href='{{ $nextprevarr["prevlink"] }}'>{{ $nextprevarr["prevtopic"] }}</a></span>
+                <a href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a href='{{ $nextprevarr["prevlink"] }}'>{{ $nextprevarr["prevtopic"] }}</a></span>
 
 
                </div>
                <div class="col-md-6 col-sm-6 text-right pad0">
 
-                <span class='nexprv'><a href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</span></a><a href="#" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+                <span class='nexprv'><a href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</span></a><a href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
 
-                
+
                </div>
              </div> 
 
