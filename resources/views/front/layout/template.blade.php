@@ -21,7 +21,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   
-  <link href="style.css?v=1" rel="stylesheet">
+    <meta name="description" content="{{ $info->meta_description }}">
+    <meta name="keywords" content="{{ $info->meta_keywords }}">
 
   </head>
   <body>
