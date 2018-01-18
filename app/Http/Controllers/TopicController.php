@@ -140,7 +140,7 @@ class TopicController extends Controller
                     $info =  Cache::get($topic_detail_cache);
               } 
           else  {
-                    $info =  Topics::select('id','subject_id','sort','page_title','meta_keywords','meta_description', 'detail')->where('slug', $slug)->firstOrFail();
+                    $info =  Topics::select('id','subject_id','sort', 'topic', 'page_title','meta_keywords','meta_description', 'detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($topic_detail_cache, $info, env('CACHE_TIME', 60));
                 }
 
