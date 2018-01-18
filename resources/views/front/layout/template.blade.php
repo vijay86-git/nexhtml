@@ -117,7 +117,7 @@
             <div class="row mrgnbtm15">
              <div class="col-md-12">
              
-               <h1 class='headingtop'>PHP Associative Array</h1>
+               <h1 class='headingtop'>{{$info->topic}}</h1>
                <div class="topnexprev">
                  
                <span class="share">
