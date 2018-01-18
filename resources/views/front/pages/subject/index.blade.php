@@ -35,7 +35,7 @@
         <ul class="list-group">
           <li class="list-group-item disabled"><strong>{{ $sec_data->section}}</strong></a></li>
               @foreach (App\Section::find($sec_data->id)->topics as $data)
-                  <li class="list-group-item"><span class="fa fa-book"></span><a style="{{ (Request::segment(3) == $data->slug) ? 'active' : '' }}" href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
+                  <li class="list-group-item"><span class="fa fa-book"></span><a class="{{ (Request::segment(3) == $data->slug) ? 'active' : '' }}" href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
               @endforeach
        </ul>
       @endforeach
