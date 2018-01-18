@@ -266,14 +266,17 @@ Size is: Short
 
                 @if (!empty($nextprevarr['prevlink']))
 
-                <a href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a href='{{ $nextprevarr["prevlink"] }}'>{{ $nextprevarr["prevtopic"] }}</a></span>
+                   <a href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a href='{{ $nextprevarr["prevlink"] }}'>{{ $nextprevarr["prevtopic"] }}</a></span>
+
+                endif;
 
 
                </div>
                <div class="col-md-6 col-sm-6 text-right pad0">
 
                 @if (!empty($nextprevarr['nextlink']))
-                <span class='nexprv'><a href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</span></a><a href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+                   <span class='nexprv'><a href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</span></a><a  href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+                endif;
 
 
                </div>
