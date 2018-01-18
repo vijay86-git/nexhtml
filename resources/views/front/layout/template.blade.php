@@ -263,7 +263,7 @@ Size is: Short
 
                <div class="col-md-12">
                <div class="col-md-6 col-sm-6 text-left pad0">
-                <a href="#" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a href='{{ url($prevtlink) }}'>PHP Example</a></span>
+                <a href="#" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a href='{{ url($prevlink) }}'>PHP Example</a></span>
                </div>
                <div class="col-md-6 col-sm-6 text-right pad0">
                 <span class='nexprv'><a href='url($nextlink)'>PHP Associative Array</span></a><a href="#" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
