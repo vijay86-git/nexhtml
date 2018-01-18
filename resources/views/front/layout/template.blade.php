@@ -268,7 +268,7 @@ Size is: Short
 
                    <a href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a href='{{ $nextprevarr["prevlink"] }}'>{{ $nextprevarr["prevtopic"] }}</a></span>
 
-                @endif;
+                @endif
 
 
                </div>
@@ -276,7 +276,7 @@ Size is: Short
 
                 @if (!empty($nextprevarr['nextlink']))
                    <span class='nexprv'><a href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</span></a><a  href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-                @endif;
+                @endif
 
 
                </div>
