@@ -158,8 +158,8 @@
 
                 @if (!empty($nextprevarr['nextlink']))
                   <a href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-                @endif;
-                
+                @endif
+
 
                </div>
              </div> 
