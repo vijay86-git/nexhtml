@@ -158,7 +158,7 @@ class TopicController extends Controller
               $next = DB::table('topics')->select('slug')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->get();
 
               if ($next->count() > 0)
-              $nextlink = $subject . '/' . $next[0]->slug;
+              $nextlink = route('topics', ['subject' => $subject, 'slug' => $next[0]->slug]);
 
               $prev = DB::table('topics')->select('slug')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
 
