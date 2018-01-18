@@ -146,8 +146,8 @@
                
                </span>
                
-                  <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span>  Previous</a>
-                  <a href="#" class="btn btn-default next">Next  <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                  <a href="#" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a>
+                  <a href="#" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
                </div>
              </div> 
             </div>
