@@ -333,9 +333,9 @@
   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js?v=1"></script>
+    <script src="{{ Helper::loadAssetsFiles('js/jquery-3.2.1.min.js?v=1') }}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js?v=1"></script>
+    <script src="{{ Helper::loadAssetsFiles('js/bootstrap.min.js?v=1') }}"></script>
   </body>
 </html>
 
