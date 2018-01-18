@@ -153,24 +153,32 @@ class TopicController extends Controller
               $topic_sort =  $info->sort;
 
               $nextlink   =  null;
+              $nexttopic  =  null;
               $prevlink   =  null;
+              $prevtopic  =  null;
 
-              $next = DB::table('topics')->select('slug')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->get();
+              $next = DB::table('topics')->select('slug', 'topic')->where([['sort', '>', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'asc')->limit(1)->get();
 
-              if ($next->count() > 0)
-              $nextlink = route('topics', ['subject' => $subject, 'slug' => $next[0]->slug]);
+              if ($next->count() > 0):
+                $nextlink = route('topics', ['subject' => $subject, 'slug' => $next[0]->slug]);
+                $nexttopic = $next[0]->topic;
+              endif;
 
-              $prev = DB::table('topics')->select('slug')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
+              $prev = DB::table('topics')->select('slug', 'topic')->where([['sort', '<', $topic_sort],['subject_id', '=', $subject_id]])->orderBy('sort', 'desc')->limit(1)->get();
 
-              if ($prev->count() > 0)
-              $prevlink = $subject . '/' . $prev[0]->slug;
+              if ($prev->count() > 0):
+                 $prevlink  = route('topics', ['subject' => $subject, 'slug' => $prev[0]->slug]);
+                 $prevtopic = $next[0]->topic;
+               endif;
+
+              $nextprevarr = ['nextlink' => $nextlink, 'nexttopic' => $nexttopic, 'prevlink' => $prevlink, 'prevtopic' => $prevtopic];
             
           /* end here */
 
 
           $slug = $subject;
 
-          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug', 'nextlink', 'prevlink'));
+          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug', 'nextprevarr'));
       }
 
 
