@@ -168,7 +168,7 @@ class TopicController extends Controller
 
               if ($prev->count() > 0):
                  $prevlink  = route('topics', ['subject' => $subject, 'slug' => $prev[0]->slug]);
-                 $prevtopic = $next[0]->topic;
+                 $prevtopic = $prev[0]->topic;
                endif;
 
               $nextprevarr = ['nextlink' => $nextlink, 'nexttopic' => $nexttopic, 'prevlink' => $prevlink, 'prevtopic' => $prevtopic];
