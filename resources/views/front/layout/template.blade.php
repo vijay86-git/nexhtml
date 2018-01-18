@@ -104,37 +104,11 @@
           <div class="row">
            <div class="col-md-3">
 
-              <ul class="list-group">
-                <li class="list-group-item disabled"><strong>Bootstrap Tutorial</strong></a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#' class="active">BS Home</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Get Started</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Wells</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Buttons</a></li>
-              </ul>
+
+            @yield('topics')
+
               
-              <ul class="list-group">
-                <li class="list-group-item disabled"><strong>Bootstrap Tutorial</strong></a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Home</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Get Started</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Wells</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Buttons</a></li>
-              </ul>
               
-              <ul class="list-group">
-                <li class="list-group-item disabled"><strong>Bootstrap Tutorial</strong></a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Home</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Get Started</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Wells</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Buttons</a></li>
-              </ul>
-              
-              <ul class="list-group">
-                <li class="list-group-item disabled"><strong>Bootstrap Tutorial</strong></a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Home</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Get Started</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Wells</a></li>
-                <li class="list-group-item"><span class="fa fa-book"></span><a href='#'>BS Buttons</a></li>
-              </ul>
            
            </div>
            <div class="col-md-9">
