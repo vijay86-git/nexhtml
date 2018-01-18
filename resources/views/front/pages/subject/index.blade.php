@@ -16,7 +16,7 @@
 
                     <ul class="nav navbar-nav">
                       @foreach($subjects as $sub_data)
-                       <li><a {{ (Request::segment(1)) }} {{ (Request::segment(1) == $sub_data->slug) ? "active" : "" }} href="{{ route('topic', $sub_data->slug) }}">{{ ucfirst($sub_data->name) }}</a></li>
+                       <li><a {{ (Request::segment(2) == $sub_data->slug) ? "active" : "" }} href="{{ route('topic', $sub_data->slug) }}">{{ ucfirst($sub_data->name) }}</a></li>
                       @endforeach
                     </ul>
 
