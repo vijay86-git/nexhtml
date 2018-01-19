@@ -42,9 +42,31 @@
                   <input class="form-control" name="slug" placeholder="Slug" type="text" value="{{ $subject->slug }}">
                 </div>
 
+
+                @if ( ! empty($subject->logo))
                 <div class="form-group">
-                  <label for="category">Logo&nbsp;<span class="req">*</span></label>
+                  <label for="category">Logo</label>
+                  <img src="{{ $subject->logo }}" width="60" />
+                </div>
+                @endif
+
+
+                <div class="form-group">
+                  <label for="category">Logo Upload&nbsp;</label>
                   <input class="form-control" type="file" name="logo" placeholder="Logo Upload" accept="image/*" />
+                </div>
+
+                 @if ( ! empty($subject->image))
+                  <div class="form-group">
+                    <label for="category">Image&nbsp;</label>
+                    <img src="{{ $subject->image }}" width="60" />
+                  </div>
+                @endif
+
+
+                <div class="form-group">
+                  <label for="category">Image Upload&nbsp;<span class="req">*</span></label>
+                  <input class="form-control" type="file" name="image" placeholder="Image Upload" accept="image/*" />
                 </div>
 
                 <div class="form-group">
