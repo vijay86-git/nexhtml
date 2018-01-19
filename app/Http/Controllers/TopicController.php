@@ -68,8 +68,9 @@ class TopicController extends Controller
                 }
             */
            
-echo $info['id'];
- die;
+           print_r($info); die;
+           
+
           $subject_id = $info->id;
 
           /* end */

@@ -25,14 +25,16 @@ class Helper
 
 	          if ( ! Cache::has($subjects_table_cache))
 	              {
-	                     Cache::put($subjects_table_cache, Subject::all(), env('CACHE_TIME', 60));
+	              	     $result = DB::table('subject')->get();
+	                     Cache::put($subjects_table_cache, $result, env('CACHE_TIME', 60));
 	              } 
 
 	          $topic_table_cache      =  env('TOPIC_TBL_CACHE', '');
 
 	          if ( ! Cache::has($topic_table_cache))
 	              {
-	                     Cache::put($topic_table_cache, Topics::all(), env('CACHE_TIME', 60));
+	              	     $result = DB::table('topics')->get();
+	                     Cache::put($topic_table_cache, $result, env('CACHE_TIME', 60));
 	              } 
 		  }
 
