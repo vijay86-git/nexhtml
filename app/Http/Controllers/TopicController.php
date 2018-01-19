@@ -50,11 +50,11 @@ class TopicController extends Controller
           $subjects =  $this->_subjects;
 
           $info     = Cache::get(env('SUBJECT_TBL_CACHE', ''), function () {
-                 return DB::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->table('subject')->firstOrFail();
+                 return Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
           });
 
           print_r($info); die;
-          
+
 
           
          /* $key      =  $slug.'_cache';
