@@ -218,3 +218,4 @@ ul.points li{list-style-type:disc;line-height:30px;color:#505763;font-size:13px;
 .codeblock pre{background:none;line-height:26px;padding:0 9px}
 .next{font-size:14px;margin-left:10px}
 .prev{font-size:14px;margin-right:10px;}
+.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover{color:#FFF;cursor:not-allowed;background-color:#11a286}
