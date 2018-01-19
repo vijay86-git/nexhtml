@@ -53,9 +53,6 @@ class TopicController extends Controller
                  return Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
           });
 
-          print_r($info); die;
-
-
           
          /* $key      =  $slug.'_cache';
 
