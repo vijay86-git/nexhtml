@@ -94,7 +94,7 @@
 
                 <div class="form-group">
                   <label for="page_title">Show In Navigation</label>
-                  <input type="checkbox" style="display:block;width:20px;height:20px" name="show_nav" id="show_nav" placeholder="" value="1" {{ $subject->about == 1 ? "checked=checked" : "" }} />
+                  <input type="checkbox" style="display:block;width:20px;height:20px" name="show_nav" id="show_nav" placeholder="" value="1" {{ $subject->show_nav == 1 ? "checked=checked" : "" }} />
                 </div>
 
 
