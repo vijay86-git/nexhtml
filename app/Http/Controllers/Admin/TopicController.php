@@ -54,7 +54,7 @@ class TopicController extends Controller
     public function store(Request $request)
     {
         //
-            request()->validate(['subject' => 'required', 'section' => 'required', 'name' => 'required', 'slug' => 'required', 'description' => 'required', 'page_title' => 'required', 'sort']);
+            request()->validate(['subject' => 'required', 'section' => 'required', 'name' => 'required', 'slug' => 'required', 'description' => 'required', 'page_title' => 'required', 'sort' => 'required']);
 
             $params                     =    $request->all();
 
