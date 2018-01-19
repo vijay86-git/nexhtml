@@ -61,7 +61,7 @@ class TopicController extends Controller
                     $info =  Cache::get($key);
               } 
           else  {
-                    $info =  Subject::select('id', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
+                    $info =  Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($key, $info, env('CACHE_TIME', 60));
                 }
 
@@ -81,6 +81,7 @@ class TopicController extends Controller
           $nextlink   =  null;
           $prevlink   =  null;
 
+          $topic_title = 'About '.ucfirst($info->name);
 
           return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug', 'info', 'nextlink', 'prevlink'));
       }
