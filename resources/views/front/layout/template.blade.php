@@ -49,7 +49,7 @@
                     <form method="post">
                    
                     <input type="text" class="searchTextTop innerTxtSrch" name="search" placeholder="Search on Nexladder..." />
-                    <button class="magnifier"><i class="glyphicon glyphicon-search"></i></button>
+                    <button class="magnifier"><i class="fa fa-search"></i></button>
   
                     </form>
                  <!-- close -->

@@ -46,7 +46,7 @@
                     <form method="post">
                    
                     <input type="text" class="searchTextTop" name="search" placeholder="Search on Nexladder..." />
-                    <button class="magnifier"><i class="glyphicon glyphicon-search"></i></button>
+                    <button class="magnifier"><i class="fa fa-search"></i></button>
   
                     </form>
                  <!-- close -->
@@ -91,7 +91,7 @@
          <div class="bodySearch">
               <div class="row">
               <div class="col-md-12">
-                 <input type="text" class="bodySearchBox" name="search" placeholder="What do you want to learn?"><button class="magnifierBody"><i class="glyphicon glyphicon-search"></i></button>
+                 <input type="text" class="bodySearchBox" name="search" placeholder="What do you want to learn?"><button class="magnifierBody"><i class="fa fa-search"></i></button>
               </div>
               <div class="col-md-12">
                  <p class="notice">Learn Online Free Tutorials &amp; Explore more</p>
