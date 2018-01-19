@@ -46,7 +46,7 @@
                 @if ( ! empty($subject->logo))
                 <div class="form-group">
                   <label for="category">Logo</label>
-                  <img src="{{ $subject->logo }}" width="60" />
+                  <img src="{{ $subject->logo }}" width="90" />
                 </div>
                 @endif
 
@@ -59,7 +59,7 @@
                  @if ( ! empty($subject->image))
                   <div class="form-group">
                     <label for="category">Image&nbsp;</label>
-                    <img src="{{ $subject->image }}" width="60" />
+                    <img src="{{ $subject->image }}" width="90" />
                   </div>
                 @endif
 
