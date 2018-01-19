@@ -45,7 +45,7 @@
 
 @section('topiccontentheader')
 
-              <h1 class='headingtop'>{{$info->topic OR $topic_title}}</h1>
+              <h1 class='headingtop'>{{ ! empty($topic_title) ? $topic_title : $info->topic}}</h1>
                <div class="topnexprev">
                  
                <span class="share">
