@@ -8,10 +8,11 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css?v=1" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/bootstrap.min.css?v=1') }}">
     
-    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/font-awesome.css') }}">
-    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/style.css') }}">
+    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/font-awesome.css?v=1') }}">
+    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/style.css?v=1') }}">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -334,13 +335,8 @@ Size is: Short
     </div>
   </div>
     
-    
-    
-
+  
     <!-- End Wrapper -->
-  
-  
-  
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{ Helper::loadAssetsFiles('js/jquery-3.2.1.min.js?v=1') }}"></script>
