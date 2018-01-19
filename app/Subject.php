@@ -12,6 +12,6 @@ class Subject extends Model
      * @var string
      */
     protected $table = 'subject';
-    protected $fillable = ['name', 'slug', 'logo', 'sort', 'page_title', 'meta_keywords', 'meta_description', 'about', 'status'];
+    protected $fillable = ['name', 'slug', 'logo', 'sort', 'image', 'show_nav', 'page_title', 'meta_keywords', 'meta_description', 'about', 'status'];
 
 }
