@@ -180,7 +180,6 @@ class TopicController extends Controller
             
           /* end here */
 
-
           $slug = $subject;
           $topic_title = null;
 

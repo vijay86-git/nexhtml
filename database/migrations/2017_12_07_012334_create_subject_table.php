@@ -25,6 +25,8 @@ class CreateSubjectTable extends Migration
 
             $table->tinyInteger('sort')->comment('Sort')->default(1);
 
+            $table->tinyInteger('show_nav')->comment('Show in Navigation')->default(0);
+
             $table->text('page_title')->comment('Page Title');
 
             $table->text('meta_keywords')->comment('Meta Keywords')->nullable();
