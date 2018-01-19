@@ -18,10 +18,9 @@ class TopicController extends Controller
   
     public function __construct()
       {
-
          Helper::createDataBaseTableCache();
 
-         $this->_subjects  =  Helper::getTableFromCache(env('SUBJECT_TBL_CACHE', ''));
+         $this->_subjects  =  Helper::getTableDataFromCache(env('SUBJECT_TBL_CACHE', ''));
 
       }
 
@@ -50,16 +49,14 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $value = Cache::get(env('SUBJECT_TBL_CACHE', ''), function () {
-                 return DB::where('slug', $slug)->table('topics')->firstOrFail();
+          $info     = Cache::get(env('SUBJECT_TBL_CACHE', ''), function () {
+                 return DB::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->table('subject')->firstOrFail();
           });
 
-          print_r($value); die;
-
           
-          $key      =  $slug.'_cache';
+         /* $key      =  $slug.'_cache';
 
-          /* get data from subject slug */
+         
 
           if (Cache::has($key))
               {
@@ -69,6 +66,8 @@ class TopicController extends Controller
                     $info =  Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($key, $info, env('CACHE_TIME', 60));
                 }
+            */
+           
 
           $subject_id = $info->id;
 

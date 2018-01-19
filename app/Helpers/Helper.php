@@ -21,22 +21,22 @@ class Helper
 
 	public static function createDataBaseTableCache()
 		  {
-				  $subjects_table_cache   =  env('SUBJECT_TBL_CACHE', '');
+			  $subjects_table_cache   =  env('SUBJECT_TBL_CACHE', '');
 
-		          if ( ! Cache::has($subjects_table_cache))
-		              {
-		                     Cache::put($subjects_table_cache, Subject::all(), env('CACHE_TIME', 60));
-		              } 
+	          if ( ! Cache::has($subjects_table_cache))
+	              {
+	                     Cache::put($subjects_table_cache, Subject::all(), env('CACHE_TIME', 60));
+	              } 
 
-		          $topic_table_cache      =  env('TOPIC_TBL_CACHE', '');
+	          $topic_table_cache      =  env('TOPIC_TBL_CACHE', '');
 
-		          if ( ! Cache::has($topic_table_cache))
-		              {
-		                     Cache::put($topic_table_cache, Topics::all(), env('CACHE_TIME', 60));
-		              } 
+	          if ( ! Cache::has($topic_table_cache))
+	              {
+	                     Cache::put($topic_table_cache, Topics::all(), env('CACHE_TIME', 60));
+	              } 
 		  }
 
-	public static function getTableFromCache($table_cache_name=null)
+	public static function getTableDataFromCache($table_cache_name=null)
 	  {
 	  	      Cache::remember($table_cache_name, env('CACHE_TIME', 60), function () {
                        return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
