@@ -44,7 +44,7 @@ class TopicController extends Controller
       }
 
 
-    public function index2($slug)
+    public function getSubjectInfo($slug)
       {
           $subjects =  $this->_subjects;
           
@@ -82,7 +82,7 @@ class TopicController extends Controller
       }
 
 
-    public function index3($subject = null, $slug = null)
+    public function getSubjectTopics($subject = null, $slug = null)
       {
 
           $subjects     =  $this->_subjects;
