@@ -36,7 +36,7 @@ class Helper
 		              } 
 		  }
 
-	public function getTableFromCache($table_cache_name=null)
+	public static function getTableFromCache($table_cache_name=null)
 	  {
 	  	      Cache::remember($table_cache_name, env('CACHE_TIME', 60), function () {
                        return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
