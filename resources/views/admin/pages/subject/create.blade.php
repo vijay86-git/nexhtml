@@ -72,7 +72,7 @@
 
                 <div class="form-group">
                   <label for="page_title">Show In Navigation</label>
-                  <input type="checkbox" class="form-control" name="show_nav" id="show_nav" placeholder="" {{ old('show_nav') == 1 ? "checked=checked" : "" }} />
+                  <input type="checkbox" name="show_nav" id="show_nav" placeholder="" {{ old('show_nav') == 1 ? "checked=checked" : "" }} />
                 </div>
 
 
