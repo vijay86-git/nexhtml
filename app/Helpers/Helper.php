@@ -25,23 +25,15 @@ class Helper
 
 	          if ( ! Cache::has($subjects_table_cache))
 	              {
-	              	     $result = DB::table('subject')->get();
+	              	     $result = DB::table('subject')->orderBy('sort', 'asc')->get();
 	                     Cache::put($subjects_table_cache, $result, env('CACHE_TIME', 60));
-	              } 
-
-	          $topic_table_cache      =  env('TOPIC_TBL_CACHE', '');
-
-	          if ( ! Cache::has($topic_table_cache))
-	              {
-	              	     $result = DB::table('topics')->get();
-	                     Cache::put($topic_table_cache, $result, env('CACHE_TIME', 60));
 	              } 
 		  }
 
-	public static function getTableDataFromCache($table_cache_name=null)
+	public static function getTableDataFromCache($table_cache_name=null,$table_name=null)
 	  {
 	  	      Cache::remember($table_cache_name, env('CACHE_TIME', 60), function () {
-                       return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+                       return DB::table($table_name)->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
                });
 	  }
     

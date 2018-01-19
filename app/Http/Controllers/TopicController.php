@@ -18,10 +18,23 @@ class TopicController extends Controller
   
     public function __construct()
       {
+
+         //Helper::createDataBaseTableCache();
+
+         //$this->_subjects  =  Helper::getTableFromCache(env('TOPIC_TBL_CACHE', 'topic_tbl_cache'));
+
+
          Helper::createDataBaseTableCache();
 
-         $this->_subjects  =  Helper::getTableDataFromCache(env('SUBJECT_TBL_CACHE', ''));
+           //$this->_subjects  =  Helper::getTableFromCache(env('SUBJECT_TBL_CACHE', ''));
 
+
+
+        // Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
+          //                       return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+            //                  });
+
+         $this->_subjects  =  Helper::getTableDataFromCache(env('SUBJECT_TBL_CACHE', ''), 'subject');
       }
 
     public function index()
@@ -48,15 +61,10 @@ class TopicController extends Controller
     public function getSubjectInfo($slug)
       {
           $subjects =  $this->_subjects;
-
-          $info     =  Cache::get(env('SUBJECT_TBL_CACHE', ''), function () use($slug) {
-                 return Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
-          });
-
           
-         /* $key      =  $slug.'_cache';
+          $key      =  $slug.'_cache';
 
-         
+          /* get data from subject slug */
 
           if (Cache::has($key))
               {
@@ -66,10 +74,6 @@ class TopicController extends Controller
                     $info =  Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
                     Cache::put($key, $info, env('CACHE_TIME', 60));
                 }
-            */
-           
-           print_r($info); die;
-           
 
           $subject_id = $info->id;
 
