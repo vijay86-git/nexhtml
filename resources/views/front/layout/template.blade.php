@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
-
-    <!-- Bootstrap -->
-
-    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/bootstrap.min.css?v=1') }}">
-    
-    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/font-awesome.css?v=1') }}">
-    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('css/style.css?v=1') }}">
-
+    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/bootstrap.min.css?v=1') }}">
+    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/font-awesome.css?v=1') }}">
+    <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/style.css?v=1') }}">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -339,9 +334,9 @@ Size is: Short
     <!-- End Wrapper -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{ Helper::loadAssetsFiles('js/jquery-3.2.1.min.js?v=1') }}"></script>
+    <script src="{{ Helper::loadAssetsFiles('build/assets/js/jquery-3.2.1.min.js?v=1') }}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{ Helper::loadAssetsFiles('js/bootstrap.min.js?v=1') }}"></script>
+    <script src="{{ Helper::loadAssetsFiles('build/assets/js/bootstrap.min.js?v=1') }}"></script>
   </body>
 </html>
 
