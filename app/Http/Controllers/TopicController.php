@@ -18,9 +18,7 @@ class TopicController extends Controller
   
     public function __construct()
       {
-         $this->_subjects  =  Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
-                                 return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
-                              });
+         $this->_subjects  =  Helper::getSubjectFromCache();
       }
 
     public function index()
@@ -85,7 +83,6 @@ class TopicController extends Controller
 
     public function getSubjectTopics($subject = null, $slug = null)
       {
-
           $subjects     =  $this->_subjects;
 
           //$subject_data =  Subject::select('id')->where('slug', $subject)->firstOrFail();
@@ -146,7 +143,6 @@ class TopicController extends Controller
                 }
 
           /* end here */
-
 
           /* get next previous topic from slug */
 

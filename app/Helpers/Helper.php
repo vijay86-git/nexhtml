@@ -36,5 +36,12 @@ class Helper
                        return DB::table($table_name)->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
                });
 	  }
+
+	public static function getSubjectFromCache()
+	 {
+         return Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
+             return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+         });
+	 }
     
 }
