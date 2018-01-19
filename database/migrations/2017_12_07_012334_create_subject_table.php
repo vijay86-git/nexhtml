@@ -23,6 +23,8 @@ class CreateSubjectTable extends Migration
             
             $table->string('logo')->comment('Logo')->nullable();
 
+            $table->string('image')->comment('Image');
+
             $table->tinyInteger('sort')->comment('Sort')->default(1);
 
             $table->tinyInteger('show_nav')->comment('Show in Navigation')->default(0);

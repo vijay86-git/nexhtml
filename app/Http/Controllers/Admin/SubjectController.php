@@ -41,22 +41,37 @@ class SubjectController extends Controller
     public function store(Request $request)
     {
         //
-        request()->validate(['name' => 'required', 'slug' => 'required', 'page_title' => 'required']);
+        request()->validate(['name' => 'required', 'slug' => 'required', 'page_title' => 'required', 'image' => 'required']);
 
         $data = $request->all();
-        if ($request->hasFile('logo'))
+
+        if ($request->hasFile('image'))
           {  
-            \Cloudder::upload($request->file('logo'));
+            \Cloudder::upload($request->file('image'));
             $result  = \Cloudder::getResult();             
             if($result)
               {
-                    $data['logo']  = $result['secure_url'];
+                    $data['image']  = $result['secure_url'];
               }
             else
                 {
-                    return redirect()->route('subject.index')->with('error', 'An error occured. try again');
+                    return redirect()->route('subject.index')->with('error', 'An error occured during image upload. try again');
                 }
           }
+
+          if ($request->hasFile('logo'))
+              {  
+                \Cloudder::upload($request->file('logo'));
+                $result  = \Cloudder::getResult();             
+                if($result)
+                  {
+                        $data['logo']  = $result['secure_url'];
+                  }
+                else
+                    {
+                        return redirect()->route('subject.index')->with('error', 'An error occured during logo upload. try again');
+                    }
+              }
 
             Subject::create($data);
             return redirect()->route('subject.index')->with('success','Subject created successfully');
@@ -109,7 +124,21 @@ class SubjectController extends Controller
               }
             else
                 {
-                    return redirect()->back()->with('error', 'An error occured. try again');
+                    return redirect()->back()->with('error', 'An error occured during logo upload. try again');
+                }
+          }
+
+        if ($request->hasFile('image'))
+          {  
+            \Cloudder::upload($request->file('image'));
+            $result  = \Cloudder::getResult();             
+            if($result)
+              {
+                    $data['image']  = $result['secure_url'];
+              }
+            else
+                {
+                    return redirect()->back()->with('error', 'An error occured during image upload. try again');
                 }
           }
 

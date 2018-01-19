@@ -43,8 +43,13 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="category">Logo&nbsp;<span class="req">*</span></label>
+                  <label for="category">Logo&nbsp;</label>
                   <input class="form-control" type="file" name="logo" placeholder="Image Upload" accept="image/*" />
+                </div>
+
+                 <div class="form-group">
+                  <label for="category">Image&nbsp;<span class="req">*</span></label>
+                  <input class="form-control" type="file" name="image" placeholder="Image Upload" accept="image/*" />
                 </div>
 
                 <div class="form-group">
