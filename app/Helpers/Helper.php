@@ -2,6 +2,8 @@
 
 namespace App\Helpers;
 use URL;
+use Cache;
+use DB;
 
 class Helper
 {
