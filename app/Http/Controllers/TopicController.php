@@ -49,7 +49,7 @@ class TopicController extends Controller
       {
           $subjects =  $this->_subjects;
 
-          $info     = Cache::get(env('SUBJECT_TBL_CACHE', ''), function () {
+          $info     =  Cache::get(env('SUBJECT_TBL_CACHE', ''), function () use($slug) {
                  return Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
           });
 
