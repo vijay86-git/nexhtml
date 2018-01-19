@@ -12,4 +12,29 @@ class Helper
 	         else
 	         	return URL::asset($src);
 	    }
+
+	public static function createDataBaseTableCache()
+		  {
+				  $subjects_table_cache   =  env('SUBJECT_TBL_CACHE', '');
+
+		          if ( ! Cache::has($subjects_table_cache))
+		              {
+		                     Cache::put($subjects_table_cache, App\Subject::all(), env('CACHE_TIME', 60));
+		              } 
+
+		          $topic_table_cache      =  env('TOPIC_TBL_CACHE', '');
+
+		          if ( ! Cache::has($topic_table_cache))
+		              {
+		                     Cache::put($topic_table_cache, App\Topic::all(), env('CACHE_TIME', 60));
+		              } 
+		  }
+
+	public function getTableFromCache($table_cache_name=null)
+	  {
+	  	      Cache::remember($table_cache_name, env('CACHE_TIME', 60), function () {
+                       return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+               });
+	  }
+    
 }

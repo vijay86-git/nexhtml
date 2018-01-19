@@ -18,13 +18,11 @@ class TopicController extends Controller
   
     public function __construct()
       {
-         $this->_subjects  =  Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
-                                 return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
-                              });
 
-         $this->_subjects  =  Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
-                                 return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
-                              });
+         Helper::createDataBaseTableCache();
+
+         $this->_subjects  =  Helper::getTableFromCache(env('SUBJECT_TBL_CACHE', ''));
+
       }
 
     public function index()
@@ -51,6 +49,13 @@ class TopicController extends Controller
     public function getSubjectInfo($slug)
       {
           $subjects =  $this->_subjects;
+
+          $value = Cache::get(env('SUBJECT_TBL_CACHE', ''), function () {
+                 return DB::where('slug', $slug)->table('topics')->firstOrFail();
+          });
+
+          print_r($value); die;
+
           
           $key      =  $slug.'_cache';
 
