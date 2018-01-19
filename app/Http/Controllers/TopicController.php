@@ -18,23 +18,9 @@ class TopicController extends Controller
   
     public function __construct()
       {
-
-         //Helper::createDataBaseTableCache();
-
-         //$this->_subjects  =  Helper::getTableFromCache(env('TOPIC_TBL_CACHE', 'topic_tbl_cache'));
-
-
-         Helper::createDataBaseTableCache();
-
-           //$this->_subjects  =  Helper::getTableFromCache(env('SUBJECT_TBL_CACHE', ''));
-
-
-
-        // Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
-          //                       return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
-            //                  });
-
-         $this->_subjects  =  Helper::getTableDataFromCache(env('SUBJECT_TBL_CACHE', ''), 'subject');
+         $this->_subjects  =  Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
+                                 return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+                              });
       }
 
     public function index()
