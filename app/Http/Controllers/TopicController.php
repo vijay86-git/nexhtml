@@ -83,7 +83,7 @@ class TopicController extends Controller
 
           $topic_title = 'About '.ucfirst($info->name);
 
-          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug', 'info', 'nextlink', 'prevlink'));
+          return view('front.pages.subject.index',compact('topics', 'section', 'subjects', 'slug', 'info', 'nextlink', 'prevlink', 'topic_title'));
       }
 
 
@@ -182,8 +182,9 @@ class TopicController extends Controller
 
 
           $slug = $subject;
+          $topic_title = null;
 
-          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug', 'nextprevarr'));
+          return view('front.pages.subject.index',compact('topics', 'info', 'section', 'subjects', 'slug', 'nextprevarr', 'topic_title'));
       }
 
 
