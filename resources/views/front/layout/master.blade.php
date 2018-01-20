@@ -108,12 +108,13 @@
           <div class="bodyPart">
           <div class="row">
            <div class="col-md-10 col-sm-10">
-               <!-- Course -->
-                 <div class="courseContainer">
+
+              <div class="courseContainer">
                    <div class="row">
                          <div class="col-md-12 col-sm-12"><div class="learnTechnologies"><h2>Learn Technologies</h2></div></div>
                          <div class="col-md-12 col-sm-12">
                            <div class="row margin15">
+
                               <div class="col-md-4 col-sm-4">
                                 <div>
                                   <a href="/graphic-design-for-beginners/" target="_self" class="merchandising-course-card--mask--22Fbx">
@@ -124,6 +125,7 @@
                                     </a>
                                  </div>
                                 </div>
+
                                 <div class="col-md-4 col-sm-4">
                                   <div>
                                     <a href="/graphic-design-for-beginners/" target="_self" class="merchandising-course-card--mask--22Fbx">
@@ -135,36 +137,39 @@
                                   </div>
                                 </div>
 
-                              <div class="col-md-4 col-sm-4">
-                               <div>
-                                <a href="/graphic-design-for-beginners/" target="_self" class="merchandising-course-card--mask--22Fbx">
-                                  <span class="courseImg">
-                                    <img src="https://udemy-images.udemy.com/course/240x135/749542_4762_3.jpg" alt="Graphic Design Bootcamp" class="img-responsive">
-                                  </span>
-                                  
-                                   <span class="coursename">Javascript</span>
-                                  </a>
-                                </div>
-                               </div>  
+                                <div class="col-md-4 col-sm-4">
+                                 <div>
+                                  <a href="/graphic-design-for-beginners/" target="_self" class="merchandising-course-card--mask--22Fbx">
+                                    <span class="courseImg">
+                                      <img src="https://udemy-images.udemy.com/course/240x135/749542_4762_3.jpg" alt="Graphic Design Bootcamp" class="img-responsive">
+                                    </span>
+                                    
+                                     <span class="coursename">Javascript</span>
+                                    </a>
+
+                                  </div>
+
+                                 </div>  
+
                            </div>
                       </div>
+
                    </div>
-                </div>
                  
+                  <div class="row">
+                       <div class="col-md-4 col-sm-4 text-center">Ads 1</div>
+                       <div class="col-md-4 col-sm-4 text-center">Ads 2</div>
+                       <div class="col-md-4 col-sm-4 text-center">Ads 3</div>
+                  </div>
                  
-                <div class="row">
-                     <div class="col-md-4 col-sm-4 text-center">Ads 1</div>
-                     <div class="col-md-4 col-sm-4 text-center">Ads 2</div>
-                     <div class="col-md-4 col-sm-4 text-center">Ads 3</div>
-                </div>
-                 
-                 <div class="row">
-                   <div class="content about">
-                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                   </div>
-                </div>
+                   <div class="row">
+                     <div class="content about">
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                     </div>
+                  </div>
+
                </div>
-             <!-- End -->
+ 
            </div>
            <div class="col-md-2 col-sm-2 text-center margin15">
                Ads
