@@ -53,7 +53,7 @@
          <div class="headerSection">
            <div class="row">
              <div class="col-md-4">
-                 <div class="sitelogo">nexladder</div>
+                 <div class="sitelogo"><a href="{{ URL('/') }} title="Nexladder">nexladder</a></div>
              </div>
              <div class="col-md-8">
                <!-- navigation -->
