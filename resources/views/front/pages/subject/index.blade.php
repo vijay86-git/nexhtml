@@ -46,13 +46,16 @@
              <a class="btn" title="share with twitter"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
              <a class="btn" title="share with google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
              <a class="btn" title="share with pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+
+             @if (!empty($nextprevarr['prevlink']))
+                <a  title="{{ $nextprevarr['prevtopic'] }}" href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a>
+             @endif
+             @if (!empty($nextprevarr['nextlink']))
+                <a title="{{ $nextprevarr['nexttopic'] }}" href="{{ $nextprevarr['nextlink'] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+             @endif
+         
           </div>
-         @if (!empty($nextprevarr['prevlink']))
-            <a  title="{{ $nextprevarr['prevtopic'] }}" href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a>
-         @endif
-         @if (!empty($nextprevarr['nextlink']))
-            <a title="{{ $nextprevarr['nexttopic'] }}" href="{{ $nextprevarr['nextlink'] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-         @endif
+         
        </div>
 @stop
 
