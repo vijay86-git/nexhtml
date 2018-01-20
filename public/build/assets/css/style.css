@@ -22,8 +22,8 @@ ul  li{list-style-type:none}
 .borderless .list-group-item {border: none}
 ul.list-group li a{margin-left:10px}
 ul.list-group li a.active, ul.list-group li a:hover{border-bottom:1px dotted #11a286;border-width:2px}
-.navbar-inverse-inner .fa-home{color:#505763;font-size:17px}
-.navbar-inverse .fa-home{color:#ffffff;font-size:17px}
+.navbar-inverse-inner .fa-home{color:#505763;font-size:18px}
+.navbar-inverse .fa-home{color:#ffffff;font-size:18px}
 .topBar{margin:15px 0 10px 0;float:left;width:100%}
 .seperator{border-bottom:1px solid #FFFFFF;opacity:0.3;padding:0 0 10px 0;height:0px}
 .social, .socialinner{margin:5px 0 0 0}
