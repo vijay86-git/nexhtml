@@ -37,10 +37,10 @@ class Helper
                });
 	  }
 
-	public static function getSubjectFromCache()
+	public static function getNavSubjectFromCache()
 	 {
          return Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
-             return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->get();
+             return DB::table('subject')->select('id', 'name', 'slug')->orderBy('sort', 'asc')->limit(1)->get();
          });
 	 }
     

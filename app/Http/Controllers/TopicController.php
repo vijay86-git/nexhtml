@@ -18,7 +18,7 @@ class TopicController extends Controller
   
     public function __construct()
       {
-           $this->_subjects  =  Helper::getSubjectFromCache();
+           $this->_subjects  =  Helper::getNavSubjectFromCache();
       }
 
     public function index()
