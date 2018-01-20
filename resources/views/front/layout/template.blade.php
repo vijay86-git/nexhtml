@@ -150,7 +150,7 @@
              
              
              <div class="content">
-                 <h1 class="h1">PHP Features</h2>
+                 <h1 class="h1">PHP Features</h1>
                
                <ul class="points">
                   <li><strong>Performance:</strong> Script written in PHP executes much faster then those scripts written in other languages such as JSP & ASP.Script written in PHP executes much faster then</li>
