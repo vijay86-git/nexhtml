@@ -36,7 +36,7 @@ ul.list-group li a.active, ul.list-group li a:hover{border-bottom:1px dotted #11
 .innerTxtSrch{background:#f3f3f3}
 .logo{color:#FFFFFF;font-size:22px;font-weight:bold}
 .navbar-inverse,.navbar-inverse-inner{background:none !important;border:none !important}
-.logos{color:#505763;font-size:24px}
+.sitelogo{color:#505763;font-size:24px;font-weight:bold}
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {color:#fff;border-bottom:2px solid #11a286;background:none}
 .navbar-inverse-inner .navbar-nav>.active>a, .navbar-inverse-inner .navbar-nav>.active>a:focus, .navbar-inverse-inner .navbar-nav>.active>a:hover {color:#505763;
 border-bottom:2px solid #11a286;background:none}

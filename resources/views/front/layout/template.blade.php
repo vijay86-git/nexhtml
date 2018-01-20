@@ -9,25 +9,19 @@
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/bootstrap.min.css?v=1') }}">
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/font-awesome.css?v=1') }}">
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/style.css') }}">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  
     <meta name="description" content="{{ $info->meta_description }}">
     <meta name="keywords" content="{{ $info->meta_keywords }}">
-
   </head>
   <body>
      <!-- Page Wrapper -->
-
-    <!-- <div class="pageWrapper"  style="background:url(pexels-photo-574071.jpeg);background-repeat:no-repeat;background-position:top center;">-->
     <div class="pageWrapper inner">
        <!-- Container -->
-      
         <div class="container height200">
            <!-- Top Bar -->
            <div class="topBar">
@@ -35,96 +29,65 @@
                 <div class="col-md-6">
                  <div class="socialinner">
                   <ul>
-                  <li><a href="#" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="#" title="google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                </ul>
+                     <li><a href="#" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="#" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a href="#" title="google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                  </ul>
                </div>
-              
               </div>
-              
               <div class="col-md-6">
                  <div class="searchbar text-right">
                    <!-- form search -->
                     <form method="post">
-                   
-                    <input type="text" class="searchTextTop innerTxtSrch" name="search" placeholder="Search on Nexladder..." />
-                    <button class="magnifier"><i class="fa fa-search"></i></button>
-  
+                       <input type="text" class="searchTextTop innerTxtSrch" name="search" placeholder="Search on Nexladder..." />
+                       <button class="magnifier"><i class="fa fa-search"></i></button>
                     </form>
-                 <!-- close -->
-               </div>
+                   <!-- close -->
+                  </div>
               </div>
-              
-              
              </div>
-             
              <div class="seperator">&nbsp;</div>
-          
           </div>
-         
          <!-- Close -->
-         
          <!-- Header part -->
-         
          <div class="headerSection">
-            
            <div class="row">
              <div class="col-md-4">
-              <div class="logos">nexladder</div>
+                 <div class="sitelogo">nexladder</div>
              </div>
-         
-            <div class="col-md-8">
-              <!-- navigation -->
+             <div class="col-md-8">
+               <!-- navigation -->
                  @yield('nav')
-              <!-- close navigation -->
-            </div>  
-            
+               <!-- close navigation -->
+            </div>
            </div>
-
          </div>
-
          <!-- close body part -->
-         
-         
-         
-        
-        </div>
-       
-         
+        </div> 
        <!-- End Container -->
-
     </div>
-    
     <div class="container">
-          <div class="bodyPart">
+       <div class="bodyPart">
           <div class="row">
-           <div class="col-md-3">
-
+            <div class="col-md-3">
                @yield('topics')
-
            </div>
            <div class="col-md-9">
               <!-- content -->
-            
             <div class="row mrgnbtm15">
              <div class="col-md-12">
-
-              @yield('topiccontentheader')
-             
-
+                @yield('topiccontentheader')
              </div> 
             </div>
              
            <div class="row">
              <div class="col-md-12">
-
-              @yield('content')
+               @yield('content')
              
               <div class="content">
                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             
-            </div>
+              </div>
             
              <div class="content">
                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -224,39 +187,24 @@ Size is: Short
             </div>
             
             <div class="row">
-
                <div class="col-md-12">
-               <div class="col-md-6 col-sm-6 text-left pad0">
-
-                @if (!empty($nextprevarr['prevlink']))
-
-                   <a title="{{ $nextprevarr['prevtopic'] }}" href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a title="{{ $nextprevarr['prevtopic'] }}" href='{{ $nextprevarr["prevlink"] }}'>{{ $nextprevarr["prevtopic"] }}</a></span>
-
-                @endif
-
-
-               </div>
-               <div class="col-md-6 col-sm-6 text-right pad0">
-
-                @if (!empty($nextprevarr['nextlink']))
-                   <span class='nexprv'><a title="{{ $nextprevarr['nexttopic'] }}" href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</span></a><a title="{{ $nextprevarr['nexttopic'] }}" href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-                @endif
-
-
-               </div>
+                 <div class="col-md-6 col-sm-6 text-left pad0">
+                    @if (!empty($nextprevarr['prevlink']))
+                       <a title="{{ $nextprevarr['prevtopic'] }}" href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a title="{{ $nextprevarr['prevtopic'] }}" href='{{ $nextprevarr["prevlink"] }}'>{{ $nextprevarr["prevtopic"] }}</a></span>
+                    @endif
+                 </div>
+                 <div class="col-md-6 col-sm-6 text-right pad0">
+                  @if (!empty($nextprevarr['nextlink']))
+                     <span class='nexprv'><a title="{{ $nextprevarr['nexttopic'] }}" href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</span></a><a title="{{ $nextprevarr['nexttopic'] }}" href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+                  @endif
+                 </div>
              </div> 
-
-
-             </div> 
-            
-            
-            
-            <!-- close  -->
-           
-           </div>         
-        </div>
-        </div>
-    </div>
+          </div> 
+          <!-- close  -->
+        </div>         
+       </div>
+     </div>
+   </div>
     
     <div class="footer marginTop40">
         <div class="container">
@@ -270,12 +218,10 @@ Size is: Short
                   <li><a href="about-us.php">About us</a></li>
                   <li><a href="our-team.php">Our team</a></li>
                   <li><a href="faq.php">F.A.Q</a></li>
-  
                 </ul>
               </div>
             </div>
           </div>
-          
           <div class="col-md-4">
             <div>
               <h3 class="title m_title">LEARN TUTORIALS</h3>
@@ -289,12 +235,6 @@ Size is: Short
               </div>
             </div>
           </div>
-          
-          
-          <!--/ col-sm-5 -->
-
-          <!-- col-sm-4 -->
-
           <div class="col-md-4">
             <div>
               <h3 class="title m_title">GET IN TOUCH</h3>
@@ -306,16 +246,13 @@ Size is: Short
               </div>
             </div>
           </div>
-          <!--/ col-sm-3 -->
       </div>
         <!--/ row -->
-
         <div class="row">
           <div class="col-md-12">
             <div class="bottom clearfix">
               <!-- social-icons -->
               <!--/ social-icons -->
-
               <!-- copyright -->
               <div class="copyright">
                 <p>&copy; 2018 All rights reserved.</p>
@@ -329,93 +266,10 @@ Size is: Short
         <!--/ row -->
     </div>
   </div>
-    
-  
     <!-- End Wrapper -->
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{ Helper::loadAssetsFiles('build/assets/js/jquery-3.2.1.min.js?v=1') }}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ Helper::loadAssetsFiles('build/assets/js/bootstrap.min.js?v=1') }}"></script>
   </body>
 </html>
-
-
-
-
-{{--
-@extends('front.layout.master')
-
- 
-</style>
-
-@section('subjects')
-
-<ul>
-@foreach($subjects as $sub_data)
-<li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
-@endforeach
-</ul>
-
-@stop
-
-
-@section('topics')
-
-@if (count($section) > 0)
-@foreach($section as $sec_data)
-<h1 style="">{{ $sec_data->section}}</h1>
-<ul>
-@foreach (App\Section::find($sec_data->id)->topics as $data)
-      <li style="color:#ffffff;display:block;"><a href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
-@endforeach
-
-</ul>
-
-@endforeach
-
-@endif
-
-
-
-@stop
-
-@section('content')
-
-@if(isset($info)):
-  <section class="content">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Topics</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-
-               {!!html_entity_decode($info->detail)!!}
-
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-
-      <div class="row">
-
-         <div class="col-xs-12 text-left">{{ $prevlink }}</div>
-
-         <div class="col-xs-12 text-right">{{ $nextlink }}</div>
-      </div>
-
-
-    </section>
-@endif
-@stop
-
---}}
