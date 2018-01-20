@@ -161,7 +161,7 @@
              
              
              <div class="content">
-                 <h1 class="h1">PHP Features</h2>
+                 <h1 class="h1">PHP Features</h1>
                
               <table class="table table-bordered">
                 <thead>
