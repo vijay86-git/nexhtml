@@ -87,12 +87,12 @@ a, a:hover{color:#505763;text-decoration:none}
 .share .btn{padding:6px 7px;outline:0}
 .share label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:400;font-style:italic}
 
-.share a span.fa-facebook:hover{color:#3b5998}
-.share a  span.fa-twitter:hover{color:#55acee}
-.share a  span.fa-linkedin:hover{color:#007bb6}
-.share a  span.fa-google-plus:hover{color:#dd4b39}
-.share a  span.fa-pinterest:hover{color:#cb2027}
-.share a  span.fa-tumblr:hover{color:#1c2d3f}
+.share a i.fa-facebook:hover{color:#3b5998}
+.share a i.fa-twitter:hover{color:#55acee}
+.share a i.fa-linkedin:hover{color:#007bb6}
+.share a i.fa-google-plus:hover{color:#dd4b39}
+.share a i.fa-pinterest:hover{color:#cb2027}
+.share a i.fa-tumblr:hover{color:#1c2d3f}
 .content table{font-size:13px}
 
 /*==========  Mobile First Method  ==========*/
