@@ -39,7 +39,7 @@ ul.list-group li a.active, ul.list-group li a:hover{border-bottom:1px dotted #11
 .sitelogo{color:#505763;font-size:24px;font-weight:bold}
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {color:#fff;border-bottom:2px solid #11a286;background:none}
 .navbar-inverse-inner .navbar-nav>.active>a, .navbar-inverse-inner .navbar-nav>.active>a:focus, .navbar-inverse-inner .navbar-nav>.active>a:hover {color:#505763;
-border-bottom:2px solid #11a286;background:none}
+border-bottom:4px solid #11a286;background:none}
 .navbar-nav>li {margin: 0 0 0 20px;font-size:14px}
 .navbar-inverse .navbar-nav>li>a:hover{border-bottom:2px solid #11a286;background:none}
 .navbar-inverse-inner .navbar-nav>li>a:hover{border-bottom:2px solid #11a286;background:none}
