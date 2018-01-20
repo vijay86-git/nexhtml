@@ -1,28 +1,5 @@
 @extends('front.layout.template')
 
-@section('nav')
-                <nav class="navbar navbar-inverse-inner">
-                  <div class="container-fluid">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span> 
-                      </button>
-                      <a class="navbar-brand" href="#"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navBar">
-                      <ul class="nav navbar-nav">
-                        <li class="{{ (Request::segment(2) == '') ? 'active' : '' }}"><a href="{{ URL('/') }}"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                        @foreach($subjects as $sub_data)
-                         <li class="{{ (Request::segment(2) == $sub_data->slug) ? 'active' : '' }}"><a title="{{ $sub_data->name }}" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
-                        @endforeach
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-@stop
-
 @section('topics')
   @if (count($section) > 0)
       @foreach($section as $sec_data)
@@ -53,7 +30,7 @@
              @if (!empty($nextprevarr['nextlink']))
                 <a title="{{ $nextprevarr['nexttopic'] }}" href="{{ $nextprevarr['nextlink'] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
              @endif
-         
+
           </div>
          
        </div>
