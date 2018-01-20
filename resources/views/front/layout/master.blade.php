@@ -56,7 +56,7 @@
          <div class="headerSection">
            <div class="row">
                <div class="col-md-4">
-                 <div class="logo"><a href="{{ URL('/') }} title="Nexladder">nexladder</a></div>
+                 <div class="logo"><a href="{{ URL('/') }}" title="Nexladder">nexladder</a></div>
                </div>
             <div class="col-md-8">
               <!-- navigation -->
