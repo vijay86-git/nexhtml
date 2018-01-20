@@ -57,24 +57,24 @@
              </div>
              <div class="col-md-8">
                <!-- navigation -->
-                 <nav class="navbar navbar-inverse">
+                 <nav class="navbar navbar-inverse-inner">
                   <div class="container-fluid">
-                      <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> 
-                        </button>
-                        <a class="navbar-brand" href="#"></a>
-                      </div>
-                      <div class="collapse navbar-collapse" id="navBar">
-                        <ul class="nav navbar-nav">
-                          <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                              @foreach($subjects as $sub_data)
-                               <li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ ucfirst($sub_data->name) }}</a></li>
-                              @endforeach
-                        </ul>
-                      </div>
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                      </button>
+                      <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navBar">
+                      <ul class="nav navbar-nav">
+                        <li class="{{ (Request::segment(2) == '') ? 'active' : '' }}"><a href="{{ URL('/') }}"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                        @foreach($subjects as $sub_data)
+                         <li class="{{ (Request::segment(2) == $sub_data->slug) ? 'active' : '' }}"><a title="{{ $sub_data->name }}" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
+                        @endforeach
+                      </ul>
+                    </div>
                   </div>
                 </nav>
                <!-- close navigation -->

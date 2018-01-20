@@ -1,5 +1,6 @@
 @extends('front.layout.template')
 
+
 @section('topics')
   @if (count($section) > 0)
       @foreach($section as $sec_data)
