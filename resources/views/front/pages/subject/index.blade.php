@@ -41,11 +41,11 @@
          <div class="topnexprev">
           <div class="share">
            <label>share with:</label>
-             <a class="btn btn-social-icon btn-facebook" title="share with facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-             <a class="btn btn-social-icon btn-twitter" title="share with twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-             <a class="btn btn-social-icon  btn-linkedin" title="share with twitter"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-             <a class="btn btn-social-icon btn-google" title="share with google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-             <a class="btn btn-social-icon btn-pinterest" title="share with pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+             <a class="btn" title="share with facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+             <a class="btn" title="share with twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+             <a class="btn" title="share with twitter"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+             <a class="btn" title="share with google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+             <a class="btn" title="share with pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
           </div>
          @if (!empty($nextprevarr['prevlink']))
             <a  title="{{ $nextprevarr['prevtopic'] }}" href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a>
