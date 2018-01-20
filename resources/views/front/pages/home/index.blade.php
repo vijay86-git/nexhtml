@@ -28,10 +28,12 @@
                   <div class="collapse navbar-collapse" id="navBar">
 
                   	<ul class="nav navbar-nav">
-						@foreach($subjects as $sub_data)
-						 <li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ ucfirst($sub_data->name) }}</a></li>
-						@endforeach
-				    </ul>
+                      <li class="active"><a href="#">HOME</a></li>
+
+              						@foreach($subjects as $sub_data)
+              						 <li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ ucfirst($sub_data->name) }}</a></li>
+              						@endforeach
+				            </ul>
 
                   </div>
 
