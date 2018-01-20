@@ -72,9 +72,9 @@
                       </div>
                       <div class="collapse navbar-collapse" id="navBar">
                         <ul class="nav navbar-nav">
-                          <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                             <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                               @foreach($subjects as $sub_data)
-                               <li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ ucfirst($sub_data->name) }}</a></li>
+                               <li><a href="{{ route('topic', $sub_data->slug) }}">{{ ucfirst($sub_data->name) }}</a></li>
                               @endforeach
                         </ul>
                       </div>
