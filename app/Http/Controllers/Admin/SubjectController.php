@@ -41,7 +41,7 @@ class SubjectController extends Controller
     public function store(Request $request)
     {
         //
-        request()->validate(['name' => 'required', 'slug' => 'required', 'page_title' => 'required', 'image' => 'required']);
+        request()->validate(['name' => 'required', 'slug' => 'required', 'page_title' => 'required']);
 
         $data = $request->all();
 

@@ -18,7 +18,7 @@ class TopicController extends Controller
   
     public function __construct()
       {
-         $this->_subjects  =  Helper::getSubjectFromCache();
+           $this->_subjects  =  Helper::getSubjectFromCache();
       }
 
     public function index()
@@ -29,7 +29,6 @@ class TopicController extends Controller
           return view('front.pages.home.index', compact('subjects'));
 
           die;
-
 
 
           $slug     =  '';

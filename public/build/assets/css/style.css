@@ -205,7 +205,7 @@ div.favicon{display:inline-block}
 pre {margin-bottom:0px;width:auto;width:650px !ie7;max-height:600px;overflow:auto;font-family:'Open Sans';font-size:12px !important;background-color: #f3f3f3;
 border:0 !important}
 .mrgnbtm15{margin-bottom:15px}
-h1.headingtop, h2.headingtop, h3.headingtop, h4.headingtop, h5.headingtop, h6.headingtop{display:inline-block}
+h1.headingtop, h2.headingtop, h3.headingtop, h4.headingtop, h5.headingtop, h6.headingtop{display:inline-block;font-weight:bold}
 .topnexprev{float:right}
 .topnexprev a:hover, .topnexprev a:focus, a.btn-default:hover, a.btn-default:focus{background:none}
 .pad0{padding:0}
