@@ -214,7 +214,7 @@ Size is: Short
                  </div>
                  <div class="col-md-6 col-sm-6 text-right pad0">
                   @if (!empty($nextprevarr['nextlink']))
-                     <span class='nexprv'><a title="{{ $nextprevarr['nexttopic'] }}" href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</span></a><a title="{{ $nextprevarr['nexttopic'] }}" href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+                     <span class='nexprv'><a title="{{ $nextprevarr['nexttopic'] }}" href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</a></span><a title="{{ $nextprevarr['nexttopic'] }}" href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
                   @endif
                  </div>
              </div> 
