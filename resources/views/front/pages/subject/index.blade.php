@@ -1,45 +1,38 @@
 @extends('front.layout.template')
 
 @section('nav')
-<nav class="navbar navbar-inverse-inner">
+                <nav class="navbar navbar-inverse-inner">
                   <div class="container-fluid">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
-                    </button>
-                    <a class="navbar-brand" href="#"></a>
-                  </div>
-
-                  <div class="collapse navbar-collapse" id="navBar">
-
-                    <ul class="nav navbar-nav">
-                      @foreach($subjects as $sub_data)
-                       <li class="{{ (Request::segment(2) == $sub_data->slug) ? 'active' : '' }}"><a title="{{ $sub_data->name }}" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
-                      @endforeach
-                    </ul>
-
-                  </div>
-
-
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                      </button>
+                      <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navBar">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                        @foreach($subjects as $sub_data)
+                         <li class="{{ (Request::segment(2) == $sub_data->slug) ? 'active' : '' }}"><a title="{{ $sub_data->name }}" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
+                        @endforeach
+                      </ul>
+                    </div>
                   </div>
                 </nav>
 @stop
 
 @section('topics')
-
   @if (count($section) > 0)
-      
       @foreach($section as $sec_data)
         <ul class="list-group">
-          <li class="list-group-item disabled"><strong>{{ $sec_data->section}}</strong></a></li>
+            <li class="list-group-item disabled"><strong>{{ $sec_data->section}}</strong></a></li>
               @foreach (App\Section::find($sec_data->id)->topics as $data)
-                  <li class="list-group-item"><span class="fa fa-book"></span><a class="{{ (Request::segment(3) == $data->slug) ? 'active' : '' }}" href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
+                  <li class="list-group-item"><i class="fa fa-book" aria-hidden="true"></i><a class="{{ (Request::segment(3) == $data->slug) ? 'active' : '' }}" href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
               @endforeach
-       </ul>
+        </ul>
       @endforeach
-
    @endif
 @stop
 
@@ -90,81 +83,3 @@
 @section('content')
   {!!html_entity_decode($info->detail)!!}
 @stop
-
-
-{{--
-@extends('front.layout.master')
-
- 
-</style>
-
-@section('subjects')
-
-<ul>
-@foreach($subjects as $sub_data)
-<li><a style="" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
-@endforeach
-</ul>
-
-@stop
-
-
-@section('topics')
-
-@if (count($section) > 0)
-@foreach($section as $sec_data)
-<h1 style="">{{ $sec_data->section}}</h1>
-<ul>
-@foreach (App\Section::find($sec_data->id)->topics as $data)
-      <li style="color:#ffffff;display:block;"><a href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
-@endforeach
-
-</ul>
-
-@endforeach
-
-@endif
-
-
-
-@stop
-
-@section('content')
-
-@if(isset($info)):
-  <section class="content">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Topics</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-
-               {!!html_entity_decode($info->detail)!!}
-
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-
-      <div class="row">
-
-         <div class="col-xs-12 text-left">{{ $prevlink }}</div>
-
-         <div class="col-xs-12 text-right">{{ $nextlink }}</div>
-      </div>
-
-
-    </section>
-@endif
-@stop
-
---}}
