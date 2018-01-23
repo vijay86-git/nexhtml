@@ -38,5 +38,5 @@
 @stop
 
 @section('content')
-  {!! $info->detail!!}
+  {!!html_entity_decode($info->detail)!!}
 @stop
