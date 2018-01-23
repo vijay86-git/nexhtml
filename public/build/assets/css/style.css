@@ -215,6 +215,7 @@ span.nexprv a,span.nexprv a:hover{color:#11a286;text-decoration:none}
 h1.h1, h2.h2, h3.h3, h4.h4, h5.h5, h6.h6{color:#505763;font-size:22px !important;margin:10px 0}
 ul.points{margin:0 0 0 30px;padding:0}
 ul.points li{list-style-type:disc;line-height:30px;color:#505763;font-size:13px;display: list-item}
+ul.points li a {color:#11a286;font-size:14px;text-decoration:none}
 .codeblock{width:100%;padding:0px;padding-left:5px;font-family:'Open Sans'}
 .codeblock pre{background:none;line-height:26px;padding:0 9px}
 .next{font-size:14px;margin-left:10px}
