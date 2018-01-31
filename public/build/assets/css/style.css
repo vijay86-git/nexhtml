@@ -223,5 +223,5 @@ ul.points li a {color:#11a286;font-size:14px;text-decoration:none}
 .list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover{color:#FFF;cursor:not-allowed;background-color:#11a286}
 
 .toolTip {position:relative;display:inline-block;border-bottom: 1px dotted black}
-.toolTip .toolTipText {visibility:hidden;width:300px;background-color:#141414;color:#fff;text-align:center;padding: 5px 0;border-radius:6px;position:absolute;z-index:1;font-size:11px}
+.toolTip .toolTipText {visibility:hidden;width:300px;background-color:#141414;color:#fff;text-align:left;padding:5px;border-radius:6px;position:absolute;z-index:1;font-size:11px;}
 .toolTip:hover .toolTipText {visibility:visible}
