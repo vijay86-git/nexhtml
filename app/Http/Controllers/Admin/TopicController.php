@@ -27,7 +27,7 @@ class TopicController extends Controller
         if ( ! empty($subject_id))
         $topics = Topics::where('subject_id', $subject_id)->latest()->paginate(15);
             else
-        $topics = Topics::latest()->paginate(1);
+        $topics = Topics::latest()->paginate(15);
 
         return view('admin.pages.topic.index',compact('topics', 'subject'))->with('i', (request()->input('page', 1) - 1) * 1);
     }
