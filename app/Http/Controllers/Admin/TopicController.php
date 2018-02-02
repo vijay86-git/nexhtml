@@ -25,7 +25,7 @@ class TopicController extends Controller
         $subject = DB::table('subject')->select('id', 'name')->get();
 
         if ( ! empty($subject_id))
-        $topics = Topics::where('subject_id', $subject_id)->latest()->paginate(1);
+        $topics = Topics::where('subject_id', $subject_id)->latest()->paginate(15);
             else
         $topics = Topics::latest()->paginate(1);
 
