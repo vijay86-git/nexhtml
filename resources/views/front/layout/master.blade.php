@@ -19,7 +19,11 @@
   <body>
      <!-- Page Wrapper -->
 
-    <div class="pageWrapper"  style="background:url(images/pexels-photo-574071.jpeg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto">
+    <!-- <div class="pageWrapper"  style="background:url(images/pexels-photo-574071.jpeg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto">-->
+
+      <div class="pageWrapper">
+
+
        <!-- Container -->
       
         <div class="container">
