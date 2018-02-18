@@ -73,7 +73,7 @@
                 </div>-->
 
                 <div class="form-group">
-                  <label for="category">Update Description&nbsp;<span class="req">*</span></label>
+                  <label for="category">Update Description&nbsp;</label>
                   <input name="update_desc" placeholder="Update Description" type="checkbox" value="1" />
                 </div>
 
