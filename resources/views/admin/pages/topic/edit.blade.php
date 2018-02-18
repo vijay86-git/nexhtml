@@ -74,7 +74,7 @@
 
                 <div class="form-group">
                   <label for="category">Update Description&nbsp;<span class="req">*</span></label>
-                  <input class="form-control" name="update_desc" placeholder="Update Description" type="text" value="1" />
+                  <input class="form-control" name="update_desc" placeholder="Update Description" type="checkbox" value="1" />
                 </div>
 
 
