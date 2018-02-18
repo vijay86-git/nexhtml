@@ -73,6 +73,12 @@
                 </div>-->
 
                 <div class="form-group">
+                  <label for="category">Update Description&nbsp;<span class="req">*</span></label>
+                  <input class="form-control" name="update_desc" placeholder="Update Description" type="text" value="1" />
+                </div>
+
+
+                <div class="form-group">
                   <label for="page_title">Description&nbsp;<span class="req">*</span></label>
                 
                   <textarea id="" style="height:300px" class="form-control" name="description" id="description" placeholder="Enter Topic Description">{{ $topic->detail }}</textarea>

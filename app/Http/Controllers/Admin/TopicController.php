@@ -120,7 +120,12 @@ class TopicController extends Controller
         $fields['section_id']       =    $params['section'];
         $fields['topic']            =    $params['name'];
         $fields['slug']             =    $params['slug'];
+
+
+        if ( ! empty($params['update_desc']))
         $fields['detail']           =    $params['description'];
+
+
         $fields['sort']             =    $params['sort'];
         $fields['page_title']       =    $params['page_title'];
         $fields['meta_keywords']    =    $params['meta_keywords'];
