@@ -25,9 +25,9 @@ class TopicController extends Controller
         $subject = DB::table('subject')->select('id', 'name')->get();
 
         if ( ! empty($subject_id))
-        $topics = Topics::where('subject_id', $subject_id)->latest()->paginate(15);
+        $topics = Topics::where('subject_id', $subject_id)->latest()->paginate(30);
             else
-        $topics = Topics::latest()->paginate(15);
+        $topics = Topics::latest()->paginate(30);
 
         return view('admin.pages.topic.index',compact('topics', 'subject'))->with('i', (request()->input('page', 1) - 1) * 1);
     }
