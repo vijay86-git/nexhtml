@@ -32,7 +32,7 @@
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:site_name" content="{{ URL::to('/') }}" />
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="{{ env('SITE_TWITTER_NAME')" />
+    <meta name="twitter:site" content="{{ env('SITE_TWITTER_NAME') }}" />
     <meta name="twitter:domain" content="{{ URL::to('/') }}" />
     <meta name="twitter:creator" content="{{ env('SITE_TWITTER_NAME') }}" />
     <meta name="twitter:image" content="{{ Helper::loadAssetsFiles('build/assets/images/logo.png') }}"/>
