@@ -18,6 +18,7 @@
     <meta name="description" content="{{ $info->meta_description }}" />
     <meta name="keywords" content="{{ $info->meta_keywords }}" />
     <link rel="canonical" href="{{ Request::url() }}" />
+    <meta property="og:image" content="{{ Helper::loadAssetsFiles('build/assets/images/logo.png') }}" />
     <meta property="og:title" content="{{ $info->page_title }}" />
     <meta property="og:description" content="{{ $info->meta_description }}" />
     <meta property="og:locale" content="en_US" />
@@ -29,9 +30,9 @@
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:site_name" content="{{ URL::to('/') }}" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="{{ env('SITE_TWITTER_NAME') }}" />
+    <meta name="twitter:site" content="{{ env('SOCIAL_SITE_NAME') }}" />
     <meta name="twitter:domain" content="{{ URL::to('/') }}" />
-    <meta name="twitter:creator" content="{{ env('SITE_TWITTER_NAME') }}" />
+    <meta name="twitter:creator" content="{{ env('SOCIAL_SITE_NAME') }}" />
     <meta name="twitter:image" content="{{ Helper::loadAssetsFiles('build/assets/images/logo.png') }}" />
   </head>
   <body>
