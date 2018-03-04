@@ -72,7 +72,7 @@
              <div class="col-md-3">
                  <div class="sitelogo"><a href="{{ URL('/') }}" title="Nexladder">nexladder</a></div>
              </div>
-             <div class="col-md-8">
+             <div class="col-md-9">
                <!-- navigation -->
                  <nav class="navbar navbar-inverse-inner">
                   <div class="container-fluid">
