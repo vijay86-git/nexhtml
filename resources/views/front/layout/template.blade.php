@@ -33,8 +33,6 @@
     <meta name="twitter:domain" content="{{ URL::to('/') }}" />
     <meta name="twitter:creator" content="{{ env('SITE_TWITTER_NAME') }}" />
     <meta name="twitter:image" content="{{ Helper::loadAssetsFiles('build/assets/images/logo.png') }}" />
-
-
   </head>
   <body>
      <!-- Page Wrapper -->
