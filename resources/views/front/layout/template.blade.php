@@ -69,10 +69,10 @@
          <!-- Header part -->
          <div class="headerSection">
            <div class="row">
-             <div class="col-md-2">
+             <div class="col-md-3">
                  <div class="sitelogo"><a href="{{ URL('/') }}" title="Nexladder">nexladder</a></div>
              </div>
-             <div class="col-md-10">
+             <div class="col-md-9">
                <!-- navigation -->
                  <nav class="navbar navbar-inverse-inner">
                   <div class="container-fluid">
