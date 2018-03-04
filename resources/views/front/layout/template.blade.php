@@ -15,27 +15,24 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <meta name="description" content="{{ $info->meta_description }}">
-    <meta name="keywords" content="{{ $info->meta_keywords }}">
-
+    <meta name="description" content="{{ $info->meta_description }}" />
+    <meta name="keywords" content="{{ $info->meta_keywords }}" />
     <link rel="canonical" href="{{ Request::url() }}" />
-
     <meta property="og:title" content="{{ $info->page_title }}" />
     <meta property="og:description" content="{{ $info->meta_description }}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:site_name" content="{{ URL::to('/') }}" />
-
     <meta name="twitter:title" property="og:title" content="{{ $info->page_title }}" />
     <meta name="twitter:description" property="og:description" content="{{ $info->meta_description }}" />
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:site_name" content="{{ URL::to('/') }}" />
-    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="{{ env('SITE_TWITTER_NAME') }}" />
     <meta name="twitter:domain" content="{{ URL::to('/') }}" />
     <meta name="twitter:creator" content="{{ env('SITE_TWITTER_NAME') }}" />
-    <meta name="twitter:image" content="{{ Helper::loadAssetsFiles('build/assets/images/logo.png') }}"/>
+    <meta name="twitter:image" content="{{ Helper::loadAssetsFiles('build/assets/images/logo.png') }}" />
 
 
   </head>
