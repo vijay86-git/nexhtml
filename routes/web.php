@@ -61,7 +61,7 @@ Route::group(array('domain' => 'nexladder.com'), function() {
     Route::get('/cache', function () {
 
              Artisan::call('cache:clear');
-             
+
          });
 
 
@@ -79,6 +79,12 @@ Route::group(array('domain' => 'nexladder.com', 'prefix' => 'beta'), function() 
    // Route::get('topic/{id}', function ($id) {
     //return 'User '.$id;
 //});
+//
+ Route::get('/cache', function () {
+
+             Artisan::call('cache:clear');
+             
+         });
 
 Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
