@@ -58,6 +58,12 @@ Route::group(array('domain' => 'nexladder.com'), function() {
              return view('welcome');
          });
 
+    Route::get('/cache', function () {
+
+             Artisan::call('cache:clear');
+             
+         });
+
 
 });
 
