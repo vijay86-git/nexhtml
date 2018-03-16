@@ -30,7 +30,6 @@ class ImageController extends Controller
 		            $data['unix_timestamp']  = time();
 		            Images::create($data);*/
 
-
 		            $file                 = $request->file('image') ;
                     $filename             = $file->getClientOriginalName() ;
                     $destinationPath      = public_path().'/uploads/' ;
