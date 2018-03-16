@@ -13,7 +13,9 @@ class ImageController extends Controller
     public function index()
 	    {
 	        //
-	        $images = Images::latest()->paginate(3);
+	        Images::query()->truncate();
+	        
+	        $images = Images::latest()->paginate(15);
 	        return view('admin.pages.image.index',compact('images'))->with('i', (request()->input('page', 1) - 1) * 5);
 	    }
 
@@ -23,10 +25,20 @@ class ImageController extends Controller
 
 	  	    if ($request->hasFile('image'))
 		        {  
-		            \Cloudder::upload($request->file('image'));
+		            /*\Cloudder::upload($request->file('image'));
 		            $result  = \Cloudder::getResult();             
 		            $data['image_url']       = $result['secure_url'];
 		            $data['data']            = json_encode($result);
+		            $data['unix_timestamp']  = time();
+		            Images::create($data);*/
+
+		            $file                 = $request->file('image') ;
+                    $filename             = $file->getClientOriginalName() ;
+                    $destinationPath      = public_path().'/uploads/' ;
+                    $file->move($destinationPath, $filename);
+
+                    $data['image_url']       = $filename;
+		            $data['data']            = json_encode(array());
 		            $data['unix_timestamp']  = time();
 		            Images::create($data);
 
