@@ -73,7 +73,7 @@
                @foreach ($images as $data)
 
                     <div class="col-sm-3" style="margin:10px 0">
-                      <img class="img-responsive" src="{{ $data->image_url }}" alt="Photo">
+                      <img class="img-responsive" src="{{ URL::asset('uploads/'.$data->image_url) }}" alt="Photo">
                       <input type="text" id="text_{{ $data->id }}" class="url" value="{{ URL::asset('uploads/'.$data->image_url) }}" /><button type="button" class="btn btn-success btn-flat btn-sm cstm" data-attr="{{ $data->id }}" onclick="copyContent({{ $data->id }})">Copy</button>
                     </div>
 
