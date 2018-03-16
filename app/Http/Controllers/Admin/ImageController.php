@@ -29,6 +29,7 @@ class ImageController extends Controller
 		            $data['data']            = json_encode($result);
 		            $data['unix_timestamp']  = time();
 		            Images::create($data);*/
+		            
 
 		            $file                 = $request->file('image') ;
                     $filename             = $file->getClientOriginalName() ;
