@@ -12,9 +12,6 @@ class ImageController extends Controller
     //
     public function index()
 	    {
-	        //
-	        Images::truncate();
-
 	        $images = Images::latest()->paginate(15);
 	        return view('admin.pages.image.index',compact('images'))->with('i', (request()->input('page', 1) - 1) * 5);
 	    }
