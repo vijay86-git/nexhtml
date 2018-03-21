@@ -181,9 +181,6 @@
               <div class="sbs">
                 <ul class="menu">
                   <li><a href="/">Home</a></li>
-                  <li><a href="about-us.php">About us</a></li>
-                  <li><a href="our-team.php">Our team</a></li>
-                  <li><a href="faq.php">F.A.Q</a></li>
                 </ul>
               </div>
             </div>
@@ -194,10 +191,8 @@
               <h3 class="title m_title">LEARN TUTORIALS</h3>
               <div class="sbs">
                 <ul class="menu">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="about-us.php">About us</a></li>
-                  <li><a href="our-team.php">Our team</a></li>
-                  <li><a href="faq.php">F.A.Q</a></li>
+                  <li><a href="https://nexladder.com/beta/php-tutorial">PHP</a></li>
+                  <li><a href="https://nexladder.com/beta/mysqli-tutorial">MySQLi</a></li>
                 </ul>
               </div>
             </div>
@@ -209,11 +204,10 @@
           <div class="col-md-4">
             <div>
               <h3 class="title m_title">GET IN TOUCH</h3>
-              <div class="contact-details"><p><strong>T (212) 555 55 00</strong><br>
-                Email: <a href="#">sales@yourwebsite.com</a></p>
-                <p>Your Company LTD<br>
-                Street nr 100, 4536534, Chicago, US</p>
-                <p><a href="http://goo.gl/maps/1OhOu" target="_blank"><i class="icon-map-marker icon-white"></i> Open in Google Maps</a></p>
+              <div class="contact-details"><p>
+                Email: <a href="#">nexladderinfo@gmail.com</a></p>
+                <p>nexladder<br></p>
+                <p><a href="#" target="_blank"><i class="icon-map-marker icon-white"></i> Open in Google Maps</a></p>
               </div>
             </div>
           </div>
@@ -227,7 +221,7 @@
               <!--/ social-icons -->
               <!-- copyright -->
               <div class="copyright">
-                <p>&copy; 2018 All rights reserved.</p>
+                <p>&copy; {{ date('Y') }} All rights reserved.</p>
               </div>
               <!--/ copyright -->
             </div>
