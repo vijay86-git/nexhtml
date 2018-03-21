@@ -121,9 +121,9 @@
 
                               <div class="col-md-4 col-sm-4">
                                 <div>
-                                  <a title="MySQLi Tutorial" href="https://nexladder.com/beta/php-tutorial" target="_self" class="merchandising-course-card--mask--22Fbx">
+                                  <a title="PHP Tutorial" href="https://nexladder.com/beta/php-tutorial" target="_self" class="merchandising-course-card--mask--22Fbx">
                                     <span class="courseImg">
-                                      <img src="{{ Helper::loadAssetsFiles('images/749542_4762_3.jpg') }}" alt="Graphic Design Bootcamp" class="img-responsive">
+                                      <img src="{{ Helper::loadAssetsFiles('images/749542_4762_3.jpg') }}" alt="PHP Tutorial" class="img-responsive">
                                     </span>
                                      <span class="coursename">PHP</span>
                                     </a>
@@ -134,7 +134,7 @@
                                   <div>
                                     <a href="https://nexladder.com/beta/mysqli-tutorial" target="_self" class="merchandising-course-card--mask--22Fbx" title="MySQLi Tutorial">
                                       <span class="courseImg">
-                                        <img src="{{ Helper::loadAssetsFiles('images/749542_4762_3.jpg') }}" alt="Graphic Design Bootcamp" class="img-responsive">
+                                        <img src="{{ Helper::loadAssetsFiles('images/749542_4762_3.jpg') }}" alt="MySQLi Tutorial" class="img-responsive">
                                       </span>
                                        <span class="coursename">MySQLi</span>
                                       </a>
