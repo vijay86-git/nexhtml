@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/style.css') }}">
     <style>
     .navbar-inverse .navbar-nav>li>a,.navbar-inverse .navbar-nav>li>a:hover  {color:#FFFFFF;font-size:14px;text-transform:uppercase}
+    .navbar-inverse-inner .navbar-nav>.active>a, .navbar-inverse-inner .navbar-nav>.active>a:focus, .navbar-inverse-inner .navbar-nav>.active>a:hover {color:#FFFFFF;border-bottom:3px solid #11a286;background:none}
     </style>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
