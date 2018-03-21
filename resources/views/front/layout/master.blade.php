@@ -121,39 +121,25 @@
 
                               <div class="col-md-4 col-sm-4">
                                 <div>
-                                  <a href="/graphic-design-for-beginners/" target="_self" class="merchandising-course-card--mask--22Fbx">
+                                  <a title="MySQLi Tutorial" href="https://nexladder.com/beta/php-tutorial" target="_self" class="merchandising-course-card--mask--22Fbx">
                                     <span class="courseImg">
-                                      <img src="https://udemy-images.udemy.com/course/240x135/749542_4762_3.jpg" alt="Graphic Design Bootcamp" class="img-responsive">
+                                      <img src="{{ Helper::loadAssetsFiles('images/749542_4762_3.jpg') }}" alt="Graphic Design Bootcamp" class="img-responsive">
                                     </span>
-                                     <span class="coursename">Php</span>
+                                     <span class="coursename">PHP</span>
                                     </a>
                                  </div>
                                 </div>
 
                                 <div class="col-md-4 col-sm-4">
                                   <div>
-                                    <a href="/graphic-design-for-beginners/" target="_self" class="merchandising-course-card--mask--22Fbx">
+                                    <a href="https://nexladder.com/beta/mysqli-tutorial" target="_self" class="merchandising-course-card--mask--22Fbx" title="MySQLi Tutorial">
                                       <span class="courseImg">
-                                        <img src="https://udemy-images.udemy.com/course/240x135/749542_4762_3.jpg" alt="Graphic Design Bootcamp" class="img-responsive">
+                                        <img src="{{ Helper::loadAssetsFiles('images/749542_4762_3.jpg') }}" alt="Graphic Design Bootcamp" class="img-responsive">
                                       </span>
-                                       <span class="coursename">Html</span>
+                                       <span class="coursename">MySQLi</span>
                                       </a>
                                   </div>
                                 </div>
-
-                                <div class="col-md-4 col-sm-4">
-                                 <div>
-                                  <a href="/graphic-design-for-beginners/" target="_self" class="merchandising-course-card--mask--22Fbx">
-                                    <span class="courseImg">
-                                      <img src="https://udemy-images.udemy.com/course/240x135/749542_4762_3.jpg" alt="Graphic Design Bootcamp" class="img-responsive">
-                                    </span>
-                                    
-                                     <span class="coursename">Javascript</span>
-                                    </a>
-
-                                  </div>
-
-                                 </div>  
 
                            </div>
                       </div>
