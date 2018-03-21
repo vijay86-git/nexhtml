@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/bootstrap.min.css?v=1') }}">
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/font-awesome.css?v=1') }}">
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/style.css') }}">
+    <style>
+    .navbar-inverse .navbar-nav>li>a,.navbar-inverse .navbar-nav>li>a:hover  {color:#FFFFFF;font-size:14px;text-transform:uppercase}
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
