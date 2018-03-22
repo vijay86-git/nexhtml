@@ -19,6 +19,28 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <meta name="description" content="Free Online Tutorials, Tutorials Online, nexladder provides tutorials like php tutorial, ajax, mysql etc for beginners and professionals." />
+    <meta name="keywords" content="nexladder, php tutorial, mysql tutorial and more for beginners and professionals" />
+    <link rel="canonical" href="{{ Request::url() }}" />
+    <meta property="og:image" content="{{ Helper::loadAssetsFiles('/images/nexsharelogo.png') }}" />
+    <meta property="og:title" content="{{ $info->page_title }}" />
+    <meta property="og:description" content="{{ Free Online Tutorials, Tutorials Online, nexladder provides tutorials like php tutorial, ajax, mysql etc for beginners and professionals. }}" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ Request::url() }}" />
+    <meta property="og:site_name" content="{{ URL::to('/') }}" />
+    <meta name="twitter:title" property="og:title" content="{{ $info->page_title }}" />
+    <meta name="twitter:description" property="og:description" content="{{ Free Online Tutorials, Tutorials Online, nexladder provides tutorials like php tutorial, ajax, mysql etc for beginners and professionals. }}" />
+    <meta property="og:url" content="{{ Request::url() }}" />
+    <meta property="og:site_name" content="{{ env('SOCIAL_SITE_NAME') }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{ env('SOCIAL_SITE_NAME') }}" />
+    <meta name="twitter:domain" content="{{ URL::to('/') }}" />
+    <meta name="twitter:creator" content="{{ env('SOCIAL_SITE_NAME') }}" />
+    <meta name="twitter:image" content="{{ Helper::loadAssetsFiles('images/nexsharelogo.png') }}" />
+
+
   </head>
   <body>
      <!-- Page Wrapper -->
