@@ -244,7 +244,9 @@ Size is: Short
     
     <div class="footer marginTop40">
         <div class="container">
-        <div class="row">
+
+
+        <!--<div class="row">
           <div class="col-md-4">
             <div>
               <h3 class="title m_title">LEARN TUTORIALS</h3>
@@ -282,7 +284,8 @@ Size is: Short
               </div>
             </div>
           </div>
-      </div>
+      </div>-->
+
         <!--/ row -->
         <div class="row">
           <div class="col-md-12">
