@@ -173,9 +173,9 @@
                    </div>
                  
                   <div class="row">
-                       <div class="col-md-4 col-sm-4 text-center">Ads 1</div>
+                       <!--<div class="col-md-4 col-sm-4 text-center">Ads 1</div>
                        <div class="col-md-4 col-sm-4 text-center">Ads 2</div>
-                       <div class="col-md-4 col-sm-4 text-center">Ads 3</div>
+                       <div class="col-md-4 col-sm-4 text-center">Ads 3</div>-->
                   </div>
                  
                    <div class="row">
@@ -188,7 +188,7 @@
  
            </div>
            <div class="col-md-2 col-sm-2 text-center margin15">
-               Ads
+               <!-- Ads -->
            </div>
         </div>
        </div>
