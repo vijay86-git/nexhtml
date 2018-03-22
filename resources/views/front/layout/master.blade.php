@@ -31,7 +31,7 @@
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:site_name" content="{{ URL::to('/') }}" />
     <meta name="twitter:title" property="og:title" content="{{ $info->page_title }}" />
-    <meta name="twitter:description" property="og:description" content="{{ Free Online Tutorials, Tutorials Online, nexladder provides tutorials like php tutorial, ajax, mysql etc for beginners and professionals. }}" />
+    <meta name="twitter:description" property="og:description" content="Free Online Tutorials, Tutorials Online, nexladder provides tutorials like php tutorial, ajax, mysql etc for beginners and professionals." />
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:site_name" content="{{ env('SOCIAL_SITE_NAME') }}" />
     <meta name="twitter:card" content="summary" />
