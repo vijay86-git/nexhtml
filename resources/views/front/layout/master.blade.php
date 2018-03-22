@@ -196,7 +196,7 @@
     
     <div class="footer marginTop40">
         <div class="container">
-        <div class="row">
+        <!--<div class="row">
           <div class="col-md-4">
             <div>
               <h3 class="title m_title">LEARN TUTORIALS</h3>
@@ -219,9 +219,7 @@
               </div>
             </div>
           </div>
-          <!--/ col-sm-5 -->
 
-          <!-- col-sm-4 -->
 
           <div class="col-md-4">
             <div>
@@ -233,8 +231,9 @@
               </div>
             </div>
           </div>
-          <!--/ col-sm-3 -->
-      </div>
+
+      </div>-->
+
         <!--/ row -->
         <div class="row">
           <div class="col-md-12">
