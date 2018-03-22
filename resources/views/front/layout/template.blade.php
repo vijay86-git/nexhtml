@@ -70,7 +70,7 @@
          <div class="headerSection">
            <div class="row">
              <div class="col-md-3">
-                 <div class="sitelogo"><a href="{{ URL('/') }}" title="Nexladder"><img width="130" src="{{ Helper::loadAssetsFiles('images/nexlogo.png') }}" alt="nexladder" /></a></div>
+                 <div class="sitelogo"><a href="{{ URL('/') }}" title="nexladder"><img width="130" src="{{ Helper::loadAssetsFiles('images/nexlogo.png') }}" alt="nexladder" /></a></div>
              </div>
              <div class="col-md-9">
                <!-- navigation -->
