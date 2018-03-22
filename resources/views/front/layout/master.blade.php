@@ -24,13 +24,13 @@
     <meta name="keywords" content="nexladder, php tutorial, mysql tutorial and more for beginners and professionals" />
     <link rel="canonical" href="{{ Request::url() }}" />
     <meta property="og:image" content="{{ Helper::loadAssetsFiles('/images/nexsharelogo.png') }}" />
-    <meta property="og:title" content="{{ $info->page_title }}" />
+    <meta property="og:title" content="Nexladder Online Web Tutorials" />
     <meta property="og:description" content="Free Online Tutorials, Tutorials Online, nexladder provides tutorials like php tutorial, ajax, mysql etc for beginners and professionals." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:site_name" content="{{ URL::to('/') }}" />
-    <meta name="twitter:title" property="og:title" content="{{ $info->page_title }}" />
+    <meta name="twitter:title" property="og:title" content="Nexladder Online Web Tutorials" />
     <meta name="twitter:description" property="og:description" content="Free Online Tutorials, Tutorials Online, nexladder provides tutorials like php tutorial, ajax, mysql etc for beginners and professionals." />
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:site_name" content="{{ env('SOCIAL_SITE_NAME') }}" />
