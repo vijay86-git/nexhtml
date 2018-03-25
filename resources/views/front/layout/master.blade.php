@@ -150,7 +150,7 @@
                                 <div>
                                   <a title="{{ $sub_data->name }}" href="{{ route('topic', $sub_info->slug) }}" target="_self" class="">
                                     <span class="courseImg">
-                                      <img src="uploads/{{ $sub_info->image) }}" alt="{{ ucfirst($sub_data->name) }}" class="img-responsive">
+                                      <img src="{{ $sub_info->image }}" alt="{{ ucfirst($sub_data->name) }}" class="img-responsive">
                                     </span>
                                      <span class="coursename">{{ strtoupper($sub_data->name) }}</span>
                                     </a>
