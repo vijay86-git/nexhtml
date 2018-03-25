@@ -40,7 +40,7 @@ class Helper
 	public static function getNavSubjectFromCache()
 	 {
          return Cache::remember('all_subjects_cache', env('CACHE_TIME', 60), function () {
-             return DB::table('subject')->select('id', 'name', 'slug')->where('show_nav', 1)->orderBy('sort', 'asc')->limit(env('NAV_SUB_LIMIT', 5))->get();
+             return DB::table('subject')->select('id', 'name', 'slug', 'image')->where('show_nav', 1)->orderBy('sort', 'asc')->limit(env('NAV_SUB_LIMIT', 5))->get();
          });
 	 }
     

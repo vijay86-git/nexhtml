@@ -145,27 +145,18 @@
                          <div class="col-md-12 col-sm-12">
                            <div class="row margin15">
 
-                              <div class="col-md-4 col-sm-4">
+                              @foreach($subjects as $sub_info)
+                               <div class="col-md-4 col-sm-4">
                                 <div>
-                                  <a title="PHP Tutorial" href="https://nexladder.com/beta/php-tutorial" target="_self" class="merchandising-course-card--mask--22Fbx">
+                                  <a title="{{ $sub_data->name }}" href="{{ route('topic', $sub_info->slug) }}" target="_self" class="">
                                     <span class="courseImg">
-                                      <img src="{{ Helper::loadAssetsFiles('images/749542_4762_3.jpg') }}" alt="PHP Tutorial" class="img-responsive">
+                                      <img src="uploads/{{ $sub_info->image) }}" alt="{{ ucfirst($sub_data->name) }}" class="img-responsive">
                                     </span>
-                                     <span class="coursename">PHP</span>
+                                     <span class="coursename">{{ strtoupper($sub_data->name) }}</span>
                                     </a>
                                  </div>
                                 </div>
-
-                                <div class="col-md-4 col-sm-4">
-                                  <div>
-                                    <a href="https://nexladder.com/beta/mysqli-tutorial" target="_self" class="merchandising-course-card--mask--22Fbx" title="MySQLi Tutorial">
-                                      <span class="courseImg">
-                                        <img src="{{ Helper::loadAssetsFiles('images/749542_4762_3.jpg') }}" alt="MySQLi Tutorial" class="img-responsive">
-                                      </span>
-                                       <span class="coursename">MySQLi</span>
-                                      </a>
-                                  </div>
-                                </div>
+                              @endforeach
 
                            </div>
                       </div>
