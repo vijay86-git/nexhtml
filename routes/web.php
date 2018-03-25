@@ -1,6 +1,5 @@
 <?php
-use ip;
-
+use Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,7 +26,7 @@ use ip;
 });
 */
 
-Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => ['adminsession']), function() {
+Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => ['adminsession', 'ip:106.223.73.237']), function() {
 
    // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
    // 
