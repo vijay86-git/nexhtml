@@ -7,7 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Nexladder Online Web Tutorials</title>
     @php
-      echo $style_file_path = $_SERVER['DOCUMENT_ROOT'] . '/assets/css/style.css';
+      echo $style_file_path = $_SERVER['DOCUMENT_ROOT'] . '../build/assets/css/style.css';
+      echo filemtime($style_file_path);
     @endphp
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/bootstrap.min.css?v=1') }}">
     <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('build/assets/css/font-awesome.css?v=1') }}">
