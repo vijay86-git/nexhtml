@@ -108,9 +108,9 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navBar">
                       <ul class="nav navbar-nav">
-                        <li class="{{ (Request::segment(2) == '') ? 'active' : '' }}"><a title="Home" href="{{ URL('/') }}"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                        <li class="{{ (Request::segment(1) == '') ? 'active' : '' }}"><a title="Home" href="{{ URL('/') }}"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                         @foreach($subjects as $sub_data)
-                         <li class="{{ (Request::segment(2) == $sub_data->slug) ? 'active' : '' }}"><a title="{{ $sub_data->name }}" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
+                         <li class="{{ (Request::segment(1) == $sub_data->slug) ? 'active' : '' }}"><a title="{{ $sub_data->name }}" href="{{ route('topic', $sub_data->slug) }}">{{ $sub_data->name }}</a></li>
                         @endforeach
                       </ul>
                     </div>
