@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://nexladder.com/</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/vuejs-tutorial</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-intro</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-syntax</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/install-php</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-variables</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-echo</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-print</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-data-types</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-constants</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-operators</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-if-else-statement</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-switch-statement</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-for-loop</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-while-loop</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-do-while-loop</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-foreach-loop</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-break</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-continue</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-array</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-indexed-array</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-associative-array</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-multidimensional-array</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-array-functions</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-string-functions</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-math-functions</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-file-handling</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-open-file</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-read-file</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-write-file</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-append-file</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-delete-file</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-form-get-post</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-file-include</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-cookie</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-session</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-file-upload</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-download-file</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/php-tutorial/php-mail</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-introduction</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-connection</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-create-database</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-drop-database</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-select-database</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-create-table</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-drop-table</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-insert-record</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-select-record</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-update-record</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-delete-record</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-where</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-distinct</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-order-by</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-group-by</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-having</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-and</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-or</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-in</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-like</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-between</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-average</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-count</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-sum</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-min</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/mysqli-tutorial/mysqli-max</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nexladder.com/vuejs-tutorial/vuejs-overview</loc>
+  <lastmod>2018-03-25T07:40:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
