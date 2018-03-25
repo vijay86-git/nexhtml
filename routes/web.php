@@ -50,7 +50,7 @@ Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'midd
 }); 
 
 
-
+/*
 Route::group(array('domain' => 'nexladder.com'), function() {
 
     Route::get('/', function () {
@@ -68,20 +68,12 @@ Route::group(array('domain' => 'nexladder.com'), function() {
 
 });
 
-Route::group(array('domain' => 'nexladder.com', 'prefix' => 'beta'), function() {
+*/
 
-    /*Route::get('/', function () {
 
-             Session::put('admin', mt_rand());
-             return view('welcome');
-         });
-         */
+Route::group(array('domain' => 'nexladder.com'), function() {
 
-   // Route::get('topic/{id}', function ($id) {
-    //return 'User '.$id;
-//});
-//
- Route::get('/cache', function () {
+Route::get('/cache', function () {
 
              Artisan::call('cache:clear');
              
