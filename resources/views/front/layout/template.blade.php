@@ -55,10 +55,16 @@
               <div class="col-md-6">
                  <div class="searchbar text-right">
                    <!-- form search -->
-                    <form method="post">
+                    <!-- <form method="post">
                        <input type="text" class="searchTextTop innerTxtSrch" name="search" placeholder="Search on Nexladder..." />
                        <button class="magnifier"><i class="fa fa-search"></i></button>
-                    </form>
+                    </form>-->
+
+                    <input type="text" class="searchTextTop innerTxtSrch" name="search" placeholder="Search on Nexladder..." />
+                    <button class="magnifier"><i class="fa fa-search"></i></button>
+
+
+
                    <!-- close -->
                   </div>
               </div>
