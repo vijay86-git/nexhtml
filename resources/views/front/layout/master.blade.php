@@ -163,7 +163,7 @@
                            <div class="row margin15">
 
                               @foreach($subjects as $sub_info)
-                               <div class="col-md-4 col-sm-4">
+                               <div class="col-md-3 col-sm-3">
                                 <div>
                                   <a title="{{ $sub_info->name }}" href="{{ route('topic', $sub_info->slug) }}" target="_self" class="">
                                     <span class="courseImg">
