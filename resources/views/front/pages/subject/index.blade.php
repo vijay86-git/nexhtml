@@ -7,7 +7,7 @@
         <ul class="list-group">
             <li class="list-group-item disabled"><strong>{{ $sec_data->section}}</strong></li>
               @foreach (App\Section::find($sec_data->id)->topics as $data)
-                  <li class="list-group-item"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><a class="{{ (Request::segment(3) == $data->slug) ? 'active' : '' }}" title="{{ $data->topic }}" href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
+                  <li class="list-group-item"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><a class="{{ (Request::segment(2) == $data->slug) ? 'active' : '' }}" title="{{ $data->topic }}" href="{{ route('topics', ['subject' => $slug, 'slug' => $data->slug]) }}">{{ $data->topic }}</a></li>
               @endforeach
         </ul>
       @endforeach
