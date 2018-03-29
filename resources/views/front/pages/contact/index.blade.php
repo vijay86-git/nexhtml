@@ -44,7 +44,7 @@
               <strong>Address:</strong><br />
               nexladder.com<br>
               Faridabad<br />
-              India<br />
+              Haryana, India<br />
               121001<br />
             </address>
       </div>
