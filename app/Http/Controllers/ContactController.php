@@ -27,4 +27,11 @@ class ContactController extends Controller
    			  $info->meta_keywords     = 'Contact Us';
 	          return view('front.pages.contact.index', compact('subjects', 'info'));
 	      }
+
+
+	    public function submit()
+	      {
+	      		request()->validate(['name' => 'required', 'email' => 'required|email', 'msg' => 'required']);
+	      		Session::flash('msg', 'Thanks for contacting us. We\'ll contact you soon'); 
+	      }
 	}
