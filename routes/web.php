@@ -82,6 +82,8 @@ Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
 Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactController@index'));
 
+Route::post('/contact-us', array('as' => 'contactus.submit', 'uses' => 'ContactController@submit'));
+
 Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
 
 Route::get('/{slug}', array('as' => 'topic', 'uses' => 'TopicController@getSubjectInfo'));

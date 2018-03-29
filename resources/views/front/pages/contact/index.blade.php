@@ -7,7 +7,24 @@
         <p>
            Please send your message below. We will get back to you at the earliest!
         </p>
-        <form role="form" method="post" id="">
+
+               @if ($errors->all())
+                    <div class="alert alert-danger">
+                            @foreach ($errors->all() as $error)
+                                <p><i class="fa fa-exclamation-circle"></i> {{ $error }} </p>
+                            @endforeach
+                    </div>
+                    @endif
+                    
+                    @if(Session::has('error'))
+                    <div class="alert-box success">
+                      <h4 class='error'>{{ Session::get('error') }}</h2>
+                    </div>
+               @endif
+
+            <!-- form start -->
+
+        {!! Form::open(['route' => 'contactus.submit', 'role' => 'form', 'autocomplete' => 'off']) !!}
 
             <div class="row">
                 <div class="col-sm-12 form-group">
@@ -33,7 +50,7 @@
                 </div>
             </div>
 
-        </form>
+         {!! Form::close() !!}
     </div>
 
     <div class="col-md-1"></div>
