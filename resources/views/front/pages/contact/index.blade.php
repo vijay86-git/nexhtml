@@ -18,7 +18,7 @@
                     
                     @if(Session::has('msg'))
                     <div class="alert-box success">
-                      <h4 class='error'>{{ Session::get('msg') }}</h2>
+                      <h4 class='success'>{{ Session::get('msg') }}</h2>
                     </div>
                @endif
 
@@ -29,18 +29,17 @@
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <label for="message">Message:</label>
-                    <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+                    <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7">{{ old('message') }}</textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label for="name">Your Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" />
+                    <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" />
                 </div>
                 <div class="col-sm-6 form-group">
-                    <label for="email">
-                        Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" />
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email" name="email" value="{{ old('email') }}" />
                 </div>
             </div>
 
