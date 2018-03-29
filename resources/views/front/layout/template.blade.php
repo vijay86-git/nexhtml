@@ -185,8 +185,8 @@
                 <p>&copy; 2018 All rights reserved.</p>
               </div>
 
-              <div class="col-md-6 pull-right">
-                <a title="contact us" href="{{ route('contactus') }}">Contact Us</a>
+              <div class="col-md-6 pull-right" style="text-align:right">
+                <a title="Home" href="{{ route('home') }}">Home</a>&nbsp;|&nbsp;<a title="contact us" href="{{ route('contactus') }}">Contact Us</a>
               </div>
 
               <!--/ copyright -->

@@ -78,13 +78,13 @@ Route::get('/cache', function () {
              
          });
 
-Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
+Route::get('/', array('as' => 'home', 'uses' => 'TopicController@index'));
 
 Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactController@index'));
 
 Route::post('/contact-us', array('as' => 'contactus.submit', 'uses' => 'ContactController@submit'));
 
-Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
+//Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
 
 Route::get('/{slug}', array('as' => 'topic', 'uses' => 'TopicController@getSubjectInfo'));
 
