@@ -41,11 +41,11 @@
     <div class="col-md-5">
       <div>
             <address>
-              Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
-              Visit us at:<br>
-              Example.com<br>
-              Box 564, Disneyland<br>
-              USA
+              <strong>Address:</strong><br />
+              nexladder.com<br>
+              Faridabad<br />
+              India<br />
+              121001<br />
             </address>
       </div>
       <div style="width:480px;height:350px" id="map">
