@@ -259,11 +259,11 @@
               <!-- social-icons -->
               <!--/ social-icons -->
               <!-- copyright -->
-              <div class="copyright" class="col-md-6">
+              <div class="copyright col-md-6">
                 <p>&copy; 2018 All rights reserved.</p>
               </div>
 
-              <div class="" class="col-md-6">
+              <div class="col-md-6">
                 <a href="/">Contact Us</a>
               </div>
               <!--/ copyright -->
