@@ -24,7 +24,7 @@ class DashboardController extends Controller
     public function database()
       {
         $tables      = false;
-        $backup_name = false
+        $backup_name = false;
         $host = env('DB_HOST');
         $user = env('DB_USERNAME');
         $pass = env('DB_PASSWORD');
