@@ -126,42 +126,8 @@
     </div>
     <div class="container">
        <div class="bodyPart">
-          <div class="row">
-            <div class="col-md-3">
-               @yield('topics')
-           </div>
-           <div class="col-md-9">
-              <!-- content -->
-            <div class="row mrgnbtm15">
-             <div class="col-md-12">
-                @yield('topiccontentheader')
-             </div> 
-            </div>
-             
-           <div class="row">
-             <div class="col-md-12">
-               @yield('content')
-             </div>
-            </div>
-            
-            <div class="row">
-               <div class="col-md-12">
-                 <div class="col-md-6 col-sm-6 text-left pad0">
-                    @if (!empty($nextprevarr['prevlink']))
-                       <a title="{{ $nextprevarr['prevtopic'] }}" href="{{ $nextprevarr['prevlink'] }}" class="btn btn-default prev"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Previous</a><span class='nexprv'><a title="{{ $nextprevarr['prevtopic'] }}" href='{{ $nextprevarr["prevlink"] }}'>{{ $nextprevarr["prevtopic"] }}</a></span>
-                    @endif
-                 </div>
-                 <div class="col-md-6 col-sm-6 text-right pad0">
-                  @if (!empty($nextprevarr['nextlink']))
-                     <span class='nexprv'><a title="{{ $nextprevarr['nexttopic'] }}" href='{{ $nextprevarr["nextlink"] }}'>{{ $nextprevarr["nexttopic"] }}</a></span><a title="{{ $nextprevarr['nexttopic'] }}" href="{{ $nextprevarr["nextlink"] }}" class="btn btn-default next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-                  @endif
-                 </div>
-             </div> 
-          </div> 
-          <!-- close  -->
-        </div>         
+           @yield('content')
        </div>
-     </div>
    </div>
     
     <div class="footer marginTop40">
