@@ -32,7 +32,7 @@
 
             <div class="row">
                 <div class="col-sm-12 form-group">
-                    <button type="submit" class="btn btn-lg btn-default pull-right" >Send →</button>
+                    <button type="submit" class="btn btn-lg btn-success pull-right" >Send</button>
                 </div>
             </div>
 
