@@ -89,7 +89,7 @@ Route::get('/{subject}/{slug}', array('as' => 'topics', 'uses' => 'TopicControll
 
 Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
 
-Route::get('/contact-us', array('as' => 'contactus.get', 'uses' => 'ContactController@get'));
+Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactController@index'));
 
 //Route::post('/contact-us', array('as' => 'contactus.post', 'uses' => 'ContactController@post'));
 

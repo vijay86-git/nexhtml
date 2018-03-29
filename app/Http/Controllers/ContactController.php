@@ -21,7 +21,7 @@ class ContactController extends Controller
 	           $this->_subjects  =  Helper::getNavSubjectFromCache();
 	      }
 
-	    public function get()
+	    public function index()
 	      {
 	          $subjects =  $this->_subjects;
 	          return view('front.pages.contact.index', compact('subjects'));
