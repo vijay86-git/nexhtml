@@ -43,7 +43,7 @@
             <address>
               <strong>Address:</strong><br />
               nexladder.com<br>
-              Faridabad<br />
+              SGM Nagar, Faridabad<br />
               Haryana, India<br />
               121001<br />
             </address>
