@@ -57,7 +57,7 @@
     <div class="col-md-5">
       <div>
             <address>
-              <strong>Address:</strong><br />
+              <i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;<strong>Address:</strong><br />
               nexladder.com<br>
               SGM Nagar, Faridabad<br />
               Haryana, India<br />
