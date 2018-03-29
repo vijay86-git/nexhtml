@@ -21,6 +21,10 @@ class ContactController extends Controller
 	    public function index()
 	      {
 	          $subjects =  $this->_subjects;
-	          return view('front.pages.contact.index', compact('subjects'));
+	          $info     =  new stdClass();
+   			  $info->page_title        = 'Contact Us - neladder';
+   			  $info->meta_description  = 'Contact Us';
+   			  $info->meta_keywords     = 'Contact Us';
+	          return view('front.pages.contact.index', compact('subjects', 'info'));
 	      }
 	}
