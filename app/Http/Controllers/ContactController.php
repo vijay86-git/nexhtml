@@ -15,12 +15,11 @@ class ContactController extends Controller
   
 	    public function __construct()
 	      {
-	           //$this->_subjects  =  Helper::getNavSubjectFromCache();
+	           $this->_subjects  =  Helper::getNavSubjectFromCache();
 	      }
 
 	    public function index()
 	      {
-	      	die('sdf');
 	          $subjects =  $this->_subjects;
 	          return view('front.pages.contact.index', compact('subjects'));
 	      }
