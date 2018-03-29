@@ -91,7 +91,7 @@ Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardCo
 
 Route::get('/contact-us', array('as' => 'contactus.get', 'uses' => 'ContactController@get'));
 
-Route::get('/contact-us', array('as' => 'contactus.post', 'uses' => 'ContactController@post'));
+Route::post('/contact-us', array('as' => 'contactus.post', 'uses' => 'ContactController@post'));
 
 
 });
