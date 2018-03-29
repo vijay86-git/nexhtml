@@ -37,7 +37,7 @@
     </div>
 
     <div class="col-md-1"></div>
-    <div class="col-md-5" id="map">
+    <div class="col-md-5" style="width:400px;height: 300px" id="map">
     </div>
 
   </div>
