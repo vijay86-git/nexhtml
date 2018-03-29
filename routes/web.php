@@ -81,13 +81,18 @@ Route::get('/cache', function () {
 
 Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
-    Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
+Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
 
-    Route::get('/{slug}', array('as' => 'topic', 'uses' => 'TopicController@getSubjectInfo'));
+Route::get('/{slug}', array('as' => 'topic', 'uses' => 'TopicController@getSubjectInfo'));
 
-    Route::get('/{subject}/{slug}', array('as' => 'topics', 'uses' => 'TopicController@getSubjectTopics'));
+Route::get('/{subject}/{slug}', array('as' => 'topics', 'uses' => 'TopicController@getSubjectTopics'));
 
-    Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
+Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
+
+Route::get('/index', array('as' => 'contact-us', 'uses' => 'ContactController@get'));
+
+Route::get('/post', array('as' => 'contact-us', 'uses' => 'ContactController@post'));
+
 
 });
 
