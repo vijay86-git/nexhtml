@@ -80,6 +80,8 @@ Route::get('/cache', function () {
 
 Route::get('/', array('as' => 'topic', 'uses' => 'TopicController@index'));
 
+Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactController@index'));
+
 Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
 
 Route::get('/{slug}', array('as' => 'topic', 'uses' => 'TopicController@getSubjectInfo'));
@@ -88,7 +90,7 @@ Route::get('/{subject}/{slug}', array('as' => 'topics', 'uses' => 'TopicControll
 
 Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
 
-Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactController@index'));
+
 
 //Route::post('/contact-us', array('as' => 'contactus.post', 'uses' => 'ContactController@post'));
 
