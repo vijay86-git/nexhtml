@@ -21,7 +21,7 @@ class ContactController extends Controller
 	    public function index()
 	      {
 	          $subjects =  $this->_subjects;
-	          $info     =  new stdClass();
+	          $info     = (object) array();
    			  $info->page_title        = 'Contact Us - neladder';
    			  $info->meta_description  = 'Contact Us';
    			  $info->meta_keywords     = 'Contact Us';
