@@ -29,7 +29,7 @@
 
             <div class="row">
                 <div class="col-sm-12 form-group">
-                    <button type="submit" class="btn btn-success pull-right" >Send</button>
+                    <button type="submit" class="btn btn-success pull-right" >Submit</button>
                 </div>
             </div>
 
@@ -37,8 +37,22 @@
     </div>
 
     <div class="col-md-1"></div>
-    <div class="col-md-5" style="width:480px;height:350px" id="map">
+
+    <div class="col-md-5">
+      <div>
+            <address>
+              Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+              Visit us at:<br>
+              Example.com<br>
+              Box 564, Disneyland<br>
+              USA
+            </address>
+      </div>
+      <div style="width:480px;height:350px" id="map">
+      </div>
     </div>
+
+
 
   </div>
   
