@@ -259,8 +259,12 @@
               <!-- social-icons -->
               <!--/ social-icons -->
               <!-- copyright -->
-              <div class="copyright">
-                <p>&copy; {{ date('Y') }} All rights reserved.</p>
+              <div class="copyright" class="col-md-6">
+                <p>&copy; 2018 All rights reserved.</p>
+              </div>
+
+              <div class="" class="col-md-6">
+                <a href="/">Contact Us</a>
               </div>
               <!--/ copyright -->
             </div>
