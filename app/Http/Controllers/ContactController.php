@@ -18,7 +18,7 @@ class ContactController extends Controller
   
 	    public function __construct()
 	      {
-	           $this->_subjects  =  Helper::getNavSubjectFromCache();
+	           //$this->_subjects  =  Helper::getNavSubjectFromCache();
 	      }
 
 	    public function index()
