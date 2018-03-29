@@ -264,7 +264,7 @@
               </div>
 
               <div class="col-md-6 pull-right">
-                <a href="/contact-us">Contact Us</a>
+                <a title="contact us" href="{{ route('contactus') }}">Contact Us</a>
               </div>
               <!--/ copyright -->
             </div>
