@@ -31,7 +31,7 @@ class ContactController extends Controller
 
 	    public function submit()
 	      {
-	      		request()->validate([ 'msg' => 'required', 'name' => 'required', 'email' => 'required|email']);
+	      		request()->validate(['message' => 'required', 'name' => 'required', 'email' => 'required|email']);
 	      		Session::flash('msg', 'Thanks for contacting us. We\'ll contact you soon'); 
 	      }
 	}

@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <label for="message">Message:</label>
-                    <textarea class="form-control" type="textarea" name="msg" id="message" maxlength="6000" rows="7"></textarea>
+                    <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
                 </div>
             </div>
             <div class="row">
