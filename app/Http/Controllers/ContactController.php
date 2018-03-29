@@ -23,6 +23,7 @@ class ContactController extends Controller
 
 	    public function index()
 	      {
+	      	die('sdf');
 	          $subjects =  $this->_subjects;
 	          return view('front.pages.contact.index', compact('subjects'));
 	      }
