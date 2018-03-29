@@ -62,6 +62,7 @@
               SGM Nagar, Faridabad<br />
               Haryana, India<br />
               121001<br />
+              <i class="fa fa-envelope" aria-hidden="true"></i> nexladdermail@gmail.com
             </address>
       </div>
       <div style="width:480px;height:350px" id="map">
