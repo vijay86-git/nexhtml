@@ -36,7 +36,8 @@
         </form>
     </div>
 
-    <div class="col-md-6" id="map">
+    <div class="col-md-1"></div>
+    <div class="col-md-5" id="map">
     </div>
 
   </div>
