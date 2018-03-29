@@ -65,7 +65,6 @@ Route::group(array('domain' => 'nexladder.com'), function() {
 
          });
 
-
 });
 
 */
