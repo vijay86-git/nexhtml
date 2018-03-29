@@ -18,7 +18,7 @@
                     
                     @if(Session::has('msg'))
                     <div class="alert-box success">
-                      <p><i class="fa fa-check"></i> {{ $error }} </p>
+                      <p><i class="fa fa-check"></i> {{ Session::get('msg') }} </p>
                     </div>
                @endif
 
