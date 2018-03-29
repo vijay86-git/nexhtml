@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Subject as Subject;
+use App\Topic as Topics;
+use App\Section as Section;
 use DB;
 use Cache;
 use Helper;
