@@ -3,13 +3,15 @@
 @section('content')
  <div class="row">
     <div class="col-md-12" id="" style="height:400px">
-        <h2>About Us</h2>
-        <p>
-           About Us - nexladder.com is a learning online platform that helps anyone can learn Web Technologies. nexladder provides all web tutorials like Php, Mysqli, Vuejs, Html, Jquery etc in simple and easy steps starting from basic to advanced concepts with examples. nexladder helps students, developers and project manager where they can learn topics in easy and simple language with examples. To make our website better for you, we bring updates to the website regularly.
-        </p><br />
-        <p>
-           Our mission - To help you learn the skills you need to achieve your goal.
-        </p>
+        <h2>Disclaimer</h2>
+        <p><strong>POST Disclaimer</strong></p><br />
+        <p>All posts and information shared here are totally individual opinions and no any intention to harm or mislead any individual.</p>
+
+        <p><strong>Emails USED</strong></p><br />
+        <p>All emails provided on the website or comment box are not shared with any third party websites or sold. We will never spam your inbox it’s our trust with you.</p><br /><br />
+
+        <p>for any concern or any issue related to privacy policies and disclaimer you can contact us at <a href="mailto:nexladdermail@gmail.com">nexladdermail@gmail.com</a></p>
+       
     </div>
 
     <div class="col-md-1"></div>
