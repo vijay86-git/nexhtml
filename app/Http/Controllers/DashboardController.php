@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Session;
+use DB;
+use Cache;
+use Helper;
 
 class DashboardController extends Controller
 {
