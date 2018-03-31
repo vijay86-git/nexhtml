@@ -12,6 +12,13 @@ use Helper;
 class DashboardController extends Controller
 {
     //
+    private $_subjects;
+  
+    public function __construct()
+      {
+           $this->_subjects  =  Helper::getNavSubjectFromCache();
+      }
+      
     public function cplogout(Request $request)
        {
           $request->session()->flush();
