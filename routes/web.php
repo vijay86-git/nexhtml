@@ -80,6 +80,10 @@ Route::get('/cache', function () {
 
 Route::get('/', array('as' => 'home', 'uses' => 'TopicController@index'));
 
+Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about'));
+
+Route::get('/disclaimer', array('as' => 'disclaimer', 'uses' => 'ContactController@disclaimer'));
+
 Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactController@index'));
 
 Route::post('/contact-us', array('as' => 'contactus.submit', 'uses' => 'ContactController@submit'));
