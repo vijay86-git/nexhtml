@@ -8,7 +8,7 @@
         <p>All posts and information shared here are totally individual opinions and no any intention to harm or mislead any individual.</p>
 
         <p><strong>Emails Used</strong></p>
-        <p>All emails provided on the website or comment box are not shared with any third party websites or sold. We will never spam your inbox it’s our trust with you.</p><br />
+        <p>All emails provided on the website or contact us form are not shared with any third party websites or sold. We will never spam your inbox it’s our trust with you.</p><br />
 
         <p>for any concern or any issue related to privacy policies and disclaimer you can contact us at <a href="mailto:nexladdermail@gmail.com">nexladdermail@gmail.com</a></p>
        
