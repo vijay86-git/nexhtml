@@ -60,8 +60,7 @@
               <i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;<strong>Address:</strong><br />
               nexladder.com<br>
               Faridabad<br />
-              Haryana, India<br />
-              121001<br />
+              Haryana, India, 121001<br />
               <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:nexladdermail@gmail.com">nexladdermail@gmail.com</a>
             </address>
       </div>
