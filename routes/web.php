@@ -82,7 +82,7 @@ Route::get('/', array('as' => 'home', 'uses' => 'TopicController@index'));
 
 Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about'));
 
-Route::get('/disclaimer', array('as' => 'disclaimer', 'uses' => 'ContactController@disclaimer'));
+Route::get('/disclaimer', array('as' => 'disclaimer', 'uses' => 'DashboardController@disclaimer'));
 
 Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactController@index'));
 
