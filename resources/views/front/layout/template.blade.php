@@ -182,7 +182,7 @@
               <!--/ social-icons -->
               <!-- copyright -->
               <div class="copyright col-md-6">
-                <p>&copy; 2018 All rights reserved.</p>
+                <p>&copy; {{ date('Y') }} All rights reserved.</p>
               </div>
 
               <div class="col-md-6 pull-right" style="text-align:right">
