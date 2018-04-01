@@ -17,7 +17,6 @@
                          <a href="{{ route('topic', $data->slug) }}" title="{{ $data->name }}"><h2>{{ $data->name }}</h2></a>
                          @php
                           $key      =  $data->slug.'_cache';
-
                           if (Cache::has($key))
                               {
                                     $info =  Cache::get($key);
@@ -26,6 +25,7 @@
                                     $info =  Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
                                     Cache::put($key, $info, env('CACHE_TIME', 60));
                                 }
+                                print_r($info);
                           @endphp
 
                          <ul>
