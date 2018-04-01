@@ -22,15 +22,15 @@
                                     $info =  Cache::get($key);
                               } 
                           else  {
-                                    $info =  Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
+                                    $info =  Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $data->slug)->firstOrFail();
                                     Cache::put($key, $info, env('CACHE_TIME', 60));
                                 }
-                                print_r($info);
                           @endphp
 
                          <ul>
-                            <li><a href="">Introduction</a></li>
-                            <li><a href="">Overview</a></li>
+                            @foreach ($info as $infodata)
+                              <li><a title="{{ $infodata->name }}" href="{{ route('topics', ['subject' => $data->slug, 'slug' => $infodata->slug]) }}">{{ $infodata->name }}</a></li>
+                            @endforeach
                          </ul>
                     </div>
                 </div>
