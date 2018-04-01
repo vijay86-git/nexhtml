@@ -85,6 +85,8 @@ Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about
 
 Route::get('/disclaimer', array('as' => 'disclaimer', 'uses' => 'DashboardController@disclaimer'));
 
+Route::get('/sitemap', array('as' => 'sitemap', 'uses' => 'DashboardController@sitemap'));
+
 Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactController@index'));
 
 Route::post('/contact-us', array('as' => 'contactus.submit', 'uses' => 'ContactController@submit'));

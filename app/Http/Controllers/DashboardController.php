@@ -36,13 +36,19 @@ class DashboardController extends Controller
 	          return view('front.pages.cms.about', compact('subjects', 'info'));
 	      }
 
-	public function disclaimer()
+	  public function disclaimer()
 	      {
 	          $subjects =  $this->_subjects;
 	          $info     = (object) array();
-   			  $info->page_title        = 'Disclaimer - neladder';
-   			  $info->meta_description  = 'Disclaimer';
-   			  $info->meta_keywords     = 'Disclaimer';
+   			    $info->page_title        = 'Disclaimer - neladder';
+   			    $info->meta_description  = 'Disclaimer';
+   			    $info->meta_keywords     = 'Disclaimer';
 	          return view('front.pages.cms.disclaimer', compact('subjects', 'info'));
 	      }
+
+    public function sitemap()
+       {
+            return view('front.pages.cms.sitemap');
+       }
+
 }
