@@ -28,11 +28,7 @@
                                 print_r($info); die;
                           @endphp
 
-                         <ul>
-                            @foreach ($info as $infodata)
-                              <li><a title="{{ $infodata->name }}" href="{{ route('topics', ['subject' => $data->slug, 'slug' => $infodata->slug]) }}">{{ $infodata->name }}</a></li>
-                            @endforeach
-                         </ul>
+                         
                     </div>
                 </div>
             @endforeach
