@@ -22,7 +22,7 @@
                                     $info =  Cache::get($key);
                               } 
                           else  {
-                                    $info =  Topic::select('id', 'name')->where('subject_id', $data->id)->get();
+                                    $info =  Topics::select('id', 'name')->where('subject_id', $data->id)->get();
                                     Cache::put($key, $info, env('CACHE_TIME', 60));
                                 }
                                 print_r($info);
