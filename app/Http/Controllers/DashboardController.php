@@ -48,7 +48,12 @@ class DashboardController extends Controller
 
     public function sitemap()
        {
-            return view('front.pages.cms.sitemap');
+            $subjects =  $this->_subjects;
+            $info     = (object) array();
+            $info->page_title        = 'Sitemap - neladder';
+            $info->meta_description  = 'Sitemap';
+            $info->meta_keywords     = 'Sitemap';
+            return view('front.pages.cms.sitemap', compact('subjects', 'info'));
        }
 
 }
