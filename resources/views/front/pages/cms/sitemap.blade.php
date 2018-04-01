@@ -15,6 +15,19 @@
                <div class="col-md-3">
                      <div class="sitemap">
                          <a href="{{ route('topic', $data->slug) }}" title="{{ $data->name }}"><h2>{{ $data->name }}</h2></a>
+                         @php
+                          $key      =  $data->slug.'_cache';
+
+                          if (Cache::has($key))
+                              {
+                                    $info =  Cache::get($key);
+                              } 
+                          else  {
+                                    $info =  Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $slug)->firstOrFail();
+                                    Cache::put($key, $info, env('CACHE_TIME', 60));
+                                }
+                          @endphp
+
                          <ul>
                             <li><a href="">Introduction</a></li>
                             <li><a href="">Overview</a></li>
