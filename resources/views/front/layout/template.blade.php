@@ -186,7 +186,7 @@
               </div>
 
               <div class="col-md-6 pull-right" style="text-align:right">
-                <a title="Home" href="{{ route('home') }}">Home</a>&nbsp;|&nbsp;<a title="About" href="{{ route('about') }}">About</a>&nbsp;|&nbsp;<a title="Disclaimer" href="{{ route('disclaimer') }}">Disclaimer</a>&nbsp;|&nbsp;<a title="Contact Us" href="{{ route('contactus') }}">Contact Us</a>
+                <a title="Home" href="{{ route('home') }}">Home</a>&nbsp;|&nbsp;<a title="About" href="{{ route('about') }}">About</a>&nbsp;|&nbsp;<a title="Disclaimer" href="{{ route('disclaimer') }}">Disclaimer</a>&nbsp;|&nbsp;<a title="Contact Us" href="{{ route('contactus') }}">Contact Us</a>&nbsp;|&nbsp;<a title="Sitemap" href="{{ route('sitemap') }}">Sitemap</a>
               </div>
 
               <!--/ copyright -->
