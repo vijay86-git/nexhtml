@@ -11,64 +11,17 @@
  <div class="row">
     <div class="col-md-12">
         <h1>Sitemap</h1>
-
-
-        <div class="col-md-3">
-             <div class="sitemap">
-                 <a href="#"><h2>Sitemap</h2></a>
-                 <ul>
-                    <li><a href="">Introduction</a></li>
-                    <li><a href="">Overview</a></li>
-                 </ul>
-            </div>
-        </div>
-
-
-
-        <div class="col-md-3">
-             <div class="sitemap">
-                 <a href="#"><h2>Sitemap</h2></a>
-                 <ul>
-                    <li><a href="">Introduction</a></li>
-                    <li><a href="">Overview</a></li>
-                 </ul>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-             <div class="sitemap">
-                 <a href="#"><h2>Sitemap</h2></a>
-                 <ul>
-                    <li><a href="">Introduction</a></li>
-                    <li><a href="">Overview</a></li>
-                 </ul>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-             <div class="sitemap">
-                 <a href="#"><h2>Sitemap</h2></a>
-                 <ul>
-                    <li><a href="">Introduction</a></li>
-                    <li><a href="">Overview</a></li>
-                 </ul>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-             <div class="sitemap">
-                 <a href="#"><h2>Sitemap</h2></a>
-                 <ul>
-                    <li><a href="">Introduction</a></li>
-                    <li><a href="">Overview</a></li>
-                 </ul>
-            </div>
-        </div>
-
-
-
+            @foreach ($subjects as $data)
+               <div class="col-md-3">
+                     <div class="sitemap">
+                         <a href="#" title="{{ $data->name }}"><h2>{{ $data->name }}</h2></a>
+                         <ul>
+                            <li><a href="">Introduction</a></li>
+                            <li><a href="">Overview</a></li>
+                         </ul>
+                    </div>
+                </div>
+            @endforeach
 
      </div>
   </div>
