@@ -14,7 +14,7 @@
             @foreach ($subjects as $data)
                <div class="col-md-3">
                      <div class="sitemap">
-                         <a href="#" title="{{ $data->name }}"><h2>{{ $data->name }}</h2></a>
+                         <a href="{{ route('topics', ['subject' => $data->slug, 'slug' => $data->slug]) }}" title="{{ $data->name }}"><h2>{{ $data->name }}</h2></a>
                          <ul>
                             <li><a href="">Introduction</a></li>
                             <li><a href="">Overview</a></li>
