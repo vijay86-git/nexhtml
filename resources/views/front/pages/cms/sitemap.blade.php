@@ -1,6 +1,6 @@
 @extends('front.layout.template')
 <style>
-.sitemap{float:left}
+.sitemap{float:left;margin:0 0 15px 0;}
 .sitemap h2{font-size:16px;margin:0 0 7px 0;}
 .sitemap ul {margin:0;padding:0}
 .sitemap ul li{padding:0 0 0 10px;line-height:24px;list-style-type:none}
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        
+
 
 
      </div>
