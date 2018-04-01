@@ -22,7 +22,7 @@ class DashboardController extends Controller
     public function cplogout(Request $request)
        {
           $request->session()->flush();
-    	  Session::flush(); 
+    	    Session::flush(); 
           return redirect('/');
        }
 
@@ -30,9 +30,9 @@ class DashboardController extends Controller
 	      {
 	          $subjects =  $this->_subjects;
 	          $info     = (object) array();
-   			  $info->page_title        = 'About Us - neladder';
-   			  $info->meta_description  = 'About Us';
-   			  $info->meta_keywords     = 'About Us';
+   			    $info->page_title        = 'About Us - neladder';
+   			    $info->meta_description  = 'About Us';
+   			    $info->meta_keywords     = 'About Us';
 	          return view('front.pages.cms.about', compact('subjects', 'info'));
 	      }
 
