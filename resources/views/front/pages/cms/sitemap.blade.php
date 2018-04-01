@@ -27,7 +27,11 @@
                                 }
                           @endphp
 
-                         
+                         <ul>
+                            @foreach ($info as $infodata)
+                              <li><a>{{ $infodata->name }}</a></li>
+                            @endforeach
+                         </ul>
                     </div>
                 </div>
             @endforeach
