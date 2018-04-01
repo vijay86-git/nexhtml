@@ -19,16 +19,16 @@
                           $key      =  $data->slug.'_sitemap_cache';
                           if (Cache::has($key))
                               {
-                                    $info =  Cache::get($key);
+                                    $pinfo =  Cache::get($key);
                               } 
                           else  {
-                                    $info =  App\Topic::select('id', 'topic', 'slug')->where('subject_id', $data->id)->get();
-                                    Cache::put($key, $info, env('CACHE_TIME', 60));
+                                    $pinfo =  App\Topic::select('id', 'topic', 'slug')->where('subject_id', $data->id)->get();
+                                    Cache::put($key, $pinfo, env('CACHE_TIME', 60));
                                 }
                           @endphp
 
                          <ul>
-                            @foreach ($info as $infodata)
+                            @foreach ($pinfo as $infodata)
                               <li><a title="{{ $infodata->name }}" href="{{ route('topics', ['subject' => $data->slug, 'slug' => $infodata->slug]) }}">{{ $infodata->name }}</a></li>
                             @endforeach
                          </ul>
