@@ -2,10 +2,18 @@
 
 @section('content')
  <div class="row">
-    <div class="col-md-12" id="">
         <h2>Sitemap</h2>
-        <p>coming soon.</p>
-    </div>
+        <div class="col-md-3">
+             <div class="content">
+                  <ul class="points">
+                     <li><a href="">PHP Tutorials</a></li>
+                     <ul class="points">
+                        <li><a href="">Introduction</a></li>
+                        <li><a href="">Overview</a></li>
+                     </ul>
+                  </ul>
+            </div>
+        </div>
   </div>
 
 @stop
