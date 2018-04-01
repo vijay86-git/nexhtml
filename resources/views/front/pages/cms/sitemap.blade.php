@@ -16,20 +16,20 @@
                      <div class="sitemap">
                          <a href="{{ route('topic', $data->slug) }}" title="{{ $data->name }}"><h2>{{ $data->name }}</h2></a>
                          @php
-                          $key      =  $data->slug.'_cache';
+                          $key      =  $data->slug.'_sitemap_cache';
                           if (Cache::has($key))
                               {
                                     $info =  Cache::get($key);
                               } 
                           else  {
-                                    $info =  Subject::select('id', 'name', 'page_title','meta_keywords','meta_description', 'about as detail')->where('slug', $data->slug)->firstOrFail();
+                                    $info =  Topic::select('id', 'name')->where('subject_id', $data->id)->get();
                                     Cache::put($key, $info, env('CACHE_TIME', 60));
                                 }
                           @endphp
 
                          <ul>
                             @foreach ($info as $infodata)
-                              <li><a>{{ $infodata->name }}</a></li>
+                              <li><a title="{{ $infodata->name }}" href="{{ route('topics', ['subject' => $data->slug, 'slug' => $infodata->slug]) }}">{{ $infodata->name }}</a></li>
                             @endforeach
                          </ul>
                     </div>
