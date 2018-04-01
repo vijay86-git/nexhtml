@@ -9,6 +9,7 @@
 
 @section('content')
  <div class="row">
+    <div class="col-md-12">
         <h1>Sitemap</h1>
         <div class="col-md-3">
              <div class="sitemap">
@@ -19,5 +20,6 @@
                  </ul>
             </div>
         </div>
+     </div>
   </div>
 @stop
