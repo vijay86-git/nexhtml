@@ -29,7 +29,7 @@
 
                          <ul>
                             @foreach ($pinfo as $infodata)
-                              <li><a title="{{ $infodata->name }}" href="{{ route('topics', ['subject' => $data->slug, 'slug' => $infodata->slug]) }}">{{ $infodata->name }}</a></li>
+                              <li><a title="{{ $infodata->topic }}" href="{{ route('topics', ['subject' => $data->slug, 'slug' => $infodata->slug]) }}">{{ $infodata->topic }}</a></li>
                             @endforeach
                          </ul>
                     </div>
