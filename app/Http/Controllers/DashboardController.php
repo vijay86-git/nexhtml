@@ -56,4 +56,11 @@ class DashboardController extends Controller
             return view('front.pages.cms.sitemap', compact('subjects', 'info'));
        }
 
+    public function usersJson()
+      {
+           $users[] = ["name" => "Vijay Singh"];
+           $users[] = ["name" => "Saarthak Singh"];
+           echo json_encode($users);
+      }
+
 }

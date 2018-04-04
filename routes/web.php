@@ -81,6 +81,8 @@ Route::get('/cache', function () {
 
 Route::get('/', array('as' => 'home', 'uses' => 'TopicController@index'));
 
+Route::get('/users.json', array('as' => 'users.json', 'uses' => 'DashboardController@usersJson'));
+
 Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about'));
 
 Route::get('/disclaimer', array('as' => 'disclaimer', 'uses' => 'DashboardController@disclaimer'));
