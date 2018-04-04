@@ -58,8 +58,12 @@ class DashboardController extends Controller
 
     public function usersJson()
       {
-           $users[] = ["name" => "Vijay Singh"];
-           $users[] = ["name" => "Saarthak Singh"];
+           $users[] = ["name" => "Dennis Ritchie"];
+           $users[] = ["name" => "James Gosling"];
+           $users[] = ["name" => "Bjarne Stroustrup"];
+           $users[] = ["name" => "Brian Kernighan"];
+           $users[] = ["name" => "Linus Torvalds"];
+           header('Content-Type: application/json');
            echo json_encode($users);
       }
 
