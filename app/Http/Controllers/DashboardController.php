@@ -63,8 +63,9 @@ class DashboardController extends Controller
            $users[] = ["name" => "Bjarne Stroustrup"];
            $users[] = ["name" => "Brian Kernighan"];
            $users[] = ["name" => "Linus Torvalds"];
-           header('Content-Type: application/json');
-           echo json_encode($users);
+           //header('Content-Type: application/json');
+           //echo json_encode($users);
+           return response()->json($users);
       }
 
 }
