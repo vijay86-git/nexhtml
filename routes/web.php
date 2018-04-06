@@ -27,7 +27,7 @@
 */
 
 
-Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:223.225.*'), function() {
+Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:106.210.*'), function() {
 
 //Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin'), function() {
    // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
