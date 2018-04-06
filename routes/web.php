@@ -26,9 +26,8 @@
 });
 */
 
-echo $_SERVER['REMOTE_ADDR'];
 
-Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:106.210.*'), function() {
+Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:223.181.*'), function() {
 
 //Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin'), function() {
    // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
