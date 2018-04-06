@@ -1,5 +1,9 @@
 <?php
-EXPORT_TABLES("localhost","root","Sam572#$","nexladder" );
+
+die;
+
+
+EXPORT_TABLES("localhost","root","Sam572#$","nexladder");
 // https://github.com/tazotodua/useful-php-scripts 
                 //optional: 5th parameter - backup specific tables only: array("mytable1","mytable2",...)   
                 //optional: 6th parameter - backup filename
