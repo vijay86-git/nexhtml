@@ -180,9 +180,39 @@
                    </div>
                  
                   <div class="row">
-                       <!--<div class="col-md-4 col-sm-4 text-center">Ads 1</div>
-                       <div class="col-md-4 col-sm-4 text-center">Ads 2</div>
-                       <div class="col-md-4 col-sm-4 text-center">Ads 3</div>-->
+                       <div class="col-md-4 col-sm-4 text-center">
+                         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                          <!-- Ad 4 -->
+                          <ins class="adsbygoogle"
+                               style="display:inline-block;width:300px;height:250px"
+                               data-ad-client="ca-pub-9716398444039739"
+                               data-ad-slot="4680411731"></ins>
+                          <script>
+                          (adsbygoogle = window.adsbygoogle || []).push({});
+                          </script>
+                       </div>
+                       <div class="col-md-4 col-sm-4 text-center">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- Ad 5 -->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:300px;height:250px"
+                                 data-ad-client="ca-pub-9716398444039739"
+                                 data-ad-slot="9106262970"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                       <div class="col-md-4 col-sm-4 text-center">
+                         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- Ad 6 -->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:300px;height:250px"
+                                 data-ad-client="ca-pub-9716398444039739"
+                                 data-ad-slot="4759823856"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                       </div>
                   </div>
                  
                    <div class="row">
