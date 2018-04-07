@@ -189,7 +189,8 @@
                      </div>
                   </div>
 
-
+                  <div class="row" style="height:20px"></div>
+                  
                   <div class="row">
                        <div class="col-md-5 col-sm-5 text-center">
                          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -215,7 +216,7 @@
                         </div>
                   </div>
 
-                  
+
 
 
 
