@@ -179,6 +179,17 @@
 
                    </div>
                  
+                  
+                 
+                   <div class="row">
+                     <div class="content about">
+                         <p><strong>About Us</strong> - nexladder.com is a learning online platform that helps anyone can learn Web Technologies. nexladder provides all web tutorials like Php, Mysqli, Vuejs, Html, Jquery etc in simple and easy steps starting from basic to advanced concepts with examples. nexladder helps students, developers and project manager where they can learn topics in easy and simple language with examples. To make our website better for you, we bring updates to the website regularly.</p>
+
+                         <p><strong>Our mission</strong> - To help you learn the skills you need to achieve your goal.</p>
+                     </div>
+                  </div>
+
+
                   <div class="row">
                        <div class="col-md-5 col-sm-5 text-center">
                          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -202,26 +213,11 @@
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                         </div>
-                       <!--<div class="col-md-4 col-sm-4 text-center">
-                         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                             Ad 6
-                            <ins class="adsbygoogle"
-                                 style="display:inline-block;width:300px;height:250px"
-                                 data-ad-client="ca-pub-9716398444039739"
-                                 data-ad-slot="4759823856"></ins>
-                            <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                       </div>-->
                   </div>
-                 
-                   <div class="row">
-                     <div class="content about">
-                         <p><strong>About Us</strong> - nexladder.com is a learning online platform that helps anyone can learn Web Technologies. nexladder provides all web tutorials like Php, Mysqli, Vuejs, Html, Jquery etc in simple and easy steps starting from basic to advanced concepts with examples. nexladder helps students, developers and project manager where they can learn topics in easy and simple language with examples. To make our website better for you, we bring updates to the website regularly.</p>
 
-                         <p><strong>Our mission</strong> - To help you learn the skills you need to achieve your goal.</p>
-                     </div>
-                  </div>
+                  
+
+
 
                </div>
  
