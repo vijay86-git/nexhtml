@@ -180,7 +180,7 @@
                    </div>
                  
                   <div class="row">
-                       <div class="col-md-4 col-sm-4 text-center">
+                       <div class="col-md-5 col-sm-5 text-center">
                          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                           <!-- Ad 4 -->
                           <ins class="adsbygoogle"
@@ -191,7 +191,7 @@
                           (adsbygoogle = window.adsbygoogle || []).push({});
                           </script>
                        </div>
-                       <div class="col-md-4 col-sm-4 text-center">
+                       <div class="col-md-5 col-sm-5 text-center">
                         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                             <!-- Ad 5 -->
                             <ins class="adsbygoogle"
@@ -202,9 +202,9 @@
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                         </div>
-                       <div class="col-md-4 col-sm-4 text-center">
+                       <!--<div class="col-md-4 col-sm-4 text-center">
                          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                            <!-- Ad 6 -->
+                             Ad 6
                             <ins class="adsbygoogle"
                                  style="display:inline-block;width:300px;height:250px"
                                  data-ad-client="ca-pub-9716398444039739"
@@ -212,7 +212,7 @@
                             <script>
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
-                       </div>
+                       </div>-->
                   </div>
                  
                    <div class="row">
