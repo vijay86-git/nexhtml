@@ -20,7 +20,16 @@
     <div class="row mrgnbtm15">
 
      <div class="col-md-12">
-       ads
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Ad 1 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-9716398444039739"
+             data-ad-slot="5095344703"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
      </div>
      <div class="col-md-12">
         <h1 class='headingtop'>{{ ! empty($topic_title) ? $topic_title : $info->topic}}</h1>
