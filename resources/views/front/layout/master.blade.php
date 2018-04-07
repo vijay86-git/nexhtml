@@ -52,7 +52,8 @@
 
           gtag('config', 'UA-111558941-1');
         </script>
-
+  </head>
+  <body>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({
@@ -60,10 +61,6 @@
         enable_page_level_ads: true
       });
     </script>
-
-
-  </head>
-  <body>
      <!-- Page Wrapper -->
 
     <!-- <div class="pageWrapper"  style="background:url(images/pexels-photo-574071.jpeg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto">-->
