@@ -18,6 +18,10 @@
    <div class="col-md-9">
       <!-- content -->
     <div class="row mrgnbtm15">
+
+     <div class="col-md-12">
+       ads
+     </div>
      <div class="col-md-12">
         <h1 class='headingtop'>{{ ! empty($topic_title) ? $topic_title : $info->topic}}</h1>
          <div class="topnexprev">
