@@ -54,7 +54,7 @@
         </script>
   </head>
   <body>
-    
+
      <!-- Page Wrapper -->
 
     <!-- <div class="pageWrapper"  style="background:url(images/pexels-photo-574071.jpeg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto">-->
@@ -197,7 +197,15 @@
  
            </div>
            <div class="col-md-2 col-sm-2 text-center margin15">
-               <!-- Ads -->
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Ad 2 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:600px"
+                     data-ad-client="ca-pub-9716398444039739"
+                     data-ad-slot="6679889118"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
            </div>
         </div>
        </div>
