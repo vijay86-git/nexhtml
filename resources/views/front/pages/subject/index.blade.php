@@ -89,7 +89,7 @@
        </div> 
      </div> 
 
-     <div class="row">
+     <div class="row mrgnTpBtm">
        <div class="col-md-12">
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- Ad 3 -->
@@ -105,7 +105,7 @@
 
 
      @if ( ! empty(Request::segment(2)))
-     <div class="row">
+     <div class="row mrgnTpBtm">
        <div class="col-md-12">
 
         <div id="disqus_thread"></div>
