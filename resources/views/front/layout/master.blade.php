@@ -227,7 +227,7 @@
                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Ad 2 -->
                 <ins class="adsbygoogle"
-                     style="display:inline-block;width:300px;height:600px"
+                     style="display:inline-block;width:270px;height:600px"
                      data-ad-client="ca-pub-9716398444039739"
                      data-ad-slot="6679889118"></ins>
                 <script>
