@@ -164,9 +164,9 @@
                               @foreach($subjects as $sub_info)
                                <div class="col-md-3 col-sm-3">
                                 <div>
-                                  <a title="{{ $sub_info->name }}" href="{{ route('topic', $sub_info->slug) }}" target="_self" class="">
+                                  <a title="{{ $sub_info->name }}" href="{{ route('topic', $sub_info->slug) }}" class="">
                                     <span class="courseImg">
-                                      <img src="{{ $sub_info->image }}" alt="{{ ucfirst($sub_info->name) }}" class="img-responsive">
+                                      <img src="{{ $sub_info->image }}" alt="{{ ucfirst($sub_info->name) }}" class="img-responsive" />
                                     </span>
                                      <span class="coursename">{{ strtoupper($sub_info->name) }}</span>
                                     </a>
