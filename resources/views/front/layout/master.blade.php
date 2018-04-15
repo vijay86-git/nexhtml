@@ -159,7 +159,7 @@
                    <div class="row">
                          <div class="col-md-12 col-sm-12"><div class="learnTechnologies"><h2>Learn Technologies</h2></div></div>
                          <div class="col-md-12 col-sm-12">
-                           <div class="row margin15">
+                           <div class="row margin15 pull-left">
 
                               @foreach($subjects as $sub_info)
                                <div class="col-md-3 col-sm-3">
