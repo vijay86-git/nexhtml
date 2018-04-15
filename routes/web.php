@@ -25,7 +25,7 @@
 
 });
 */
-echo $_SERVER['REMOTE_ADDR'];
+
 
 Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:106.210.*'), function() {
 
