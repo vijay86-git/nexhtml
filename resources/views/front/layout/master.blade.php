@@ -159,7 +159,7 @@
                    <div class="row">
                          <div class="col-md-12 col-sm-12"><div class="learnTechnologies"><h2>Learn Technologies</h2></div></div>
                          <div class="col-md-12 col-sm-12">
-                           <div class="row margin15 pull-left">
+                           <div class="row margin15">
 
                               @foreach($subjects as $sub_info)
                                <div class="col-md-3 col-sm-3">
@@ -223,7 +223,7 @@
                </div>
  
            </div>
-           <div class="col-md-3 col-sm-3 margin15">
+           <div class="col-md-3 col-sm-3 margin15 pull-left">
                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Ad 2 -->
                 <ins class="adsbygoogle"
