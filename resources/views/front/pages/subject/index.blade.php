@@ -30,7 +30,7 @@
       <!-- content -->
     <div class="row mrgnbtm15">
 
-     <div class="col-md-12">
+     <div class="col-md-12 mrgnbtm15">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- Ad 1 -->
         <ins class="adsbygoogle"
