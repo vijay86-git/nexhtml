@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Nexladder Online Web Tutorials</title>
+    <title>Free Online Web Development Tutorials | Nexladder</title>
     @php
       $style_file_path = $_SERVER['DOCUMENT_ROOT'] . '/build/assets/css/style.css';
       $ftime           = filemtime($style_file_path);
