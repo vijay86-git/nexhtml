@@ -1,6 +1,5 @@
 <?php
 
-die;
 
 
 EXPORT_TABLES("localhost","root","Sam572#$","nexladder");
