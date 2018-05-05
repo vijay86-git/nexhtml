@@ -85,9 +85,11 @@
                        <input type="text" class="searchTextTop" name="search" placeholder="Search on Nexladder..." />
                        <button class="magnifier"><i class="fa fa-search"></i></button>
                     </form>-->
-                     <input type="text" class="searchTextTop" name="search" placeholder="Search on Nexladder..." />
-                     <button class="magnifier"><i class="fa fa-search"></i></button>
 
+                     <form method="get" action="https://www.google.com/search" target="_blank"> 
+                       <input type="text" class="searchTextTop" name="q" placeholder="Search on Nexladder..." title="Search on Nexladder" /><button class="magnifier"><i class="fa fa-search"></i></button>
+                       <input type="hidden" name="sitesearch" value="www.nexladder.com" />
+                     </form>
                     
                  <!-- close -->
                </div>
