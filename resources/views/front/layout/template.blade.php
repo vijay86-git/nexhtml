@@ -71,15 +71,11 @@
               <div class="col-md-6">
                  <div class="searchbar text-right">
                    <!-- form search -->
-                    <!-- <form method="post">
-                       <input type="text" class="searchTextTop innerTxtSrch" name="search" placeholder="Search on Nexladder..." />
-                       <button class="magnifier"><i class="fa fa-search"></i></button>
-                    </form>-->
 
-                    <input type="text" class="searchTextTop innerTxtSrch" name="search" placeholder="Search on Nexladder..." />
-                    <button class="magnifier"><i class="fa fa-search"></i></button>
-
-
+                    <form method="get" action="https://www.google.com/search" target="_blank"> 
+                       <input autocomplete="off" type="text" class="searchTextTop" name="q" placeholder="Search on Nexladder..." title="Search on Nexladder" /><button class="magnifier"><i class="fa fa-search"></i></button>
+                       <input type="hidden" name="sitesearch" value="https://nexladder.com" />
+                     </form>
 
                    <!-- close -->
                   </div>
