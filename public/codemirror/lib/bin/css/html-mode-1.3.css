@@ -253,8 +253,8 @@ html, body{
     line-height:26px
 }
 .control-bar a:hover, .control-bar input:hover{
-	border-color: #464f5c;
-	background: #464f5c;
+	border-color: #0e947a;
+	background: #0e947a;
 	box-shadow: none;
 }
 .control-bar a:hover span{
