@@ -250,6 +250,7 @@ html, body{
     box-sizing: border-box;
     border-radius: 2px;
     padding:5px 12px;
+    line-height:26px
 }
 .control-bar a:hover, .control-bar input:hover{
 	border-color: #464f5c;
