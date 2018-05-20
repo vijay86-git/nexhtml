@@ -329,13 +329,7 @@ html, body{
 .control-bar a.download-code{
 	margin-right: 10px;
 }
-.new-window i, .download-code i, .toggle-view i{
-	width: 36px;
-    height: 24px;
-    display: inline-block;
-    vertical-align: middle;
-	background: url("../../images/control-icons.png") no-repeat 10px 3px;
-}
+
 .new-window i{
 	background-size: 20px auto;
 }
