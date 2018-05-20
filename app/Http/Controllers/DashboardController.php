@@ -64,8 +64,10 @@ class DashboardController extends Controller
 
     public function codeMirror($topic = '', $file = '')
       {
-               if (file_exists(public_path().'/codemirror/code/'.$topic.'/'.$file.'.html'))
-                    echo "in";
+               $file = public_path().'/codemirror/code/'.$topic.'/'.$file.'.html';
+               if (file_exists($file)) { 
+                    return view('front.pages.codemirror.code', compact('file'));
+               }
                else
                     abort(404);
       }
