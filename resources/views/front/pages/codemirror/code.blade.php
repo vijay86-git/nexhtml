@@ -46,7 +46,7 @@
                 </div>
                 <div class="control-bar">
                     <div class="buttons">
-                        <a href="javascript:void(0);" onClick="updatePreview();" class="show-output">Show Output</a>
+                        <a href="javascript:void(0);" onClick="updatePreview();" class="btn btn-primary">Show Output</a>
 						<a href="javascript:void(0);" onClick="toggleView();" class="toggle-view" title="Change Editor Layout"><i></i></a>
                     </div>                            
                 </div>
