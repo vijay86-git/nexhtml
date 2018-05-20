@@ -337,7 +337,10 @@ html, body{
 	background-position: 9px -81px;
 }
 .toggle-view i{
-	background-position: 8px -39px;
+    background: url('../images/layout.png');
+    width:16px;
+    height:16px;
+    background-repeat:no-repeat;
 }
 .ad-wrapper{
 	height: 90px;
