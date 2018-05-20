@@ -237,7 +237,6 @@ html, body{
     color: #fbfbfb;
     line-height: 33px;
     cursor: pointer;
-    border: none;
     outline: none;
     float: left;
     display: block;
@@ -248,11 +247,9 @@ html, body{
     font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     background: #11a286;
     margin-bottom: 6px;
-    border: 1px solid #4b7a94;
-    height: 34px;
     box-sizing: border-box;
     border-radius: 2px;
-    box-shadow: inset 0 0 12px #588eab;
+    padding:5px 12px;
 }
 .control-bar a:hover, .control-bar input:hover{
 	border-color: #464f5c;
