@@ -41,7 +41,7 @@
             <div class="header">
                 <div class="logo-box">
                     <div class="logo">
-                        <img src="lib/images/codelab-logo.png" alt="CodeLab" />
+                        <img src="{{ URL::asset('codemirror/lib/bin/images/logo.png') }}" alt="CodeLab" />
                     </div>
                 </div>
                 <div class="control-bar">
