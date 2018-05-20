@@ -9,16 +9,16 @@
 	<meta property="og:image" content="/lib/images/signature.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
-	<link rel="stylesheet" href="file/codemirror.css" />
-	<link rel="stylesheet" href="file/html-mode-1.3.css" />
-	<script type="text/javascript" src="file/jquery-1.7.js"></script>
-	<script type="text/javascript" src="file/codemirror.js"></script>
-	<script type="text/javascript" src="file/html-mode-1.1.js"></script>
-	<script type="text/javascript" src="file/xml.js"></script>    
-	<script type="text/javascript" src="file/javascript.js"></script>
-	<script type="text/javascript" src="file/mode/css.js"></script>
-	<script type="text/javascript" src="file/htmlmixed.js"></script>
-	<script type="text/javascript" src="file/active-line.js"></script>
+	<link rel="stylesheet" href="{{ URL::asset('codemirror/lib/bin/css/codemirror.css') }}" />
+	<link rel="stylesheet" href="{{ URL::asset('codemirror/lib/bin/css/html-mode-1.3.css') }}" />
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/js/jquery-1.7.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/js/codemirror.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/js/html-mode-1.1.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/mode/xml.js') }}"></script>    
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/mode/javascript.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/mode/css.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/mode/htmlmixed.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/js/active-line.js') }}"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
         	updatePreview();
