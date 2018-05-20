@@ -109,15 +109,17 @@ table td{
 }
 .logo-box{
     float: left;
-    padding-top: 24px;
+    padding-top:15px;
 	margin-right: 20px;
-	margin-left: 10px;
+	margin-left: 15px;
 }
 .logo{
     width:200px;
     float:left;
     padding-top: 2px;
 }
+.logo img { width:60px }
+
 .slogan {
     float:left;
     border-left:1px solid #CCCCCC;
