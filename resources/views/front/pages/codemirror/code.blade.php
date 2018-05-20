@@ -4,7 +4,7 @@
 	<title>Online Editor - nexladder</title>
 	<meta name="description" content="Try and test code online and see the real-time results." />
 	<meta charset="UTF-8" />
-	<meta property="og:title" content="jQuery Click Handler Demo" />
+	<meta property="og:title" content="Test Code Online" />
     <meta property="og:description" content="View the live example as well as try and test it using the online HTML editor." />
 	<meta property="og:image" content="/lib/images/signature.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
