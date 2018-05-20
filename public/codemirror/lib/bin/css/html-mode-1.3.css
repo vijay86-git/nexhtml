@@ -1,15 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face {
-  font-family: 'MenschRegular';
-  src: url('../fonts/mensch-webfont.eot');
-  src: url('../fonts/mensch-webfont.eot?#iefix') format('eot'),
-       url('../fonts/mensch-webfont.woff') format('woff'),
-       url('../fonts/mensch-webfont.ttf') format('truetype'),
-       url('../fonts/mensch-webfont.svg#webfont0UwCC656') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+      src: local('Open Sans Regular'), local('OpenSans-Regular'),
+           url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+           url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+           url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+    }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,7 +75,7 @@ body{
     text-align: center;
 	min-width: 1260px;
 	background: #fff;
-	font-family: arial,sans-serif;
+	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 table{
     width: 100%;
@@ -223,7 +225,7 @@ html, body{
   margin-top: 5px;
   font-size: 12px;
   line-height: 19px;
-  font-family: "Myriad Pro",Verdana,sans-serif;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 .control-bar label input{
   float: left;
@@ -243,8 +245,8 @@ html, body{
     font-weight: bold;
     text-decoration: none;
     text-shadow: 0 0 2px rgba(0,0,0,0.1);
-    font-family: Arial,sans-serif;
-    background: #6598b3;
+    font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background: #11a286;
     margin-bottom: 6px;
     border: 1px solid #4b7a94;
     height: 34px;
@@ -372,7 +374,7 @@ html, body{
 }
 .social-link{
     float: left;
-    font-family: arial,sans-serif;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: rgb(85, 116, 142);
     font-size: 13px;
     padding-top: 1px;
@@ -415,7 +417,7 @@ html, body{
 .switch-mode{
 	float: right;
 	text-decoration: none;
-	font-family: arial,sans-serif;
+	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 	display: inline-block;
 	color: #9542c4;
     padding: 1px 14px;
