@@ -99,7 +99,9 @@ Route::get('/{slug}', array('as' => 'topic', 'uses' => 'TopicController@getSubje
 
 Route::get('/{subject}/{slug}', array('as' => 'topics', 'uses' => 'TopicController@getSubjectTopics'));
 
-Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout')); 
+Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardController@cplogout'));
+
+Route::get('/codemirror/{folder}/{file}', 'DashboardController@codeMirror')->name('dashboard.codemirror'); 
 
 
 

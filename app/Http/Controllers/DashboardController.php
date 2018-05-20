@@ -62,4 +62,12 @@ class DashboardController extends Controller
            return response()->json($users);
       }
 
+    public function codeMirror($topic = '', $file = '')
+      {
+               if (file_exists(public_path().'/codemirror/code/'.$topic.'/'.$file.'.html'))
+                    echo "in";
+               else
+                    abort(404);
+      }
+
 }
