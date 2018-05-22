@@ -84,7 +84,7 @@ include_once($file)
                     <div class="outer-wrapper">
                         <span class="hide-preview-pane">&nbsp;</span>
                         <div class="output-area">
-                            <iframe id="preview" name="preview"></iframe>
+                            <iframe id="preview" name="preview" style="padding:10px"></iframe>
                         </div>
                     </div>
                 </div>
