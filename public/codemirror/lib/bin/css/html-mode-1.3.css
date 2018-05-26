@@ -336,7 +336,6 @@ html, body{
     height: 24px;
     display: inline-block;
     vertical-align: middle;
-	background: url("../../images/control-icons.png") no-repeat 10px 3px;
 }
 .new-window i{
 	background-size: 20px auto;
@@ -379,7 +378,6 @@ html, body{
 	left: 16px;
 	top: 16px;
 	z-index: 999;
-	background: url("../../images/editor-hint.png") no-repeat;
 }
 .social-link{
     float: left;
