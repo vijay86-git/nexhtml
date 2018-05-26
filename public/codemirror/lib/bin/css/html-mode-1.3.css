@@ -94,7 +94,7 @@ table td{
     height: 95px;
 	overflow: hidden;
     border-bottom: 1px solid #ccc;
-    background: url("../../images/codelab-header-bg.png") repeat-x scroll 0 5px #f3f3f3;
+    background:#f3f3f3;
 }
 .header {
     height: 90px;
