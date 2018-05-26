@@ -52,6 +52,17 @@
                 </div>
                 <div class="top-ad-box">
 
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Ad 1 -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-9716398444039739"
+                         data-ad-slot="5095344703"
+                         data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
                 </div>
             <div class="clear">&nbsp;</div>
             </div>
