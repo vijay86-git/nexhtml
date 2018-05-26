@@ -90,6 +90,36 @@ include_once($file)
                 </div>
             </div>
         </div>
+
+
+        <div class="codelab-footer">        
+            <label class="auto-update"><input type="checkbox" id="check"> Auto update</label>
+            <script>
+                var delay;
+                var checkbox = document.getElementById("check");
+                editor.on("change", function(){
+                    editor.refresh();
+                    if(checkbox.checked==true){            
+                        clearTimeout(delay);
+                        delay = setTimeout(updatePreview, 300); // Don't use parenthesis 
+                    }
+                });
+                //setTimeout(updatePreview, 300);
+            </script>
+            <div class="social-widget-wrapper">
+                <!-- Social widget -->
+                  <p class="social-link">Share this example with 
+                    <a id="facebook-share-btn" href="https://facebook.com/sharer.php?u={{ Request::url() }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Facebook</a>, 
+                    <a id="twitter-share-btn" href="https://twitter.com/share?text={{ $text }}&amp;url={{ Request::url() }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;">Twitter</a>, 
+                    <a id="google-share-btn" href="https://plus.google.com/share?url={{ Request::url() }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600,top=150, left='+((screen.width/2)-300));return false;">Google +</a>
+                  </p>
+                <!-- End:Social widget -->
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+
+
+
         
     </form>
         
