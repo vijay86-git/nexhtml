@@ -250,7 +250,6 @@ html, body{
     background: #11a286;
     margin-bottom: 6px;
     box-sizing: border-box;
-    border-radius: 2px;
     padding:5px 12px;
     line-height:26px
 }
@@ -350,7 +349,7 @@ html, body{
 .toggle-view i {
     background: url('../images/toggle.png');
     width:24px;
-    height:24px;
+    height:26px;
     background-repeat:no-repeat;
 }
 

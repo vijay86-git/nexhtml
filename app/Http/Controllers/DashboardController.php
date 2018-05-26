@@ -67,7 +67,7 @@ class DashboardController extends Controller
                $file = public_path().'/codemirror/code/'.$topic.'/'.$file.'.html';
                if (file_exists($file)) { 
                     $fileinfo = pathinfo($file);
-                    echo $text = str_replace("-", " ", $fileinfo['filename']);
+                    $text     = str_replace("-", " ", $fileinfo['filename']);
                     return view('front.pages.codemirror.code', compact('file', 'text'));
                }
                else
