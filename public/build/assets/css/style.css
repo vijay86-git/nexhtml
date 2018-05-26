@@ -33,7 +33,7 @@ ul.list-group li a.active, ul.list-group li a:hover{border-bottom:1px dotted #11
 .social ul li a{color:#505763;font-size:15px}
 .socialinner ul li a{color:#505763;font-size:15px}
 .searchbar{padding-right:10px}
-.searchTextTop{width:225px;height:36px;line-height:36px;padding: 0 0 0 10px;border-radius:2px;border:1px solid #f9f9f9}
+.searchTextTop{width:225px;height:36px;line-height:36px;padding: 0 0 0 10px;border-radius:2px;border:none}
 .searchTextTop:focus{background:none}
 .innerTxtSrch{background:#f3f3f3}
 .logo{display:block}
