@@ -349,7 +349,7 @@ html, body{
 }
 
 .toggle-view i {
-    background: url('../images/layout.png');
+    background: url('../images/toggle.png');
     width:16px;
     height:16px;
     background-repeat:no-repeat;
