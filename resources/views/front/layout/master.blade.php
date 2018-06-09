@@ -238,43 +238,6 @@
     
     <div class="footer marginTop40">
         <div class="container">
-        <!--<div class="row">
-          <div class="col-md-4">
-            <div>
-              <h3 class="title m_title">LEARN TUTORIALS</h3>
-              <div class="sbs">
-                <ul class="menu">
-                  <li><a href="/">Home</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4">
-            <div>
-              <h3 class="title m_title">LEARN TUTORIALS</h3>
-              <div class="sbs">
-                <ul class="menu">
-                  <li><a href="https://nexladder.com/beta/php-tutorial">PHP</a></li>
-                  <li><a href="https://nexladder.com/beta/mysqli-tutorial">MySQLi</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4">
-            <div>
-              <h3 class="title m_title">GET IN TOUCH</h3>
-              <div class="contact-details"><p>
-                Email: <a href="#">nexladderinfo@gmail.com</a></p>
-                <p>nexladder<br></p>
-                <p><a href="#" target="_blank"><i class="icon-map-marker icon-white"></i> Open in Google Maps</a></p>
-              </div>
-            </div>
-          </div>
-
-      </div>-->
 
         <!--/ row -->
         <div class="row">
