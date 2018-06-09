@@ -23,8 +23,8 @@ class ContactController extends Controller
 	          $subjects =  $this->_subjects;
 	          $info     = (object) array();
    			  $info->page_title        = 'Contact Us - neladder';
-   			  $info->meta_description  = 'Contact Us';
-   			  $info->meta_keywords     = 'Contact Us';
+   			  $info->meta_description  = 'Contact us - you can contact us by filling the contact us form, we\'ll respond you as soon as possible.';
+   			  $info->meta_keywords     = '';
 	          return view('front.pages.contact.index', compact('subjects', 'info'));
 	      }
 
