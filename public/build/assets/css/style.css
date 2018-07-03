@@ -237,4 +237,4 @@ ol.code li{list-style-type:none;padding:0 0 0 10px;}
 
 .btn-code, .btn-code:hover {background-color:#11a286;border-color:#0e9279;padding:8px 20px;color:#fff}
 .btn-code a {color:#fff !important}
-.homeclr{color:#fff;}
+.homeclr{color:#fff !important;}
