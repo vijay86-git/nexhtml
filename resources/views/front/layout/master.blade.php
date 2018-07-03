@@ -59,7 +59,7 @@
 
     <!-- <div class="pageWrapper"  style="background:url(images/pexels-photo-574071.jpeg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto">-->
 
-      <div class="pageWrapper" style="background:url(https://nexladder.com/images/banner.jpg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto;">
+      <div class="pageWrapper" style="background:url(https://nexladder.com/images/banner1.jpeg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto;">
 
 
        <!-- Container -->
@@ -100,7 +100,7 @@
          <div class="headerSection">
            <div class="row">
                <div class="col-md-3">
-                 <div class="logo"><a href="{{ URL('/') }}" title="nexladder"><img src="{{ Helper::loadAssetsFiles('images/nexlogo.png') }}" alt="nexladder" /></a></div>
+                 <div class="logo"><a href="{{ URL('/') }}" title="nexladder"><img src="{{ Helper::loadAssetsFiles('images/nex_logo.png') }}" alt="nexladder" /></a></div>
                </div>
             <div class="col-md-9">
               <!-- navigation -->
