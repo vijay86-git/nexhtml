@@ -13,7 +13,37 @@ get_header(); ?>
 </header>
 <!-- /END HOME / HEADER  -->
 
+<?php
+	$llorix_one_lite_blog_header_image    = get_theme_mod( 'llorix_one_lite_blog_header_image', llorix_one_lite_get_file( '/images/background-images/background-blog.jpg' ) );
+	$llorix_one_lite_blog_header_title    = get_theme_mod( 'llorix_one_lite_blog_header_title', apply_filters( 'llorix_one_lite_blog_header_title_default_filter', 'This Theme Supports a Custom FrontPage' ) );
+	$llorix_one_lite_blog_header_subtitle = get_theme_mod( 'llorix_one_lite_blog_header_subtitle' );
 
+	if ( ! empty( $llorix_one_lite_blog_header_image ) || ! empty( $llorix_one_lite_blog_header_title ) || ! empty( $llorix_one_lite_blog_header_subtitle ) ) :
+
+	if ( ! empty( $llorix_one_lite_blog_header_image ) ) :
+		echo '<div class="archive-top" style="background-image: url(' . $llorix_one_lite_blog_header_image . ');">';
+		else :
+			echo '<div class="archive-top">';
+		endif;
+		echo '<div class="section-overlay-layer">';
+		echo '<div class="container">';
+
+		if ( ! empty( $llorix_one_lite_blog_header_title ) ) :
+			echo '<p class="archive-top-big-title">' . $llorix_one_lite_blog_header_title . '</p>';
+			echo '<p class="colored-line"></p>';
+			endif;
+
+		if ( ! empty( $llorix_one_lite_blog_header_subtitle ) ) :
+			echo '<p class="archive-top-text">' . $llorix_one_lite_blog_header_subtitle . '</p>';
+			endif;
+
+		echo '</div>';
+		echo '</div>';
+		echo '</div>';
+
+	endif;
+
+?>
 
 
 <div role="main" id="content" class="content-wrap">
