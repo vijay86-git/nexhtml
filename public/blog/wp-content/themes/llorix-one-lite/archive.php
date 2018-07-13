@@ -21,7 +21,7 @@ get_header(); ?>
 	if ( ! empty( $llorix_one_lite_blog_header_image ) || ! empty( $llorix_one_lite_blog_header_title ) || ! empty( $llorix_one_lite_blog_header_subtitle ) ) :
 
 	if ( ! empty( $llorix_one_lite_blog_header_image ) ) :
-		echo '<div class="archive-top" style="background-image: url(' . $llorix_one_lite_blog_header_image . ');">';
+		echo '<div class="archive-top">';
 		else :
 			echo '<div class="archive-top">';
 		endif;
