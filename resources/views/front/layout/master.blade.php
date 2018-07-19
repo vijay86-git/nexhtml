@@ -59,7 +59,7 @@
 
     <!-- <div class="pageWrapper"  style="background:url(images/pexels-photo-574071.jpeg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto">-->
 
-      <div class="pageWrapper" style="background:url(https://nexladder.com/images/banner1.jpeg);background-repeat:no-repeat;background-position:top center;background-size:1600px auto;">
+      <div class="pageWrapper" style="background:url(https://nexladder.com/images/banner2.jpg);background-repeat:no-repeat;background-position:center center;background-size:1600px auto;">
 
 
        <!-- Container -->
