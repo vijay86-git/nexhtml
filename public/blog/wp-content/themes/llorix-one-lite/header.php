@@ -15,6 +15,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 
+	<meta name="msvalidate.01" content="F13063B8299624F18B7C4E98367AE3E1" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111558941-1"></script>
     <script>
@@ -24,7 +25,7 @@
 
       gtag('config', 'UA-111558941-1');
     </script>
-        
+
 </head>
 
 <?php
