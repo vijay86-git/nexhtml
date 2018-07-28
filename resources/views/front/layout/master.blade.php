@@ -61,7 +61,6 @@
 
       <div class="pageWrapper" style="background:url(https://nexladder.com/images/banner2.jpg);background-repeat:no-repeat;background-position:center center;background-size:1600px auto;">
 
-
        <!-- Container -->
       
         <div class="container">
@@ -71,9 +70,9 @@
                 <div class="col-md-6">
                  <div class="social">
                   <ul>
-                  <li><a href="https://www.facebook.com/nexladder" title="facebook"><i class="fa fa-facebook homeclr" aria-hidden="true"></i></a></li>
-                  <li><a href="https://twitter.com/nexladder" title="twitter"><i class="fa fa-twitter homeclr" aria-hidden="true"></i></a></li>
-                  <li><a href="https://plus.google.com/107873437441310283848" title="google plus"><i class="fa fa-google-plus homeclr" aria-hidden="true"></i></a></li>
+                  <li><a target="_blank" href="https://www.facebook.com/nexladder" title="facebook"><i class="fa fa-facebook homeclr" aria-hidden="true"></i></a></li>
+                  <li><a target="_blank" href="https://twitter.com/nexladder" title="twitter"><i class="fa fa-twitter homeclr" aria-hidden="true"></i></a></li>
+                  <li><a target="_blank" href="https://plus.google.com/107873437441310283848" title="google plus"><i class="fa fa-google-plus homeclr" aria-hidden="true"></i></a></li>
                 </ul>
                </div>
               </div>
