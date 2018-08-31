@@ -221,6 +221,9 @@
  
            </div>
            <div class="col-md-3 col-sm-3 margin15 pull-left">
+
+               <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnexladder&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=541506242974269" width="300" height="214" style="border:none;overflow:hidden;margin:10px 0 0 0" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Ad 2 -->
                 <ins class="adsbygoogle"
@@ -231,8 +234,6 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
-
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnexladder&tabs&width=340&height=214&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=541506242974269" width="300" height="214" style="border:none;overflow:hidden;margin:10px 0 0 0" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
            </div>
         </div>
        </div>
