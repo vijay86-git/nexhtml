@@ -230,6 +230,9 @@
                 <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
+
+
+                <div class="fb-page" data-href="https://www.facebook.com/nexladder" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/nexladder" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nexladder">Nexladder</a></blockquote></div>
            </div>
         </div>
        </div>
