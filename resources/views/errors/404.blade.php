@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>{{ $info->page_title }}</title>
+    <title>Page Not Found</title>
     @php
       $style_file_path = $_SERVER['DOCUMENT_ROOT'] . '/build/assets/css/style.css';
       $ftime           = filemtime($style_file_path);
@@ -20,25 +20,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <meta name="msvalidate.01" content="F13063B8299624F18B7C4E98367AE3E1" />
-    <meta name="description" content="{{ $info->meta_description }}" />
-    <meta name="keywords" content="{{ $info->meta_keywords }}" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <link rel="canonical" href="{{ Request::url() }}" />
-    <meta property="og:image" content="{{ Helper::loadAssetsFiles('/images/nexsharelogo.png') }}" />
-    <meta property="og:title" content="{{ $info->page_title }}" />
-    <meta property="og:description" content="{{ $info->meta_description }}" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ Request::url() }}" />
-    <meta property="og:site_name" content="{{ URL::to('/') }}" />
-    <meta name="twitter:title" property="og:title" content="{{ $info->page_title }}" />
-    <meta name="twitter:description" property="og:description" content="{{ $info->meta_description }}" />
-    <meta property="og:url" content="{{ Request::url() }}" />
-    <meta property="og:site_name" content="{{ env('SOCIAL_SITE_NAME') }}" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="{{ env('SOCIAL_SITE_NAME') }}" />
-    <meta name="twitter:domain" content="{{ URL::to('/') }}" />
-    <meta name="twitter:creator" content="{{ env('SOCIAL_SITE_NAME') }}" />
-    <meta name="twitter:image" content="{{ Helper::loadAssetsFiles('images/nexsharelogo.png') }}" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111558941-1"></script>
