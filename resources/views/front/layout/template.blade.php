@@ -137,7 +137,7 @@
               <!--/ social-icons -->
               <!-- copyright -->
               <div class="copyright col-md-5">
-                <p>&copy; {{ date('Y') }} All rights reserved.</p>
+                <p>&copy; {{ date('Y') }} All rights reserved. Developed by <a target="_blank" href="https://nexglobalinc.com/" title="nexglobalinc">nexgloalinc</a></p>
               </div>
 
               <div class="col-md-7 pull-right" style="text-align:right">
