@@ -81,7 +81,7 @@
        <!-- End Container -->
     </div>
     <div class="container">
-       <div class="bodyPart">
+       <div class="bodyPart" style="margin:60px 0">
            <h1 style="font-size:26px">This page isn't available</h1>
            <p>The link you followed may be broken, or the page may have been removed.</p>
            <br />
