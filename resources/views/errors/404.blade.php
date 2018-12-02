@@ -85,7 +85,7 @@
            <h1 style="font-size:26px">This page isn't available</h1>
            <p>The link you followed may be broken, or the page may have been removed.</p>
            <br />
-           <a href="{{ URL('/') }}" title="Back"><button class="btn btn-danger" style="padding:0 10px">Back</button></a>
+           <a href="{{ URL('/') }}" title="Back"><button class="btn btn-danger" style="padding:10 20px">Back</button></a>
        </div>
    </div>
     
