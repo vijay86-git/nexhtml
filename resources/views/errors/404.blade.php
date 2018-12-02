@@ -80,12 +80,12 @@
         </div> 
        <!-- End Container -->
     </div>
-    <div class="container">
+    <div class="container" style="margin:50px 0">
        <div class="bodyPart">
-           <h2>This page isn't available</h2>
+           <h1 style="font-size:20px">This page isn't available</h1>
            <p>The link you followed may be broken, or the page may have been removed.</p>
            <br />
-           <a href="{{ URL('/') }}" title="Back">Back</a>
+           <a href="{{ URL('/') }}" title="Back"><u>Back</u></a>
        </div>
    </div>
     
