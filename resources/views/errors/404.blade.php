@@ -71,32 +71,9 @@
          <!-- Header part -->
          <div class="headerSection">
            <div class="row">
-             <div class="col-md-3">
+             <div class="col-md-12 text-center">
                  <div class="sitelogo"><a href="{{ URL('/') }}" title="nexladder"><img src="{{ Helper::loadAssetsFiles('images/nexlogo.png') }}" alt="nexladder" /></a></div>
              </div>
-             <div class="col-md-9">
-               <!-- navigation -->
-                 <nav class="navbar navbar-inverse-inner">
-                  <div class="container-fluid">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span> 
-                      </button>
-                      <a class="navbar-brand" href="#"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navBar">
-                      <ul class="nav navbar-nav">
-                        <li class="{{ (Request::segment(1) == '') ? 'active' : '' }}"><a title="Home" href="{{ URL('/') }}"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-
-                        
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-               <!-- close navigation -->
-            </div>
            </div>
          </div>
          <!-- close body part -->
@@ -105,7 +82,10 @@
     </div>
     <div class="container">
        <div class="bodyPart">
-           <h2>404, Page Not Found </h2>
+           <h2>This page isn't available</h2>
+           <p>The link you followed may be broken, or the page may have been removed.</p>
+           <br />
+           <a href="{{ URL('/') }}" title="Back">Back</a>
        </div>
    </div>
     
