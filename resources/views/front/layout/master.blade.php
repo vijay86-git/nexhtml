@@ -250,7 +250,7 @@
               <!--/ social-icons -->
               <!-- copyright -->
               <div class="copyright col-md-6">
-                <p>&copy; {{ date('Y') }} All rights reserved. Developed by <a target="_blank" href="https://nexglobalinc.com/" title="nexglobalinc">nexgloalinc</a></p>
+                <p>&copy; {{ date('Y') }} All rights reserved. Developed by <a target="_blank" href="https://nexglobalinc.com/" title="nexglobalinc">nexglobalinc</a></p>
               </div>
 
               <div class="col-md-6 pull-right" style="text-align:right">
