@@ -36,7 +36,7 @@ class ContactController extends Controller
 	      	   
 	      		request()->validate(['message' => 'required', 'name' => 'required', 'email' => 'required|email']);
 
-	      		$data   = $params['name'] . ' - ' .$params['email'] . ' - ' .$params['message'];
+	      		$data   = $params['name'] . ' - ' .$params['email'] . ' - ' .substr($params['message'], 0, 225);
 
 	      		Mail::raw($data, function ($message){
            					 $message->to('vjmail17@gmail.com');
