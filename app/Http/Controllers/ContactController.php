@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use DB;
 use Cache;
 use Helper;
+use Mail;
 
 class ContactController extends Controller
 	{
@@ -29,9 +30,19 @@ class ContactController extends Controller
 	      }
 
 
-	    public function submit()
+	    public function submit(Request $request)
 	      {
+	      	    $params = $request->all();
+	      	   
 	      		request()->validate(['message' => 'required', 'name' => 'required', 'email' => 'required|email']);
+
+	      		$data   = $params['name'] . ' - ' .$params['email'] . ' - ' .$params['message'];
+
+	      		Mail::raw($data, function ($message){
+           					 $message->to('vjmail17@gmail.com');
+           					 $message->subject('nexladder query');
+ 				});
+
 	      		return redirect()->route('contactus')->with('msg', 'Thanks for contacting us. We\'ll contact you soon');
 	      }
 	}
