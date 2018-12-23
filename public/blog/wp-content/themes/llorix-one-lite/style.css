@@ -90,7 +90,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
    1.0 GENERAL STYLES
 -----------------------------------------*/
 .syntaxhighlighter{font-size:13px !important}
-p{font-family: "Open Sans",Helvetica Neue,Helvetica,Arial,sans-serif !important;}
+p{font-family: "Open Sans",Helvetica Neue,Helvetica,Arial,sans-serif !important;font-size:13px !important}
 html {
 	font-family: "Open Sans",Helvetica Neue,Helvetica,Arial,sans-serif;
 	font-size: 100%;
