@@ -29,12 +29,11 @@ class ContactController extends Controller
 	          return view('front.pages.contact.index', compact('subjects', 'info'));
 	      }
 
-
 	    public function submit(Request $request)
 	      {
 	      	    $params = $request->all();
 	      	   
-	      		request()->validate(['message' => 'required', 'name' => 'required', 'email' => 'required|email']);
+	      		request()->validate(['message' => 'required', 'name' => 'required', 'email' => 'required|email', 'g-recaptcha-response' => 'required|captcha']);
 
 	      		$data   = $params['name'] . ' - ' .$params['email'] . ' - ' .substr($params['message'], 0, 225);
 
