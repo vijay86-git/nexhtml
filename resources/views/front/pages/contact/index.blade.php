@@ -1,5 +1,7 @@
 @extends('front.layout.template')
 
+{!! NoCaptcha::renderJs() !!}
+
 @section('content')
  <div class="row">
     <div class="col-md-12">
@@ -57,6 +59,13 @@
                     <input type="text" class="form-control" id="email" name="email" value="{{ old('email') }}" />
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    {!! NoCaptcha::display() !!}
+                </div>
+            </div>
+
 
             <div class="row">
                 <div class="col-sm-12 form-group">
