@@ -181,6 +181,8 @@ return [
         JD\Cloudder\CloudderServiceProvider::class,
         App\Providers\HelperServiceProvider::class,
 
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
+
     ],
 
     /*
@@ -235,6 +237,8 @@ return [
         'Input' => Illuminate\Support\Facades\Input::class,
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
         'Helper' => App\Helpers\Helper::class,
+
+        'NoCaptcha' => Anhskohbo\NoCaptcha\Facades\NoCaptcha::class,
 
     ],
 
