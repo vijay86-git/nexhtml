@@ -49,6 +49,9 @@
 
           gtag('config', 'UA-111558941-1');
         </script>
+
+        @stack('js')
+
   </head>
   <body>
     
