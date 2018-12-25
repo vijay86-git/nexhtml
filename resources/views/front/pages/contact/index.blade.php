@@ -1,8 +1,7 @@
 @extends('front.layout.template')
 
-{!! NoCaptcha::renderJs() !!}
-
 @section('content')
+{!! NoCaptcha::renderJs() !!}
  <div class="row">
     <div class="col-md-12">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
