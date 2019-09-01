@@ -64,7 +64,6 @@ class DashboardController extends Controller
 
     public function getSubjects()
       {
-        die('sdf');
         $subjects = Subject::get();
         return response()->json([
                                     'response' => $subjects,
