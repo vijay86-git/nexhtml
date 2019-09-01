@@ -33,7 +33,7 @@ class TopicController extends Controller
 
           $slug     =  '';
           
-      	  $topics = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
+      	  $topics   = DB::table('topics')->select('id', 'topic', 'slug')->orderBy('sort', 'asc')->get();
 
           $section = DB::table('section')->select('id', 'section')->orderBy('sort', 'asc')->get();
 
