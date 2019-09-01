@@ -9,6 +9,8 @@ use DB;
 use Cache;
 use Helper;
 
+use App\Subject as Subject;
+
 class DashboardController extends Controller
 {
     //
