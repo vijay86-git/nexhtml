@@ -9,8 +9,6 @@ use DB;
 use Cache;
 use Helper;
 
-use App\Subject as Subject;
-
 class DashboardController extends Controller
 {
     //
@@ -75,15 +73,5 @@ class DashboardController extends Controller
                else
                     abort(404);
       }
-
-     /* API Methods */ 
-
-     public function getSubjects()
-      {
-        $subjects = Subject::get();
-        return response()->json([
-                                    'response' => $subjects,
-                                ]);
-      } 
 
 }
