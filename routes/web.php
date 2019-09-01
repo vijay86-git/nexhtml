@@ -108,7 +108,7 @@ Route::get('/codemirror/{folder}/{file}', 'DashboardController@codeMirror')->nam
 //Route::post('/contact-us', array('as' => 'contactus.post', 'uses' => 'ContactController@post'));
 
 
-Route::get('/subjects', 'DashboardController@getSubjects')->name('dashboard.getsubjectsapi'); 
+Route::get('/subjects', array('as' => 'subjects.api', 'uses' => 'DashboardController@getSubjects'));
 
 
 });
