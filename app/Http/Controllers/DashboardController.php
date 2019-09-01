@@ -66,7 +66,7 @@ class DashboardController extends Controller
 
     public function getSubjects()
       {
-        $subjects = Subject::pluck('id', 'name', 'image')->get();
+        $subjects = Subject::get()->pluck('id', 'name', 'image');
         return response()->json([
                                     'response' => $subjects,
                                 ]);
