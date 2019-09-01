@@ -187,7 +187,11 @@ class TopicController extends Controller
 
      public function getSubjects()
       {
-
+        die('sdfsdf');
+        $subjects = Subject::get();
+        return response()->json([
+                                    'response' => $subjects,
+                                ]);
       } 
 
  }
