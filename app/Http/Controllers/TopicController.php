@@ -183,14 +183,4 @@ class TopicController extends Controller
           echo 'test';
       }
 
-         /* API Methods */ 
-
-     public function getSubjects()
-      {
-        $subjects = Subject::get();
-        return response()->json([
-                                    'response' => $subjects,
-                                ]);
-      } 
-
  }

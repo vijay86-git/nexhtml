@@ -81,7 +81,9 @@ Route::get('/cache', function () {
 
 Route::get('/', array('as' => 'home', 'uses' => 'TopicController@index'));
 
-Route::get('/users.jsonaa', array('as' => 'users.json', 'uses' => 'DashboardController@usersJson'));
+Route::get('/users.json', array('as' => 'users.json', 'uses' => 'DashboardController@usersJson'));
+
+Route::get('/subjects.json', array('as' => 'subjects.json', 'uses' => 'DashboardController@getSubjects'));
 
 Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about'));
 
@@ -106,9 +108,6 @@ Route::get('/codemirror/{folder}/{file}', 'DashboardController@codeMirror')->nam
 
 
 //Route::post('/contact-us', array('as' => 'contactus.post', 'uses' => 'ContactController@post'));
-
-
-Route::get('/subjects.json', array('as' => 'subjects.json', 'uses' => 'TopicController@getSubjects'));
 
 
 });

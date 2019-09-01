@@ -62,6 +62,15 @@ class DashboardController extends Controller
            return response()->json($users);
       }
 
+    public function getSubjects()
+      {
+        die('sdf');
+        $subjects = Subject::get();
+        return response()->json([
+                                    'response' => $subjects,
+                                ]);
+      } 
+
     public function codeMirror($topic = '', $file = '')
       {
                $file = public_path().'/codemirror/code/'.$topic.'/'.$file.'.html';
