@@ -10,6 +10,7 @@ use Cache;
 use Helper;
 
 use App\Subject as Subject;
+use App\Topic as Topics;
 
 class DashboardController extends Controller
 {
