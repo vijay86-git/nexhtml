@@ -86,6 +86,10 @@ Route::get('/users.json', array('as' => 'users.json', 'uses' => 'DashboardContro
 Route::get('/subjects.json', array('as' => 'subjects.json', 'uses' => 'DashboardController@getSubjects'));
 
 Route::get('/subject-topics/{id}', array('as' => 'subject-topics.json', 'uses' => 'DashboardController@subjectTopics'));
+Route::get('/topic-detail/{id}', array('as' => 'topic-detail.json', 'uses' => 'DashboardController@topicDetail'));
+
+
+
 
 
 Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about'));

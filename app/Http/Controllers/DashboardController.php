@@ -81,6 +81,17 @@ class DashboardController extends Controller
                                 ]);
      }
 
+
+    public function topicDetail($id = '')
+     {
+         $results = Topics::where(['id' => $id])->get();
+         return response()->json([
+                                    'response' => $results,
+                                ]);
+     }
+     
+
+
     public function codeMirror($topic = '', $file = '')
       {
                $file = public_path().'/codemirror/code/'.$topic.'/'.$file.'.html';
