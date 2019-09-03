@@ -84,7 +84,7 @@ class DashboardController extends Controller
 
     public function topicDetail($id = '')
      {
-         $results = Topics::where(['id' => $id])->get();
+         $results = Topics::select('detail')->where(['id' => $id])->get();
          return response()->json([
                                     'response' => $results,
                                 ]);
