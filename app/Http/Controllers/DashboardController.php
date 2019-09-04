@@ -84,12 +84,9 @@ class DashboardController extends Controller
 
     public function topicDetail($id = '')
      {
-         $results = Topics::select('detail')->where(['id' => $id])->first();
-         return response()->json([
-                                    'response' => $results,
-                                ]);
+         $info = Topics::select('detail', 'topic')->where(['id' => $id])->first();
+         return view('front.pages.subject.webview',compact('info'));
      }
-     
 
 
     public function codeMirror($topic = '', $file = '')
