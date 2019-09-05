@@ -3,6 +3,12 @@
 @section('content')
 
 <p>In this article, We’ll see how to encrypt a string and decrypt a encrypted string in php?</p>
+<p class="text-center"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><br />
+<!-- Ad 4 --><br />
+<ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9716398444039739" data-ad-slot="4680411731"></ins><br />
+<script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
 <pre class="brush: php; title: ; notranslate" title="">
   function encrypt_decrypt($string, $action = 'encrypt') 
       {
