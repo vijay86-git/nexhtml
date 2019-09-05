@@ -38,8 +38,7 @@
    <body  class="post-template-default single single-post postid-188 single-format-standard" dir="ltr">
       <div class="content-wrap">
          <div class="container">
-            <div id="primary" class="content-area 
-               col-md-8">
+            <div id="primary" class="content-area col-md-8 col-sm-12 col-xs-12">
                <main itemscope itemtype="http://schema.org/WebPageElement" itemprop="mainContentOfPage" id="main" class="site-main" role="main">
                   <article id="post-188" class="content-single-page post-188 post type-post status-publish format-standard hentry category-php">
                      <header class="entry-header single-header">
