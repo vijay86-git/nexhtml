@@ -88,8 +88,7 @@ Route::get('/subjects.json', array('as' => 'subjects.json', 'uses' => 'Dashboard
 Route::get('/subject-topics/{id}', array('as' => 'subject-topics.json', 'uses' => 'DashboardController@subjectTopics'));
 Route::get('/topic-detail/{id}', array('as' => 'topic-detail.json', 'uses' => 'DashboardController@topicDetail'));
 
-
-
+Route::get('/blog-detail/{id}', array('as' => 'blog-detail.json', 'uses' => 'DashboardController@blogDetail'));
 
 
 Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about'));
