@@ -65,37 +65,7 @@ class DashboardController extends Controller
            return response()->json($users);
       }
 
-    public function getSubjects()
-      {
-        $subjects = DB::table('subject')->select('id', 'name', 'image')->orderBy('sort', 'asc')->get();
-        return response()->json([
-                                    'response' => $subjects,
-                                ]);
-      } 
-
-    public function subjectTopics($id = '')
-     {
-         $results = Topics::select('id', 'topic', 'slug')->where(['subject_id' => $id])->get();
-         return response()->json([
-                                    'response' => $results,
-                                ]);
-     }
-
-
-    public function topicDetail($id = '')
-     {
-         $info = Topics::select('detail', 'topic')->where(['id' => $id])->first();
-         return view('front.pages.subject.webview',compact('info'));
-     }
-
-     public function blogDetail($id = '')
-     {
-        // $info = Topics::select('detail', 'topic')->where(['id' => $id])->first();
-         return view('front.pages.subject.webviewblog');
-     }
-
-
-
+   
     public function codeMirror($topic = '', $file = '')
       {
                $file = public_path().'/codemirror/code/'.$topic.'/'.$file.'.html';
@@ -107,5 +77,34 @@ class DashboardController extends Controller
                else
                     abort(404);
       }
+
+      /* Api */
+
+
+    public function getSubjects()
+      {
+        $subjects = DB::table('subject')->select('id', 'name', 'image')->orderBy('sort', 'asc')->get();
+        return response()->json([
+                                    'response' => $subjects,
+                                ]);
+      } 
+
+    public function subjectTopics($id = '')
+     {
+         $results = Topics::select('id', 'topic', 'slug')->where(['subject_id' => $id])->get();
+         return response()->json(['response' => $results]);
+     }
+
+    public function topicDetail($id = '')
+     {
+         $info = Topics::select('detail', 'topic')->where(['id' => $id])->first();
+         return view('front.pages.subject.webview',compact('info'));
+     }
+
+    public function blogDetail($id = '')
+     {
+        // $info = Topics::select('detail', 'topic')->where(['id' => $id])->first();
+         return view('front.pages.subject.webviewblog');
+     }
 
 }
