@@ -107,7 +107,7 @@ class DashboardController extends Controller
 
     public function getBlogs()
      {
-         $blogs = DB::connection('blog')->table('wp_posts')->select('ID', 'post_title')->orderBy('sort', 'asc')->get();
+         $blogs = DB::connection('blog')->table('wp_posts')->get();
          return response()->json(['response' => $blogs]);
      }
 
