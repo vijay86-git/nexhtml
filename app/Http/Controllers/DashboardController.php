@@ -108,8 +108,12 @@ class DashboardController extends Controller
     public function getBlogs()
      {
          $blogs  = DB::connection('blog')->table('tbl_posts')->select('ID', 'post_title')->where('post_type', 'post')->orderBy('ID', 'desc')->get()->toArray();
-         echo count($blogs);
-         //return response()->json(['response' => $filter]);
+         if (count($blogs)):
+          foreach ($blogs as $blog):
+            $arr[] = ['id' => $blog->ID, 'title' => htmlspecialchars($blog->post_title, ENT_QUOTES, 'UTF-8')];
+          endforeach;
+         endif;
+         return response()->json(['response' => $arr]);
      }
 
 }
