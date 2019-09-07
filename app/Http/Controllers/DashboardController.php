@@ -110,7 +110,7 @@ class DashboardController extends Controller
          $blogs  = DB::connection('blog')->table('tbl_posts')->select('ID', 'post_title')->where('post_type', 'post')->orderBy('ID', 'desc')->get()->toArray();
          if (count($blogs)):
           foreach ($blogs as $blog):
-            $arr[] = ['id' => $blog->ID, 'title' => htmlspecialchars($blog->post_title, ENT_QUOTES, 'UTF-8')];
+            $arr[] = ['id' => $blog->ID, 'title' => utf8_encode($blog->post_title)];
           endforeach;
          endif;
          return response()->json(['response' => $arr]);
