@@ -83,7 +83,7 @@ class DashboardController extends Controller
 
     public function getSubjects()
       {
-         $subjects = DB::table('subject')->select('id', 'name', 'image')->orderBy('sort', 'asc')->get();
+         $subjects = DB::table('subject')->select('id', 'name', 'image')->where('show_nav', 1)->orderBy('sort', 'asc')->get();
          return response()->json(['response' => $subjects]);
       } 
 
