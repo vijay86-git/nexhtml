@@ -105,4 +105,14 @@ class DashboardController extends Controller
          return view('front.pages.subject.webviewblog');
      }
 
+    public function getBlogs()
+     {
+         $blogs = DB::connection('blog')->table('wp_posts')->select('ID', 'post_title')->orderBy('sort', 'asc')->get();
+         return response()->json(['response' => $blogs]);
+     }
+
+
+
+
+
 }
