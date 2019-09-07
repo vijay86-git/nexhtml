@@ -107,8 +107,8 @@ class DashboardController extends Controller
 
     public function getBlogs()
      {
-         $blogs  = DB::connection('blog')->table('tbl_posts')->select('ID', 'post_title')->orderBy('ID', 'desc')->get()->toArray();
-         $filter = mb_convert_encoding($blogs, 'UTF-8', 'UTF-8');
+         $blogs  = DB::connection('blog')->table('tbl_posts')->select('ID', 'post_title')->where('post_type', 'post')->orderBy('ID', 'desc')->get()->toArray();
+          print_r($blogs);
          return response()->json(['response' => $filter]);
      }
 
