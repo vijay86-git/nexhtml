@@ -6,5 +6,5 @@
 
 
 @section('content')
- {!! $info->post_content !!}
+ {! $info->post_content !}
 @stop
