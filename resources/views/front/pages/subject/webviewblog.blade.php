@@ -6,5 +6,7 @@
 
 
 @section('content')
- {! $info->post_content !}
+  @php
+    echo mb_convert_encoding($info->post_content, 'UTF-8', 'UTF-8');
+  @endphp
 @stop
