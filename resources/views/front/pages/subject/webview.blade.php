@@ -9,7 +9,7 @@
      </div>
 
      <div class="col-md-12" style="margin:15px 0 0 0">
-        {!! $info->detail !!}
+        {!! $info->post_content !!}
      </div>
 
 </div>
