@@ -63,7 +63,7 @@
                      <!-- .entry-header -->
                      <div itemprop="text" class="entry-content">
                         @php 
-                        echo {!! $info->post_content !!}
+                          echo mb_convert_encoding($info->post_content, 'UTF-8', 'UTF-8');
                         @endphp
                        
                      </div>
