@@ -101,8 +101,8 @@ class DashboardController extends Controller
 
     public function blogDetail($id = '')
      {
-        // $info = Topics::select('detail', 'topic')->where(['id' => $id])->first();
-         return view('front.pages.subject.webviewblog');
+         $info = Topics::select('detail', 'topic')->where(['id' => $id])->first();
+         return view('front.pages.subject.webviewblog', compact('info'));
      }
 
     public function getBlogs()
