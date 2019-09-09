@@ -42,7 +42,7 @@
                <main itemscope itemtype="http://schema.org/WebPageElement" itemprop="mainContentOfPage" id="main" class="site-main" role="main">
                   <article id="post-188" class="content-single-page post-188 post type-post status-publish format-standard hentry category-php">
                      <header class="entry-header single-header">
-                        <h1 itemprop="headline" class="entry-title single-title">Php encrypt decrypt string</h1>
+                        <h1 itemprop="headline" class="entry-title single-title">@yield('title')</h1>
                         <div class="colored-line-left"></div>
                      </header>
                      <!-- .entry-header -->
