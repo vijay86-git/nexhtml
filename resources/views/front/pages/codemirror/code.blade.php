@@ -11,10 +11,10 @@
 	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
     <meta name="msvalidate.01" content="F13063B8299624F18B7C4E98367AE3E1" />
 	<link rel="stylesheet" href="{{ URL::asset('codemirror/lib/bin/css/codemirror.css?v=1') }}" />
-	<link rel="stylesheet" href="{{ URL::asset('codemirror/lib/bin/css/html-mode-1.3.css?v=1') }}" />
+	<link rel="stylesheet" href="{{ URL::asset('codemirror/lib/bin/css/html-mode-1.3.css?v=1.1') }}" />
 	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/js/jquery-1.7.js?v=1') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/js/codemirror.js?v=1') }}"></script>
-	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/js/html-mode-1.2.js?v=1') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/js/html-mode-1.1.js?v=1') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/mode/xml.js?v=1') }}"></script>    
 	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/mode/javascript.js?v=1') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('codemirror/lib/bin/mode/css.js?v=1') }}"></script>
