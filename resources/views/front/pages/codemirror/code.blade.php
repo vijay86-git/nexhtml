@@ -81,7 +81,7 @@
         </div>
         <div class="frame-box vr">
             <div class="pane-wrapper row">
-              <div class="col-md-6 col-xs-12 col-sm-12">
+              <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
                 <div class="pane" id="code-pane">
                     <div class="outer-area">
                         <span class="show-preview-pane">&nbsp;</span>
@@ -106,7 +106,7 @@ include_once($file)
                   </div>
                 </div>
 
-                <div class="col-md-6 col-xs-12 col-sm-12">
+                <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
                     <div class="pane" id="preview-pane">
                         <div class="outer-wrapper">
                             <span class="hide-preview-pane">&nbsp;</span>
