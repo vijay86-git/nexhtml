@@ -3,10 +3,24 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Php encrypt decrypt string - nexladder web tutorials</title>
+      <title>nexladder web tutorials</title>
       <!-- This site is optimized with the Yoast SEO plugin v7.8 - https://yoast.com/wordpress/plugins/seo/ -->
       <!-- / Yoast SEO plugin. -->
       <style type="text/css">
+
+      @font-face {
+           font-family: 'Open Sans';
+           font-style: normal;
+           font-weight: 400;
+           src: url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+           src: local('Open Sans Regular'), local('OpenSans-Regular'),
+               url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+               url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+               url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+               url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+               url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+         }
+   
          img.wp-smiley,
          img.emoji {
          display: inline !important;
