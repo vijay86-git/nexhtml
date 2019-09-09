@@ -80,7 +80,8 @@
             </div>
         </div>
         <div class="frame-box vr">
-            <div class="pane-wrapper">
+            <div class="pane-wrapper row">
+              <div class="col-md-6 col-xs-12 col-sm-12">
                 <div class="pane" id="code-pane">
                     <div class="outer-area">
                         <span class="show-preview-pane">&nbsp;</span>
@@ -102,15 +103,21 @@ include_once($file)
                             </script>									
                         </div>
                     </div>
+                  </div>
                 </div>
-                <div class="pane" id="preview-pane">
-                    <div class="outer-wrapper">
-                        <span class="hide-preview-pane">&nbsp;</span>
-                        <div class="output-area">
-                            <iframe id="preview" name="preview" style="padding:10px"></iframe>
+
+                <div class="col-md-6 col-xs-12 col-sm-12">
+                    <div class="pane" id="preview-pane">
+                        <div class="outer-wrapper">
+                            <span class="hide-preview-pane">&nbsp;</span>
+                            <div class="output-area">
+                                <iframe id="preview" name="preview" style="padding:10px"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
 
