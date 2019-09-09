@@ -1,5 +1,5 @@
 @extends('front.layout.blog')
 
 @section('content')
- {!! $info->detail !!}
+ {!! $info->post_content !!}
 @stop
