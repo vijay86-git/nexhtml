@@ -64,7 +64,7 @@
                      <div itemprop="text" class="entry-content">
 
                         @php
-                         echo $paragraphs;
+                         echo $new_str;
                         @endphp
 
                      </div>
