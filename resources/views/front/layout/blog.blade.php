@@ -62,7 +62,11 @@
                      </header>
                      <!-- .entry-header -->
                      <div itemprop="text" class="entry-content">
-                        {!! $info->post_content !!}
+
+                        @php
+                         $info =  mb_convert_encoding($info->post_content, 'UTF-8', 'UTF-8');
+                        @endphp
+
                      </div>
                      <!-- .entry-content -->
                   </article>
@@ -121,4 +125,3 @@
          var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
          /* ]]> */
       </script>
-      
