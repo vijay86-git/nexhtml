@@ -62,7 +62,7 @@
                      </header>
                      <!-- .entry-header -->
                      <div itemprop="text" class="entry-content">
-
+<p>
                         [php]
                           $subject = new App\Subject;
                           $subject->name = 'Laravel';
@@ -70,7 +70,7 @@
                           $subject->save();
                         [/php]
 
-                       
+                       </p>
                        
                      </div>
                      <!-- .entry-content -->

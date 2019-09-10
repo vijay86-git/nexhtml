@@ -103,7 +103,6 @@ class DashboardController extends Controller
      {
          $info = DB::connection('blog')->table('tbl_posts')->select('ID', 'post_content', 'post_title')->where(['ID' => $id])->first();
 
-         print_r($info);
          return view('front.pages.subject.webviewblog', compact('info'));
      }
 
