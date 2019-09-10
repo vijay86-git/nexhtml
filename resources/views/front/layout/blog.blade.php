@@ -64,7 +64,7 @@
                      <div itemprop="text" class="entry-content">
 
                         @php
-                         $info =  mb_convert_encoding($info->post_content, 'UTF-8', 'UTF-8');
+                         echo $info =  mb_convert_encoding($info->post_content, 'UTF-8', 'UTF-8');
                         @endphp
 
                      </div>
