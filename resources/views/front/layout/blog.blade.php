@@ -63,6 +63,13 @@
                      <!-- .entry-header -->
                      <div itemprop="text" class="entry-content">
 
+                        [php]
+                          $subject = new App\Subject;
+                          $subject->name = 'Laravel';
+                          $subject->author = 'Taylor Otwell';
+                          $subject->save();
+                        [/php]
+
                        
                        
                      </div>

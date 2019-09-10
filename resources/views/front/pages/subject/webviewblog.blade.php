@@ -1,123 +1,73 @@
-<!DOCTYPE html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Blog - nexladder web tutorials</title>
-      <!-- This site is optimized with the Yoast SEO plugin v7.8 - https://yoast.com/wordpress/plugins/seo/ -->
-      <!-- / Yoast SEO plugin. -->
-      <style type="text/css">
+@extends('front.layout.blog')
 
-         @font-face {
-              font-family: 'Open Sans';
-              font-style: normal;
-              font-weight: 400;
-              src: url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
-              src: local('Open Sans Regular'), local('OpenSans-Regular'),
-                  url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-                  url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-                  url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-                  url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-                  url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
-            }
+@section('content')
 
-         img.wp-smiley,
-         img.emoji {
-         display: inline !important;
-         border: none !important;
-         box-shadow: none !important;
-         height: 1em !important;
-         width: 1em !important;
-         margin: 0 .07em !important;
-         vertical-align: -0.1em !important;
-         background: none !important;
-         padding: 0 !important;
-         }
-      </style>
-     
-      <link rel='stylesheet' id='llorix-one-lite-bootstrap-style-css'  href='https://nexladder.com/blog/wp-content/themes/llorix-one-lite/css/bootstrap.min.css?ver=3.3.1' type='text/css' media='all' />
-     
-      <link rel='stylesheet' id='llorix-one-lite-style-css'  href='https://nexladder.com/blog/wp-content/themes/llorix-one-lite/style.css?ver=1.0.0' type='text/css' media='all' />
-     
-      <style id='llorix-one-lite-style-inline-css' type='text/css'>
-         .overlay-layer-wrap{ background:rgba(13, 60, 85, 0.5);}.archive-top .section-overlay-layer{ background:rgba(33,242,158,0.6);}
-      </style>
-      <script type='text/javascript' src='https://nexladder.com/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-      <script type='text/javascript' src='https://nexladder.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-      <!--[if lt IE 9]>
-      <script src="https://nexladder.com/blog/wp-content/themes/llorix-one-lite/js/html5shiv.min.js"></script>
-      <![endif]-->
-      <style type="text/css" id="syntaxhighlighteranchor"></style>
-   </head>
-   <body  class="post-template-default single single-post postid-188 single-format-standard" dir="ltr">
-      <div class="content-wrap">
-         <div class="container">
-            <div id="primary" class="content-area 
-               col-md-8">
-               <main itemscope itemtype="http://schema.org/WebPageElement" itemprop="mainContentOfPage" id="main" class="site-main" role="main">
-                  <article id="post-188" class="content-single-page post-188 post type-post status-publish format-standard hentry category-php">
-                     <header class="entry-header single-header">
-                        <h1 itemprop="headline" class="entry-title single-title">Php encrypt decrypt string</h1>
-                        <div class="colored-line-left"></div>
-                     </header>
-                     <!-- .entry-header -->
-                     <div itemprop="text" class="entry-content">
-                        @php 
-                          echo mb_convert_encoding($info->post_content, 'UTF-8', 'UTF-8');
-                        @endphp
-                       
-                     </div>
-                     <!-- .entry-content -->
-                  </article>
-                  <!-- #post-## -->
-               </main>
-               <!-- #main -->
-            </div>
-            <!-- #primary -->
-         </div>
-      </div>
-      <!-- .content-wrap -->
-      <script type='text/javascript' src='https://nexladder.com/blog/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b'></script>
-      <script type='text/javascript' src='https://nexladder.com/blog/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0.9b'></script>
-      <script type='text/javascript'>
-         (function(){
-            var corecss = document.createElement('link');
-            var themecss = document.createElement('link');
-            var corecssurl = "https://nexladder.com/blog/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
-            if ( corecss.setAttribute ) {
-                  corecss.setAttribute( "rel", "stylesheet" );
-                  corecss.setAttribute( "type", "text/css" );
-                  corecss.setAttribute( "href", corecssurl );
-            } else {
-                  corecss.rel = "stylesheet";
-                  corecss.href = corecssurl;
-            }
-            document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
-            var themecssurl = "https://nexladder.com/blog/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9b";
-            if ( themecss.setAttribute ) {
-                  themecss.setAttribute( "rel", "stylesheet" );
-                  themecss.setAttribute( "type", "text/css" );
-                  themecss.setAttribute( "href", themecssurl );
-            } else {
-                  themecss.rel = "stylesheet";
-                  themecss.href = themecssurl;
-            }
-            //document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
-            document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
-         })();
-         SyntaxHighlighter.config.strings.expandSource = '+ expand source';
-         SyntaxHighlighter.config.strings.help = '?';
-         SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
-         SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
-         SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
-         SyntaxHighlighter.defaults['pad-line-numbers'] = false;
-         SyntaxHighlighter.defaults['toolbar'] = false;
-         SyntaxHighlighter.all();
-      </script>
-      <script type='text/javascript'>
-         /* <![CDATA[ */
-         var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
-         /* ]]> */
-      </script>
-   </body>
-</html>
+<p><code>Firebase Cloud Messaging (FCM)</code> is a new <code>cloud messaging services</code> to send push notifications to Android, iOS and Web applications. It is the newer version of GCM (google cloud messaging) with more features.</p>
+<p class="text-center"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><br />
+<!-- Ad 4 --><br />
+<ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9716398444039739" data-ad-slot="4680411731"></ins><br />
+<script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<p>To send notifications, we basically required two things:</p>
+<ul>
+<li>Authorization key</li>
+<li>Device Token</li>
+</ul>
+<p>We can get Authorization key (API_ACCESS_KEY) available in <code>Firebase Console -> Project Settings -> Cloud Messaging -> Server key</code>, and <code>device token</code> we can get at the time of registering or logging by the android or ios users through API.</p>
+<p>Simple steps to register your app under FCM</p>
+<ul>
+<li>Go to the Firebase console <a href='https://console.firebase.google.com' target='_blank'><code>https://console.firebase.google.com</code></a> (Login using Google account)</li>
+<li>Create a new project</li>
+<li>Click on &#8220;Add Firebase to your iOS app&#8221; Or &#8220;Add Firebase to your Android app&#8221; button and Register Your App.</li>
+</ul>
+<p>To send push notifications, use below PHP script.</p>
+<p>Create <code>PushNotifications.php</code> file</p>
+<pre class="brush: php; title: ; notranslate" title="">
+
+class PushNotifications {
+
+private static $URL  = &quot;https://fcm.googleapis.com/fcm/send&quot;;  //API URL of FCM
+
+private static $API_ACCESS_KEY = 'AAAApRMIM9I:APA91bHd7N...........Taq'; // YOUR_FIREBASE_API_KEY
+
+public function __construct() {
+
+}
+
+public static function sendPushNotification($token = &quot;&quot;, $fields = array())
+ {
+            $registrationIds = array();
+            
+            array_push($registrationIds, $token);
+
+            $msg     = array('body' =&gt; $fields['body'], 'title'	=&gt; $fields['title']);
+
+            $fields  = array('registration_ids' =&gt; $registrationIds, 'notification' =&gt; $msg);
+
+            $headers = array('Authorization: key=' . self::$API_ACCESS_KEY, 'Content-Type: application/json');
+
+            #Send Reponse To FireBase Server	
+            $ch = curl_init(); 
+            curl_setopt($ch,CURLOPT_URL, self::$URL);
+            curl_setopt($ch,CURLOPT_POST, true);
+            curl_setopt($ch,CURLOPT_HTTPHEADER, $headers);
+            curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch,CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch,CURLOPT_POSTFIELDS, json_encode($fields));
+            $result = curl_exec($ch);
+            curl_close($ch);
+            return $result;
+ }
+ 
+//include PushNotifications.php file and call sendPushNotification method on your page
+
+require_once 'PushNotifications.php';
+$device_token    =  &quot;eIWdeiXnVW4:APA1FMWhLK60.......TdM6IyaYJzdo&quot;;
+$fields          =  [&quot;title&quot; =&gt; &quot;message title&quot;, &quot;body&quot; =&gt; &quot;message text&quot;];
+$response        =  PushNotifications::sendPushNotification($device_token, $fields);
+print_r($response);	 
+</pre>
+<p>That’s it!. Please share your thoughts or suggestions in the comments below.</p>
+
+@stop
