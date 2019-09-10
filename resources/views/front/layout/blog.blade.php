@@ -64,7 +64,7 @@
                      <div itemprop="text" class="entry-content">
 
                         @php
-                         echo $info->post_content;
+                         echo $paragraphs;
                         @endphp
 
                      </div>
