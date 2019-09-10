@@ -62,25 +62,7 @@
                      </header>
                      <!-- .entry-header -->
                      <div itemprop="text" class="entry-content">
-<pre class="brush: php; title: ; notranslate" title="">
-// we'll use reduce method to get total sales
-
-const sales = [2000, 500, 750, 2500, 3000, 1500, 1000];
-var totalSales = sales.reduce((pos, cur) =&gt; pos + cur);
-console.log(`Total Sale: ${totalSales}`); // Total Sale: 11250
-
-// we'll use filter method to all sales which is &gt;= 1000
-
-var filterSales = sales.filter(sale =&gt; sale &gt;= 1000);
-console.log(filterSales); // [2000, 2500, 3000, 1500, 1000]
-
-// we'll use map method to get 10% commission of that sale which is &gt;= 1000
-
-var earnCommission = filterSales.map(sale =&gt; sale / 100 * 10);
-console.log(earnCommission); // [200, 250, 300, 150, 100]
-
-</pre>
-                       
+                        {!! $info->post_content !!}
                      </div>
                      <!-- .entry-content -->
                   </article>
@@ -91,7 +73,12 @@ console.log(earnCommission); // [200, 250, 300, 150, 100]
             <!-- #primary -->
          </div>
       </div>
-      <!-- .content-wrap -->
+      
+   </body>
+</html>
+
+
+<!-- .content-wrap -->
       <script type='text/javascript' src='https://nexladder.com/blog/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b'></script>
       <script type='text/javascript' src='https://nexladder.com/blog/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0.9b'></script>
       <script type='text/javascript'>
@@ -134,5 +121,4 @@ console.log(earnCommission); // [200, 250, 300, 150, 100]
          var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
          /* ]]> */
       </script>
-   </body>
-</html>
+      
