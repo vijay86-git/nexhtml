@@ -102,7 +102,7 @@ class DashboardController extends Controller
     public function blogDetail($id = '')
      {
          $info = DB::connection('blog')->table('tbl_posts')->select('ID', 'post_content', 'post_title')->where(['ID' => $id])->first();
-
+         $paragraphs = '';
         foreach (explode("\n", $info->post_content) as $line) {
             if (trim($line)) {
                 $paragraphs .= '<p>' . $line . '</p>';
