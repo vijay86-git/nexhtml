@@ -33,7 +33,7 @@
          background: none !important;
          padding: 0 !important;
          }
-         .entry-title{font-size:16px !important;font-weight::bold !important}
+         .entry-title{font-size:20px !important;font-weight::bold !important}
       </style>
      
       <link rel='stylesheet' id='llorix-one-lite-bootstrap-style-css'  href='https://nexladder.com/blog/wp-content/themes/llorix-one-lite/css/bootstrap.min.css?ver=3.3.1' type='text/css' media='all' />
