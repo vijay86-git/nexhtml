@@ -103,7 +103,12 @@ class DashboardController extends Controller
      {
          $info = DB::connection('blog')->table('tbl_posts')->select('ID', 'post_content', 'post_title')->where(['ID' => $id])->first();
 
-         return view('front.pages.subject.webviewblog', compact('info'));
+        foreach (explode("\n", $info->post_content) as $line) {
+            if (trim($line)) {
+                $paragraphs .= '<p>' . $line . '</p>';
+            }
+
+         return view('front.pages.subject.webviewblog', compact('paragraphs'));
      }
 
     public function getBlogs()
