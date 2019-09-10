@@ -105,8 +105,9 @@ class DashboardController extends Controller
 
          $pre_open   = '<pre class="brush: php; title: ; notranslate" title="">';
          $pre_close  = '</pre>';
-         $new_str    = str_replace(array('[php]', '[/php]'), array($pre_open, $pre_close), $info->post_content);
-         return view('front.pages.subject.webviewblog', compact('new_str'));
+         $content    = str_replace(array('[php]', '[/php]'), array($pre_open, $pre_close), $info->post_content);
+         $heading    = $info->post_title;
+         return view('front.pages.subject.webviewblog', compact('content', 'heading'));
      }
 
     public function getBlogs()

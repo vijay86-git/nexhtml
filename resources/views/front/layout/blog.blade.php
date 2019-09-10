@@ -33,6 +33,7 @@
          background: none !important;
          padding: 0 !important;
          }
+         .entry-title{font-size:16px !important;font-weight::bold !important}
       </style>
      
       <link rel='stylesheet' id='llorix-one-lite-bootstrap-style-css'  href='https://nexladder.com/blog/wp-content/themes/llorix-one-lite/css/bootstrap.min.css?ver=3.3.1' type='text/css' media='all' />
@@ -57,14 +58,14 @@
                <main itemscope itemtype="http://schema.org/WebPageElement" itemprop="mainContentOfPage" id="main" class="site-main" role="main">
                   <article id="post-188" class="content-single-page post-188 post type-post status-publish format-standard hentry category-php">
                      <header class="entry-header single-header">
-                        <h1 itemprop="headline" class="entry-title single-title">Php encrypt decrypt string</h1>
+                        <h1 itemprop="headline" class="entry-title single-title">{{ $heading }}</h1>
                         <div class="colored-line-left"></div>
                      </header>
                      <!-- .entry-header -->
                      <div itemprop="text" class="entry-content">
 
                         @php
-                         echo nl2br($new_str);
+                         echo nl2br($content);
                         @endphp
 
                      </div>
