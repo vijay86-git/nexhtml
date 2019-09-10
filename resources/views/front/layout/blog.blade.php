@@ -64,7 +64,7 @@
                      <div itemprop="text" class="entry-content">
 
                         @php
-                         echo $new_str;
+                         echo nl2br($new_str);
                         @endphp
 
                      </div>
