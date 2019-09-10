@@ -107,6 +107,7 @@ class DashboardController extends Controller
             if (trim($line)) {
                 $paragraphs .= '<p>' . $line . '</p>';
             }
+        }
 
          return view('front.pages.subject.webviewblog', compact('paragraphs'));
      }
