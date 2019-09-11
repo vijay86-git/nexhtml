@@ -69,6 +69,7 @@
                         @php
                          echo $content;
                         @endphp
+                        <p>That's it! Please share your thoughts or suggestion</p>
 
                      </div>
                      <!-- .entry-content -->
