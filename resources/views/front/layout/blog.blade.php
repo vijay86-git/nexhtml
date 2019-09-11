@@ -20,6 +20,7 @@
                   url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
                   url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
             }
+         #primary{margin:10px 0 !important;}
 
          img.wp-smiley,
          img.emoji {
