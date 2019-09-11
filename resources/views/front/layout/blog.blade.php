@@ -35,7 +35,7 @@
          background: none !important;
          padding: 0 !important;
          }
-         .entry-title{font-size:20px !important;font-weight::bold !important}
+         .entry-title{font-size:18px !important;font-weight:bold !important}
          code{font-size:14px !important;}
          .shr{display:none}
       </style>
