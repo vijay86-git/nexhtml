@@ -21,6 +21,7 @@
                   url('https://nexladder.com/fonts/webfont/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
             }
          #primary{margin:10px 0 !important;}
+         .container{padding-left:0px !important;padding-right:0px !important}
 
          img.wp-smiley,
          img.emoji {
