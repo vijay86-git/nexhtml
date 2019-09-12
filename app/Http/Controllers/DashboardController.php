@@ -123,6 +123,13 @@ class DashboardController extends Controller
 
     public function blogCategories()
      {
+         $query   = "SELECT t.term_id AS id, t.name AS post_title, t.slug AS post_url FROM tbl_terms t LEFT JOIN tbl_term_taxonomy tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' and t.name != 'Uncategorized' ORDER BY name";
+         $results = DB::select($query);
+
+         print_r($results); die;
+
+
+
          $results[] = ['id' => 1, 'name' => 'Laravel'];
          $results[] = ['id' => 2, 'name' => 'Javascript'];
 
