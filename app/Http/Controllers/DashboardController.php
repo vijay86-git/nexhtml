@@ -128,4 +128,11 @@ class DashboardController extends Controller
          return response()->json(['response' => $results]);
      }
 
+    public function categoryBlogs($id = '')
+     {
+         $query   = "SELECT * FROM tbl_posts LEFT JOIN tbl_term_relationships ON (tbl_posts.ID = tbl_term_relationships.object_id) LEFT JOIN tbl_term_taxonomy ON (tbl_term_relationships.term_taxonomy_id = tbl_term_taxonomy.term_taxonomy_id) WHERE tbl_term_taxonomy.term_id IN ($id) GROUP BY tbl_posts.ID";
+         $result  = DB::connection('blog')->select($query);
+         return response()->json(['response' => $result]);
+     }
+
 }

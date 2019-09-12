@@ -91,6 +91,9 @@ Route::get('/blogs.json', array('as' => 'blogs.json', 'uses' => 'DashboardContro
 
 Route::get('/blog-categories.json', array('as' => 'blogcategories.json', 'uses' => 'DashboardController@blogCategories'));
 
+Route::get('/category-blogs/{id}', array('as' => 'category-blogs.json', 'uses' => 'DashboardController@categoryBlogs'));
+
+
 
 Route::get('/subject-topics/{id}', array('as' => 'subject-topics.json', 'uses' => 'DashboardController@subjectTopics'));
 Route::get('/topic-detail/{id}', array('as' => 'topic-detail.json', 'uses' => 'DashboardController@topicDetail'));
