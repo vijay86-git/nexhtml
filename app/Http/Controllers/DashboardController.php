@@ -123,7 +123,7 @@ class DashboardController extends Controller
 
     public function blogCategories()
      {
-         $query   = "SELECT t.term_id AS id, t.name AS post_title FROM tbl_terms t LEFT JOIN tbl_term_taxonomy tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' and t.name != 'Uncategorized' ORDER BY name";
+         $query   = "SELECT t.term_id AS id, t.name AS post_title AS name FROM tbl_terms t LEFT JOIN tbl_term_taxonomy tt ON t.term_id = tt.term_id WHERE tt.taxonomy = 'category' and t.name != 'Uncategorized' ORDER BY name";
          $results = DB::connection('blog')->select($query);
          return response()->json(['response' => $results]);
      }
@@ -136,7 +136,6 @@ class DashboardController extends Controller
           $query   = "SELECT tbl_posts.ID, tbl_posts.post_title FROM tbl_posts LEFT JOIN tbl_term_relationships ON (tbl_posts.ID = tbl_term_relationships.object_id) LEFT JOIN tbl_term_taxonomy ON (tbl_term_relationships.term_taxonomy_id = tbl_term_taxonomy.term_taxonomy_id) WHERE tbl_posts.post_status='publish' ORDER BY tbl_posts.ID DESC";
 
          $results  = DB::connection('blog')->select($query);
-
          return response()->json(['response' => $results]);
      }
 
