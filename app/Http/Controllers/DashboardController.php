@@ -121,4 +121,12 @@ class DashboardController extends Controller
          return response()->json(['response' => $arr]);
      }
 
+    public function blogCategories()
+     {
+         $results[] = ['id' => 1, 'name' => 'Laravel'];
+         $results[] = ['id' => 2, 'name' => 'Javascript'];
+
+         return response()->json(['response' => $results]);
+     }
+
 }
