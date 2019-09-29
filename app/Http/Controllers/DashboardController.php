@@ -11,6 +11,7 @@ use Helper;
 
 use App\Subject as Subject;
 use App\Topic as Topics;
+use Mail;
 
 class DashboardController extends Controller
 {
@@ -137,6 +138,20 @@ class DashboardController extends Controller
 
          $results  = DB::connection('blog')->select($query);
          return response()->json(['response' => $results]);
+     }
+
+    public function feedback()
+     {
+            $params = $request->all();
+
+            $data   = $params['name'] . ' - ' .$params['email'] . ' - ' .substr($params['msg'], 0, 1024);
+
+            Mail::raw($data, function ($message){
+                     $message->to('vjmail17@gmail.com');
+                     $message->subject('nexladder query from app');
+
+            return response()->json(['response' => 'success']);
+        });
      }
 
 }
