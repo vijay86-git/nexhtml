@@ -140,7 +140,7 @@ class DashboardController extends Controller
          return response()->json(['response' => $results]);
      }
 
-    public function feedback()
+    public function feedback(Request $request)
      {
             $params = $request->json()->all();
 
