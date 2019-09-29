@@ -142,7 +142,7 @@ class DashboardController extends Controller
 
     public function feedback(Request $request)
      {
-            $params = file_get_contents('php://input');
+            $params = json_decode(file_get_contents('php://input'), true);
             print_r($params); die;
 
             $data   = $params['name'] . ' - ' .$params['email'] . ' - ' .substr($params['msg'], 0, 1024);
