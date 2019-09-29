@@ -104,6 +104,7 @@ Route::post('/feedback', array('as' => 'feedback.json', 'uses' => 'DashboardCont
 
 
 
+
 Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about'));
 
 Route::get('/disclaimer', array('as' => 'disclaimer', 'uses' => 'DashboardController@disclaimer'));
