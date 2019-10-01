@@ -35,8 +35,8 @@ class DashboardController extends Controller
 	          $subjects =  $this->_subjects;
 	          $info     = (object) array();
    			    $info->page_title        = 'About Us - nexladder';
-   			    $info->meta_description  = 'About Us';
-   			    $info->meta_keywords     = 'About Us';
+   			    $info->meta_description  = 'nexladder.com is a learning online platform that helps anyone can learn Web Technologies. nexladder provides all web tutorials like Php, Mysqli, Vuejs, Html, Jquery etc in simple and easy steps starting from basic to advanced concepts with examples. nexladder helps students, developers and project manager where they can learn topics in easy and simple language with examples. To make our website better for you, we bring updates to the website regularly.';
+   			    $info->meta_keywords     = '';
 	          return view('front.pages.cms.about', compact('subjects', 'info'));
 	      }
 
