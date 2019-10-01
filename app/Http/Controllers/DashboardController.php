@@ -150,8 +150,8 @@ class DashboardController extends Controller
                      $message->to('vjmail17@gmail.com');
                      $message->subject('nexladder query from app');
             });*/
-
-            return rkkesponse()->json(['response' => 'success']);
+            
+            return response()->json(['response' => 'success']);
      }
 
 }
