@@ -146,11 +146,11 @@ class DashboardController extends Controller
 
             $data   = $params['name'] . ' - ' .$params['email'] . ' - ' .substr($params['msg'], 0, 1024);
 
-            /*Mail::raw($data, function ($message) {
+            Mail::raw($data, function ($message) {
                      $message->to('vjmail17@gmail.com');
                      $message->subject('nexladder query from app');
-            });*/
-            
+            });
+
             return response()->json(['response' => 'success']);
      }
 
