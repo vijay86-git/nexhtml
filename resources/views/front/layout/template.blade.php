@@ -67,7 +67,7 @@
                   <ul>
                      <li><a href="https://www.facebook.com/nexladder" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                      <li><a href="https://twitter.com/nexladder" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                     <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.nexladder.nexladderwebtutorials" title="Download App"><img src="{{ Helper::loadAssetsFiles('images/android_google_play.png') }}" alt="" /></a></li>
+                     <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.nexladder.nexladderwebtutorials" title="Download App"><img width="120" src="{{ Helper::loadAssetsFiles('images/android_google_play.png') }}" alt="" /></a></li>
                   </ul>
                </div>
               </div>
