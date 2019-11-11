@@ -126,6 +126,10 @@ Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardCo
 Route::get('/codemirror/{folder}/{file}', 'DashboardController@codeMirror')->name('dashboard.codemirror'); 
 
 
+Route::get('/kids_play_privacy_policy', 'DashboardController@kids_play_privacy_policy')->name('dashboard.kidsplay'); 
+
+
+
 
 //Route::post('/contact-us', array('as' => 'contactus.post', 'uses' => 'ContactController@post'));
 

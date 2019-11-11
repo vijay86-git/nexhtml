@@ -154,4 +154,9 @@ class DashboardController extends Controller
             return response()->json(['response' => 'success']);
      }
 
+    public function kids_play_privacy_policy()
+     {
+          return view('front.pages.contact.kids_play_privacy');
+     }
+
 }
