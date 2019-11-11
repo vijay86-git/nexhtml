@@ -9,8 +9,11 @@
 		<link rel="stylesheet" href="https://nexladder.com/build/assets/css/bootstrap.min.css?v=1">
 		<link rel="stylesheet" href="https://nexladder.com/build/assets/css/font-awesome.css?v=1">
 		<link rel="stylesheet" href="https://nexladder.com/build/assets/css/style.css?v=1531962794">
+		<style type="text/css">
+			h2{font-size:18px;font-weight: bold}
+		</style>
 	</head>
-	<body>
+	<body style="padding:25px">
 		<h2>Privacy Policy</h2> 
 		<p>
 		This page is used to inform visitors regarding
