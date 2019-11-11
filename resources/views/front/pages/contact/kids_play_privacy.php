@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://nexladder.com/build/assets/css/font-awesome.css?v=1">
 		<link rel="stylesheet" href="https://nexladder.com/build/assets/css/style.css?v=1531962794">
 		<style type="text/css">
-			h2{font-size:18px;font-weight: bold}
+			h2, p strong{font-size:18px;font-weight: bold}
 		</style>
 	</head>
 	<body style="padding:25px">
