@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Online Web Development Tutorials | Nexladder</title>
+		<title>Kids Play Math - Privacy Policy | Nexladder</title>
 		<link rel="stylesheet" href="https://nexladder.com/build/assets/css/bootstrap.min.css?v=1">
 		<link rel="stylesheet" href="https://nexladder.com/build/assets/css/font-awesome.css?v=1">
 		<link rel="stylesheet" href="https://nexladder.com/build/assets/css/style.css?v=1531962794">
@@ -73,14 +73,18 @@ services. You have the option to either accept or refuse
 these cookies and know when a cookie is being sent to your
 device. If you choose to refuse our cookies, you may not be
 able to use some portions of this Service.
-</p>  <p><strong>Security</strong></p> <p>
+</p>  
+
+<p><strong>Security</strong></p> <p>
 I value your trust in providing us
 your Personal Information, thus we are striving to use
 commercially acceptable means of protecting it. But remember
 that no method of transmission over the internet, or method
 of electronic storage is 100% secure and reliable, and
 I cannot guarantee its absolute security.
-</p> <p><strong>Links to Other Sites</strong></p> <p>
+</p> 
+
+<p><strong>Links to Other Sites</strong></p> <p>
 This Service may contain links to other sites. If you click
 on a third-party link, you will be directed to that site.
 Note that these external sites are not operated by
@@ -89,7 +93,9 @@ review the Privacy Policy of these websites.
 I have no control over and assume no
 responsibility for the content, privacy policies, or
 practices of any third-party sites or services.
-</p> <p><strong>Children's Privacy</strong></p> <p>
+</p> 
+
+<p><strong>Children's Privacy</strong></p> <p>
 These Services do not address anyone under the age of 13.
 I do not knowingly collect personally
 identifiable information from children under 13. In the case
@@ -100,14 +106,23 @@ are a parent or guardian and you are aware that your child
 has provided us with personal information, please contact
 me so that I will be able to do
 necessary actions.
-</p> <p><strong>Changes to This Privacy Policy</strong></p> <p>
+</p> 
+
+<p><strong>Changes to This Privacy Policy</strong></p> <p>
 we may update our Privacy Policy from
 time to time. Thus, you are advised to review this page
 periodically for any changes. I will
 notify you of any changes by posting the new Privacy Policy
 on this page. These changes are effective immediately after
 they are posted on this page.
-</p> <p><strong>Contact Us</strong></p> <p>
+</p> 
+
+<p>All topics and information shared here are totally individual opinions and no any intention to harm or mislead any individual.</p>
+
+<p>Emails Used:</p>
+<p>all emails provided on feedback form are not shared with any third party websites or sold. We will never spam your inbox it’s our trust with you.</p>
+
+<p><strong>Contact Us</strong></p> <p>
 If you have any questions or suggestions about
 my Privacy Policy, do not hesitate to contact
 me at <a href="mailto:nexladdermail@gmail.com">nexladdermail@gmail.com</a>
