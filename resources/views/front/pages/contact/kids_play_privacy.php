@@ -110,7 +110,7 @@ they are posted on this page.
 </p> <p><strong>Contact Us</strong></p> <p>
 If you have any questions or suggestions about
 my Privacy Policy, do not hesitate to contact
-me at nexladdermail@gmail.com
+me at <a href="mailto:nexladdermail@gmail.com">nexladdermail@gmail.com</a>
 </p>
 
 <p>This privacy policy page was last modified on 11/11/2019</p>
