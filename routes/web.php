@@ -103,7 +103,7 @@ Route::post('/feedback', array('as' => 'feedback.json', 'uses' => 'DashboardCont
 
 
 
-
+Route::get('/kids_play_privacy_policy', 'DashboardController@kids_play_privacy_policy')->name('dashboard.kidsplay'); 
 
 Route::get('/about', array('as' => 'about', 'uses' => 'DashboardController@about'));
 
@@ -126,7 +126,7 @@ Route::get('/cplogout', array('as' => 'dashboard.logout', 'uses' => 'DashboardCo
 Route::get('/codemirror/{folder}/{file}', 'DashboardController@codeMirror')->name('dashboard.codemirror'); 
 
 
-Route::get('/kids_play_privacy_policy', 'DashboardController@kids_play_privacy_policy')->name('dashboard.kidsplay'); 
+
 
 
 
