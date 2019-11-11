@@ -56,7 +56,7 @@ used by the app
 
 <!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
 I want to inform you that whenever
-you use my Service, in a case of an error in the
+you use this, in a case of an error in the
 app I collect data and information (through third
 party products) on your phone called Log Data. This Log Data
 may include information such as your device Internet
@@ -64,30 +64,21 @@ Protocol (“IP”) address, device name, operating system
 version, the configuration of the app when utilizing
 my Service, the time and date of your use of the
 Service, and other statistics.
-</p> <p><strong>Cookies</strong></p> <p>
+</p> 
+<p><strong>Cookies</strong></p> <p>
 Cookies are files with a small amount of data that are
 commonly used as anonymous unique identifiers. These are
 sent to your browser from the websites that you visit and
 are stored on your device's internal memory.
 </p> <p>
-This Service does not use these “cookies” explicitly.
+This Service does not use these "cookies" explicitly.
 However, the app may use third party code and libraries that
-use “cookies” to collect information and improve their
+use "cookies" to collect information and improve their
 services. You have the option to either accept or refuse
 these cookies and know when a cookie is being sent to your
 device. If you choose to refuse our cookies, you may not be
 able to use some portions of this Service.
-</p> <p><strong>Service Providers</strong></p> <p>
-I may employ third-party companies
-and individuals due to the following reasons:
-</p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p>
-I want to inform users of this
-Service that these third parties have access to your
-Personal Information. The reason is to perform the tasks
-assigned to them on our behalf. However, they are obligated
-not to disclose or use the information for any other
-purpose.
-</p> <p><strong>Security</strong></p> <p>
+</p>  <p><strong>Security</strong></p> <p>
 I value your trust in providing us
 your Personal Information, thus we are striving to use
 commercially acceptable means of protecting it. But remember
@@ -103,7 +94,7 @@ review the Privacy Policy of these websites.
 I have no control over and assume no
 responsibility for the content, privacy policies, or
 practices of any third-party sites or services.
-</p> <p><strong>Children’s Privacy</strong></p> <p>
+</p> <p><strong>Children's Privacy</strong></p> <p>
 These Services do not address anyone under the age of 13.
 I do not knowingly collect personally
 identifiable information from children under 13. In the case
@@ -115,7 +106,7 @@ has provided us with personal information, please contact
 me so that I will be able to do
 necessary actions.
 </p> <p><strong>Changes to This Privacy Policy</strong></p> <p>
-I may update our Privacy Policy from
+we may update our Privacy Policy from
 time to time. Thus, you are advised to review this page
 periodically for any changes. I will
 notify you of any changes by posting the new Privacy Policy
@@ -124,7 +115,7 @@ they are posted on this page.
 </p> <p><strong>Contact Us</strong></p> <p>
 If you have any questions or suggestions about
 my Privacy Policy, do not hesitate to contact
-me at support@htmlcodeplay.com.
+me at nexladdermail@gmail.com
 </p>
 
 <p>This privacy policy page was last modified on 11/11/2019</p>
