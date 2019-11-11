@@ -158,5 +158,6 @@ class DashboardController extends Controller
      {
           return view('front.pages.contact.kids_play_privacy');
      }
+    
 
 }
