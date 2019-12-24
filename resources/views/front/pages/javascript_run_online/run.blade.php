@@ -1,8 +1,6 @@
 @extends('front.layout.template')
 
 @section('css')
-
-<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/editor-js.css') }}?v=1">
 @stop
 
 @section('content')
