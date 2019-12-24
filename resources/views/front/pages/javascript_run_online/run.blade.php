@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <title>Run JavaScript Online - nexladder</title>
+      <title>{{ $info->page_title }}</title>
       <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/codemirror5.31.0.css') }}?v=1">
       <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/editor-js.css') }}?v=1">
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
