@@ -1,11 +1,7 @@
-@extends('front.layout.template')
 
-@section('css')
 <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/codemirror5.31.0.css') }}?v=1">
 <link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/editor-js.css') }}?v=1">
-@stop
 
-@section('content')
  <div class="row">
     <div class="col-md-12">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -51,15 +47,12 @@
             </section>    
 
 
-            
+
     </div>
 
     <div class="col-md-1"></div>
   </div>
 
-@stop
 
-@section('javascript')
 <script src="{{ Helper::loadAssetsFiles('codemirror/lib/bin/js/codemirror.5.31.0.js?v=1') }}"></script>
 <script src="{{ Helper::loadAssetsFiles('codemirror/lib/bin/js/editor.js?v=1') }}"></script>
-@stop
