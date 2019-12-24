@@ -46,7 +46,7 @@ class DashboardController extends Controller
         $info     = (object) array();
         $info->page_title        = 'Online JavaScript Editor - nexladder';
         $info->meta_description  = 'Online JavaScript Editor - write and run your javascript code inside this page.';
-        $info->meta_keywords     = 'online javascript editor, javascript editor online, run javascript online, run online javascript';
+        $info->meta_keywords     = 'online javascript editor, javascript editor online, run javascript online, run online javascript, online javascript compiler, execute javascript online, compile javascript online, javascript online, javascript tester online, run javascript code onine, practice javascript online, javascript compiler';
         return view('front.pages.javascript_run_online.run', compact('subjects', 'info'));
      }
 
