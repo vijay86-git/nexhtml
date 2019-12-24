@@ -36,7 +36,7 @@
   </head>
   <body>
     
-     <!-- Page Wrapper -->
+    <!-- Page Wrapper -->
     <div class="pageWrapper inner">
        <!-- Container -->
         <div class="container height200">
@@ -100,7 +100,7 @@
               <!--/ social-icons -->
               <!-- copyright -->
               <div class="copyright col-md-5">
-                <p>&copy; {{ date('Y') }} All rights reserved. Developed by <a rel="nofollow" target="_blank" href="https://nexglobalinc.com/" title="nexglobalinc">nexgloalinc</a></p>
+                <p>&copy; {{ date('Y') }} All rights reserved. Developed by <a rel="nofollow" target="_blank" href="https://sparxitlab.com/" title="sparxitlab">Sparx IT Lab</a></p>
               </div>
 
               <div class="col-md-7 pull-right" style="text-align:right">
