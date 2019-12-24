@@ -31,7 +31,7 @@
 
     <div class="row">
          <div class="col-md-12 text-center">
-                 <div class="sitelogo"><a href="{{ URL('/') }}" title="nexladder"><img src="{{ Helper::loadAssetsFiles('images/logo.png') }}" alt="nexladder" /></a></div>
+                 <div class="sitelogo"><a href="{{ URL('/') }}" title="nexladder"><img width="180" src="{{ Helper::loadAssetsFiles('images/nexsharelogo.png') }}" alt="nexladder" /></a></div>
          </div>
     </div>
 
@@ -51,7 +51,6 @@
       </div>
       <div class="row">
          <div class="col-md-12" id="" style="height:400px">
-            <h2>About Us</h2>
             <section id="static">
                <pre>
                     <code id="static-js">console.log("Hello World!"); // Hello World!
