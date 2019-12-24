@@ -1,6 +1,8 @@
 @extends('front.layout.template')
 
 @section('css')
+<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/codemirror5.31.0.css') }}?v=1">
+<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/editor-js.css') }}?v=1">
 @stop
 
 @section('content')
@@ -21,7 +23,8 @@
 
  <div class="row">
     <div class="col-md-12" id="" style="height:400px">
-        <h2>Run JavaScript Online Us</h2>
+        <h2>About Us</h2>
+        
 
         <section id="static">          
             <pre>
@@ -48,7 +51,7 @@
             </section>    
 
 
-        
+            
     </div>
 
     <div class="col-md-1"></div>
