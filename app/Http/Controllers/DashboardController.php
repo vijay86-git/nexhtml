@@ -42,6 +42,7 @@ class DashboardController extends Controller
 
     public function javascript_online()
      {
+      echo "df"; die;
         $info     = (object) array();
         $info->page_title        = 'Run JavaScript Online - nexladder';
         $info->meta_description  = 'run javascript online, online javascript run';
