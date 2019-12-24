@@ -40,6 +40,10 @@
     <meta name="twitter:creator" content="{{ env('SOCIAL_SITE_NAME') }}" />
     <meta name="twitter:image" content="{{ Helper::loadAssetsFiles('images/nexsharelogo.png') }}" />
 
+    @yield('css')
+
+    @yield('javascript')
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111558941-1"></script>
         <script>
@@ -50,7 +54,7 @@
           gtag('config', 'UA-111558941-1');
         </script>
 
-        @stack('js')
+    @stack('js')
 
   </head>
   <body>

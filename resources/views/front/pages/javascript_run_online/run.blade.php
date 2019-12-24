@@ -37,7 +37,7 @@
 
 @stop
 
-@section('js')
+@section('javascript')
 <script src="{{ Helper::loadAssetsFiles('codemirror/lib/bin/js/codemirror.5.31.0.js?v=1') }}"></script>
 <script src="{{ Helper::loadAssetsFiles('codemirror/lib/bin/js/editor.js?v=1') }}"></script>
 @stop
