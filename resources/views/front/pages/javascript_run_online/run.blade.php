@@ -1,5 +1,10 @@
 @extends('front.layout.template')
 
+@section('css')
+<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/codemirror5.31.0.css') }}?v={{ $ftime }}">
+<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/editor-js.css') }}?v={{ $ftime }}">
+@stop
+
 @section('content')
  <div class="row">
     <div class="col-md-12">
@@ -30,4 +35,9 @@
     <div class="col-md-1"></div>
   </div>
 
+@stop
+
+@section('js')
+<script src="{{ Helper::loadAssetsFiles('codemirror/lib/bin/js/codemirror.5.31.0.js?v=1') }}"></script>
+<script src="{{ Helper::loadAssetsFiles('codemirror/lib/bin/js/editor.js?v=1') }}"></script>
 @stop
