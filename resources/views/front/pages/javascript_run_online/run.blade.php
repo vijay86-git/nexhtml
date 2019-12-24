@@ -1,8 +1,8 @@
 @extends('front.layout.template')
 
 @section('css')
-<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/codemirror5.31.0.css') }}?v={{ $ftime }}">
-<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/editor-js.css') }}?v={{ $ftime }}">
+<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/codemirror5.31.0.css') }}?v=1">
+<link rel="stylesheet" href="{{ Helper::loadAssetsFiles('codemirror/lib/bin/css/editor-js.css') }}?v=1">
 @stop
 
 @section('content')
