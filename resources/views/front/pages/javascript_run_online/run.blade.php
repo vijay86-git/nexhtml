@@ -30,7 +30,7 @@
    <body>
 
     <div class="row">
-         <div class="col-md-12 text-center">
+         <div class="col-md-12 text-center" style="text-align:center;margin:25px 0">
                  <div class="sitelogo"><a href="{{ URL('/') }}" title="nexladder"><img width="180" src="{{ Helper::loadAssetsFiles('images/nexsharelogo.png') }}" alt="nexladder" /></a></div>
          </div>
     </div>
