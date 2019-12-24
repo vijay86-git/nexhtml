@@ -50,6 +50,7 @@ class DashboardController extends Controller
         return view('front.pages.javascript_run_online.run', compact('subjects', 'info'));
      }
 
+
 	  public function disclaimer()
 	      {
 	          $subjects =  $this->_subjects;
