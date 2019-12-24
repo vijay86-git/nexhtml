@@ -42,11 +42,12 @@ class DashboardController extends Controller
 
     public function javascript_online()
      {
+        $subjects =  $this->_subjects;
         $info     = (object) array();
         $info->page_title        = 'Run JavaScript Online - nexladder';
         $info->meta_description  = 'run javascript online, online javascript run';
         $info->meta_keywords     = 'run javascript online';
-        return view('front.pages.javascript_run_online.run', compact('info'));
+        return view('front.pages.javascript_run_online.run', compact('subjects', 'info'));
      }
 
 	  public function disclaimer()
