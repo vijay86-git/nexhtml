@@ -115,7 +115,7 @@ Route::get('/contact-us', array('as' => 'contactus', 'uses' => 'ContactControlle
 
 Route::post('/contact-us', array('as' => 'contactus.submit', 'uses' => 'ContactController@submit'));
 
-Route::get('/run-javascript-online', 'DashboardController@javascript_online')->name('javascript.online'); 
+Route::get('/online-javascript-editor', 'DashboardController@javascript_online')->name('javascript.online'); 
 
 //Route::get('/about', array('as' => 'topic', 'uses' => 'TopicController@about'));
 
