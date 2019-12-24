@@ -40,6 +40,15 @@ class DashboardController extends Controller
 	          return view('front.pages.cms.about', compact('subjects', 'info'));
 	      }
 
+    public function javascript_online()
+     {
+        $info     = (object) array();
+        $info->page_title        = 'Run JavaScript Online - nexladder';
+        $info->meta_description  = 'run javascript online, online javascript run';
+        $info->meta_keywords     = 'run javascript online';
+        return view('front.pages.javascript.run');
+     }
+
 	  public function disclaimer()
 	      {
 	          $subjects =  $this->_subjects;
