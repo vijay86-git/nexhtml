@@ -29,55 +29,9 @@
    </head>
    <body>
 
-    <!-- Page Wrapper -->
-    <div class="pageWrapper inner">
-       <!-- Container -->
-        <div class="container height200">
-           <!-- Top Bar -->
-           <div class="topBar">
-               <div class="row">
-                <div class="col-md-6">
-                 <div class="socialinner">
-                  <ul>
-                     <li><a href="https://www.facebook.com/nexladder" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                     <li><a href="https://twitter.com/nexladder" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                     <li><a href="https://plus.google.com/b/107873437441310283848" title="google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                  </ul>
-               </div>
-              </div>
-              <div class="col-md-6">
-                 <div class="searchbar text-right">
-                   <!-- form search -->
-
-                    <form method="get" action="https://www.google.com/search" target="_blank"> 
-                       <input autocomplete="off" type="text" class="searchTextTop" name="q" placeholder="Search on Nexladder..." title="Search on Nexladder" /><button class="magnifier"><i class="fa fa-search"></i></button>
-                       <input type="hidden" name="sitesearch" value="https://nexladder.com" />
-                     </form>
-
-                   <!-- close -->
-                  </div>
-              </div>
-             </div>
-             <div class="seperator">&nbsp;</div>
-          </div>
-         <!-- Close -->
-         <!-- Header part -->
-         <div class="headerSection">
-           <div class="row">
-             <div class="col-md-12 text-center">
-                 <div class="sitelogo"><a href="{{ URL('/') }}" title="nexladder"><img src="{{ Helper::loadAssetsFiles('images/nexsharelogo.png') }}" alt="nexladder" /></a></div>
-             </div>
-           </div>
-         </div>
-         <!-- close body part -->
-        </div> 
-       <!-- End Container -->
-    </div>
-
-    
-
     <div class="row">
-         <div class="col-md-12">
+         <div class="col-md-12 text-center">
+                 <div class="sitelogo"><a href="{{ URL('/') }}" title="nexladder"><img src="{{ Helper::loadAssetsFiles('images/nexsharelogo.png') }}" alt="nexladder" /></a></div>
          </div>
     </div>
 
