@@ -46,7 +46,7 @@ class DashboardController extends Controller
         $info->page_title        = 'Run JavaScript Online - nexladder';
         $info->meta_description  = 'run javascript online, online javascript run';
         $info->meta_keywords     = 'run javascript online';
-        return view('front.pages.javascript.run');
+        return view('front.pages.javascript_run_online.run');
      }
 
 	  public function disclaimer()
