@@ -21,7 +21,7 @@ class TopicController extends Controller
            $this->_subjects  =  Helper::getNavSubjectFromCache();
       }
 
-    public function index(Request $request)
+    public function index()
       {
           
           $subjects =  $this->_subjects;

@@ -18,7 +18,6 @@ class DashboardController extends Controller
     //
     public function index()
        {
-        die('111');
     	    return view('admin.pages.dashboard.home');
        }
 
