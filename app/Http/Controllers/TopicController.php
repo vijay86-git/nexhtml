@@ -23,7 +23,6 @@ class TopicController extends Controller
 
     public function index(Request $request)
       {
-          echo $request->ip();
           
           $subjects =  $this->_subjects;
 
