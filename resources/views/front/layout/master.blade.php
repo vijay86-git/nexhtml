@@ -253,7 +253,7 @@
 
                     <div class="col-md-3 col-sm-3">
                       <div>
-                        <a title="CodeIgniter" href="https://nexladder.com/laravel-tutorial" class="">
+                        <a title="Laravel" href="https://nexladder.com/laravel-tutorial" class="">
                           <span class="courseImg">
                             <img src="https://res.cloudinary.com/dqekhps4b/image/upload/v1578241441/qpp4lt4ha50pdjqjb13s.png" alt="Laravel" class="img-responsive">
                           </span>
