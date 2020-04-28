@@ -29,7 +29,7 @@
 
 //Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:110.225.*'), function() {
 
-Route::prefix('backend')->group(array('domain' => 'nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:2401:4900:b81:afbe:49bd:5dd2:f51d:959'), function() {
+Route::prefix('panel')->group(array('domain' => 'nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:2401:4900:b81:afbe:49bd:5dd2:f51d:959'), function() {
 
 
 //Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin'), function() {
