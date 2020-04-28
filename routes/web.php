@@ -29,13 +29,7 @@
 
 //Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:110.225.*'), function() {
 
-Route::group(array('prefix' => 'panel', 'domain' => 'nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:2401:4900:b81:afbe:49bd:5dd2:f51d:959'), function() {
-
-
-
-//Route::group(array('domain' => 'cp.nexladder.com', 'namespace' => 'Admin'), function() {
-   // Route::group(['namespace' => 'Admin', 'prefix' => 'cp'], function () {
-   // 
+/* Route::group(array('prefix' => 'panel', 'domain' => 'nexladder.com', 'namespace' => 'Admin', 'middleware' => 'ip:2401:4900:b81:afbe:49bd:5dd2:f51d:959'), function() {
 
     Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
 
@@ -52,7 +46,7 @@ Route::group(array('prefix' => 'panel', 'domain' => 'nexladder.com', 'namespace'
     Route::post('/store', array('as' => 'image.store', 'uses' => 'ImageController@store'));
         
 
-}); 
+}); */
 
 
 /*
@@ -76,6 +70,30 @@ Route::group(array('domain' => 'nexladder.com'), function() {
 
 
 Route::group(array('domain' => 'nexladder.com'), function() {
+
+
+
+            Route::group(array('prefix' => 'panel', 'namespace' => 'Admin', 'middleware' => 'ip:2401:4900:b81:afbe:49bd:5dd2:f51d:959'), function() {
+
+                Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
+
+                Route::get('/database', array('as' => 'database', 'uses' => 'DashboardController@database'));
+
+                Route::resource('subject','SubjectController');
+                Route::resource('topic','TopicController');
+                Route::resource('section','SectionController');
+
+                Route::resource('interview','InterviewController');
+                Route::resource('question','QuestionController');
+
+                Route::get('/image', array('as' => 'image.index', 'uses' => 'ImageController@index'));
+                Route::post('/store', array('as' => 'image.store', 'uses' => 'ImageController@store'));
+            }); 
+
+
+
+
+
 
 Route::get('/cache', function () {
 
