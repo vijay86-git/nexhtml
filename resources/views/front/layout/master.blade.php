@@ -202,7 +202,7 @@
 
 
                   <div class="row margin15">
-                    
+
                     <div class="col-md-3 col-sm-3">
                       <div>
                         <a title="Css" href="https://nexladder.com/css-tutorial" class="">
@@ -243,6 +243,11 @@
                         </a>
                       </div>
                     </div>
+
+
+                </div>
+
+                <div class="row margin15">
                     <div class="col-md-3 col-sm-3">
                       <div>
                         <a title="PHP7" href="https://nexladder.com/php7-tutorial" class="">
@@ -287,6 +292,11 @@
                       </div>
                     </div>
 
+
+              </div>
+
+              <div class="row margin15">
+
                     <div class="col-md-3 col-sm-3">
                       <div>
                         <a title="React Native" href="https://nexladder.com/react-native-tutorial" class="">
@@ -311,6 +321,8 @@
 
                     
                   </div>
+
+                  
                 </div>
               </div>
               
