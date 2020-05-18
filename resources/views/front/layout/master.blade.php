@@ -280,7 +280,7 @@
                           <span class="courseImg">
                             <img style="border:1px solid #ccc" src="https://res.cloudinary.com/dqekhps4b/image/upload/v1589781267/kktarnt1drx265cw82w1.png" alt="React Native" class="img-responsive">
                           </span>
-                          <span class="coursename">REACTJS</span>
+                          <span class="coursename">REACT NATIVE</span>
                         </a>
                       </div>
                     </div>
