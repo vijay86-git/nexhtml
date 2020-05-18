@@ -150,6 +150,7 @@
                 <div class="col-md-12 col-sm-12"><div class="learnTechnologies"><h2>Learn Technologies</h2></div></div>
                 <div class="col-md-12 col-sm-12">
                   <div class="row margin15">
+
                     <div class="col-md-3 col-sm-3">
                       <div>
                         <a title="PHP" href="https://nexladder.com/php-tutorial" class="">
@@ -160,6 +161,7 @@
                         </a>
                       </div>
                     </div>
+
                     <div class="col-md-3 col-sm-3">
                       <div>
                         <a title="MySqli" href="https://nexladder.com/mysqli-tutorial" class="">
@@ -170,6 +172,7 @@
                         </a>
                       </div>
                     </div>
+
                     <div class="col-md-3 col-sm-3">
                       <div>
                         <a title="Ajax" href="https://nexladder.com/ajax-tutorial" class="">
@@ -180,6 +183,8 @@
                         </a>
                       </div>
                     </div>
+
+
                     <div class="col-md-3 col-sm-3">
                       <div>
                         <a title="Html" href="https://nexladder.com/html-tutorial" class="">
@@ -190,6 +195,14 @@
                         </a>
                       </div>
                     </div>
+
+                </div>
+
+
+
+
+                  <div class="row margin15">
+                    
                     <div class="col-md-3 col-sm-3">
                       <div>
                         <a title="Css" href="https://nexladder.com/css-tutorial" class="">
