@@ -73,7 +73,7 @@ Route::group(array('domain' => 'nexladder.com'), function() {
 
 
 
-            Route::group(array('prefix' => 'cpanel', 'namespace' => 'Admin', 'middleware' => 'ip:2401:4900:4110:b840:f4bc:d5fb:66d8:d6ea'), function() {
+            Route::group(array('prefix' => 'cpanel', 'namespace' => 'Admin', 'middleware' => 'ip:117.97.242.107'), function() {
 
                 Route::get('/dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
 
